@@ -2,10 +2,15 @@
 
 ## Setup
 
-### Frontend
+### Frontend + Backend
 
 ```
 cd frontend
+yarn
+```
+
+```
+cd backend
 yarn
 ```
 
@@ -26,9 +31,15 @@ python -m spacy link en_core_web_md en
 
 ## Usage
 
-### Frontend
+### Frontend + Backend
 
 ```
+cd frontend
+yarn start
+```
+
+```
+cd backend
 yarn start
 ```
 

@@ -76,3 +76,12 @@ https://chatvisualizer.com/
 https://www.kaggle.com/datasets?sortBy=relevance&group=public&search=chat&page=1&pageSize=20&size=all&filetype=all&license=all
 https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-13
 https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-14
+
+### Combine sets
+    cat set1.csv > set12.csv
+    tail -n +2 set2.csv >> set12.csv
+    
+    import pandas as pd
+    df = pd.read_csv('set12.csv')
+    out = df[df.intent.notnull()]
+    out.to_csv('set12_cleaned.csv', index=False)

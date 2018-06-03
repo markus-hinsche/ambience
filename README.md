@@ -64,6 +64,8 @@ Analogously to [rasa intents](https://github.com/RasaHQ/rasa_nlu/blob/master/dat
 * deny
 * argue
 * propose
+* ask
+* explain
 * other
 
 ## Competition

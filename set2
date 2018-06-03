@@ -1,127 +1,126 @@
-"07:56:20","<RRSAgent>","RRSAgent has joined #rdf-wg"
-"07:56:20","<RRSAgent>","logging to http://www.w3.org/2011/04/13-rdf-wg-irc"
-"07:56:25","<gavinc>","Mmm... 1 am is in fact morning I guess ;)"
-"07:56:27","<ivan>","rrsagent, set log public"
-"07:56:44","<ivan>","gavinc: just a minute, we will dial in soonish"
-"07:56:50","<Zakim>","+ +1.404.978.aabb"
-"07:57:19","<tomayac>","zakim, aabb is me"
-"07:57:19","<Zakim>","+tomayac; got it"
-"07:57:35","<Guus>","Guus has joined #rdf-wg"
-"07:59:54","<OlivierCorby>","OlivierCorby has joined #rdf-wg"
-"08:01:56","<pgroth>","pgroth has joined #rdf-wg"
-"08:03:13","<davidwood>","davidwood has joined #rdf-wg"
-"08:05:31","<Zakim>","+ +31.20.592.aacc"
-"08:05:54","<pfps>","zakim, who is here?"
-"08:05:54","<Zakim>","On the phone I see gavinc, tomayac, +31.20.592.aacc"
-"08:05:55","<sandro>","zakim, who is on the call?"
-"08:05:56","<Zakim>","On the phone I see gavinc, tomayac, +31.20.592.aacc"
-"08:06:11","<AZ>","AZ has joined #rdf-wg"
-"08:06:35","<AZ>","Hello"
-"08:09:13","<Zakim>","+ +1.760.705.aaee"
-"08:09:24","<AZ>","zakim, +1.760.705.aaee is me"
-"08:09:24","<Zakim>","+AZ; got it"
-"08:09:28","<ivan>","zakim, who is here?"
-"08:09:28","<Zakim>","On the phone I see gavinc, tomayac, +31.20.592.aacc, OlivierCorby, AZ"
-"#08:09:47","<sandro>","AZ, you're a bit loud"
-"08:09:55","<AZ>","zakim, mute me"
-"08:09:55","<Zakim>","AZ should now be muted"
-"08:10:01","<ivan>","zakim, aacc is ivan"
-"08:10:01","<Zakim>","+ivan; got it"
-"08:10:03","<pfps>","zakim, aacc is CWI"
-"08:10:03","<Zakim>","sorry, pfps, I do not recognize a party named 'aacc'"
-"08:10:25","<sandro>","zakim, ivan is Meeting_Room"
-"08:10:25","<Zakim>","+Meeting_Room; got it"
-"08:10:53","<SteveH>","Scribe: mischat"
-"08:11:00","<mischat>","http://www.w3.org/2011/rdf-wg/wiki/F2F1"
-"08:11:27","<FabGandon>"," zakim, who is here?"
-"08:11:27","<Zakim>","On the phone I see gavinc, tomayac, Meeting_Room, OlivierCorby, AZ (muted)"
-<sandro> Topic: Agenda Review
-"08:11:55","<mischat>","Guus: are we happy with the agenda ?"
-"08:12:11","<mischat>","Guus: does anything need to be amended?"
-"08:12:46","<mischat>","as thomas is not here so matteo will be giving the json roundup"
-"08:13:38","<mischat>","thanks"
-"08:17:27","<raphael>","raphael has joined #rdf-wg"
-"08:18:23","<mischat>","is everyone physically at CWI turning up to dinner tonight ?"
-"08:18:26","<mischat>","if not shout ..."
-"08:18:54","<mbrunati>","mbrunati has joined #rdf-wg"
-"08:19:02","<mischat>","anyone for agenda changes ?"
-"08:19:16","<mischat>","we are looking at this now"
-"08:19:16","<mischat>","http://www.w3.org/2011/rdf-wg/wiki/F2F1-objectives"
-"08:19:26","<mischat>","^^ are the objectives for this f2f"
-"08:19:57","<mischat>","Guus: this f2f to move us from an open discussion to a more targeted effort"
-"08:20:24","<mischat>","we are looking to get documents in place"
-"08:21:02","<mischat>","from now on we should have our long threads turn into something tangible and useful for the process"
-"08:21:33","<mischat>","we are now looking to identify starting documents for the various tasks"
-"08:21:50","<mischat>","Guus: would like to have names against the various documents, so that we can push work forward"
-"08:21:59","<mischat>","Graph's tasks force"
-"08:22:40","<mischat>","we have some standard terminology now in terms of GraphTerminology"
-"08:23:11","<mischat>","Guus: another issues is the alignment with the SPARQL work"
-"08:23:26","<NickH>","http://plixi.com/p/92009392"
-"08:24:03","<mischat>","Guus: so what will be the starting document for the GRaphs TF, should it be the RDF concepts"
-"08:24:05","<mischat>","?"
-"08:24:19","<mischat>","that is the current feeling, and these are things which we need to discuss"
-"08:24:38","<tomayac>","thanks, NickH for the photo :-)"
-"08:25:18","<mischat>","Guus: we have some cleanup tasks, and there are discussions needed to identify what changes need to happen to the various RDF documents"
-"08:25:48","<mischat>","Guus: we seem to have a good grasp of the issues, re: a good issue list has been developed"
-"08:25:59","<mischat>","Guus: do people think we have a good grasp of the problem domain ?"
-"08:26:04","<mischat>","question for the room ^^"
-"08:26:30","<FabGandon>","for ecah identifier we define (e.g. g-box identifiers) we should also discuss what happens when we dereference that identifier (e.g. what do I get when I dereference the IRI of g-box? triples in the g-box? triples about g-box? both)"
-"08:27:57","<pgroth>","- moving on to discussing turtle"
-"08:28:03","<FabGandon>","Guus: for TURTLE starting point is the doc from team submission"
-"08:28:56","<FabGandon>","Guus: N-triple considered as a limited sub-set of Turtle"
-"08:29:04","<mischat>","mischat has joined #rdf-wg"
-"08:29:07","<ivan>","zakim, who is here?"
-"08:29:07","<Zakim>","On the phone I see gavinc, tomayac, Meeting_Room, OlivierCorby, AZ (muted)"
-"08:29:22","<NickH>","pchampin: very impressive!"
-"08:30:16","<ivan>","zakim, Meeting_Room has David Wood, Sandro, Mateo, Steve Harris, Fabien, Pierre Antoine, Cygri, Yves, Nick, Jean-François, Jan, PFPS, Paul Groth, Chris Matheus, Dan Brickley, Misha Tuffield, Ivan"
-"08:30:16","<Zakim>","+David, Wood, Sandro, Mateo, Steve, Harris, Fabien, Pierre, Antoine, Cygri, Yves, Nick, Jean-François, Jan, PFPS, Paul, Groth, Chris, Matheus, Dan, Brickley, Misha, Tuffield,"
-"08:30:20","<Zakim>","... Ivan; got it"
-"08:30:35","<mischat>","JSON, we have documents to start from, in terms of the Talis submission"
-"08:30:47","<yvesr>","if we're not able to standardise object-based json, can we at least standardise a canonical mapping from an rdf graph to some straight-fw json?"
-"08:31:14","<mischat>","davidWood: just asked about Talis submitting a member submission"
-"08:31:48","<mischat>","Guus: it is important to figure out what is achievable in terms of work in the JSON TF"
-"08:32:31","<mischat>","danbri: JSON developers learn new formats all the time"
-"08:33:04","<mischat>","danbri: we can get it wrong, and push out three syntaxes, and we will get it right eventually"
-"08:33:47","<mischat>","in the JSON TF, we need to elicit what our objectives should be"
-"08:34:07","<mischat>","if we develop more than one syntax then we will have doubled the work"
-"08:34:18","<mischat>","ivan: asked about cleanup related actions"
-"08:34:26","<mischat>","Guus: there is time set aside for that tomorrow"
-"08:34:51","<mischat>","Guus: has no idea how much work the cleanup will be"
-"08:35:35","<mischat>","ivan there are a bunch of small issues, URIRef vs IRI"
-"08:35:42","<pchampin>","ivan: following discussion on the ML, we need to agree on what 'deprecation' means for this WG"
-"08:36:00","<tomayac>","(audio no longer understandable on the US no. anyone else on the phone have this issue, too?)"
-"08:36:04","<mischat>","ivan: the meta-issue regarding \"deprecation\" should be discussed and sorted out here at the f2f"
-"08:36:33","<mischat>","the issue will be tackled tomorrow, but we are going to try and touch upon it now"
-"08:36:34","<mischat>","for 20 mins"
-"08:37:12","<ivan>","q?"
-"08:37:17","<mischat>","so lunch at somepoint between 12:30-13:00 central european summer time"
-"08:37:46","<mischat>","davidwood: re: turtle, dave wants to know what standardised will be developed by tthe WG"
-"08:37:56","<tomayac>","(audio back to normal. phew)"
-"08:38:26","<Danbri>","Danbri has joined #rdf-wg"
-"08:38:27","<mischat>","i.e. we will have turtle, will we have qturtle, trig, or what combination of serialisations will we develop"
-"08:39:12","<tomayac>","sandro FTW! thanks!"
-"08:39:15","<mischat>","peter: question should we have Qturtle, or turtle, should one be a superset ?"
-"08:39:37","<mischat>","so dave would like to see issue sorted out"
-"08:40:00","<mischat>","SteveH: said we could have one document which lists all of the turtle(related) serialisations"
-"08:40:16","<pchampin>","sounds like a great idea to me"
-"08:40:31","<mischat>","Dave's goal for the f2f is to nail the turtle work"
-"08:40:48","<mischat>","so we have clear goals, turtle work seems to be the most advanced"
-"08:41:27","<mischat>","danbri, we have a big archive \"www rdf comments\", will someone go through the archives"
-"08:41:38","<mischat>","where we have had lots of feedback from people about RDF"
-"08:42:27","<tomayac>","sandro, i up-scale it client-side, works perfect for me. thanks!"
-"08:42:31","<davidwood>","davidwood has joined #rdf-wg"
-"08:43:24","<davidwood>","http://www.w3.org/2000/03/rdf-tracking/#/%23futures - historical RDF issues"
-<pfps> Topic: Graphs Task Force
-"08:43:35","<mischat>","we are going to move on to the Graph's discussion, if we are happy with the objectives ?"
-"08:43:59","<mischat>","Richard is about to give some slides summarising the graphs work"
-"08:44:28","<danbri>","danbri has joined #rdf-wg"
-"08:44:52","<mischat>","there are some slides on the wiki for richard's talk"
-"08:44:56","<cygri>"," slides: http://www.w3.org/2011/rdf-wg/wiki/images/3/3b/Rdfwg-graphs-tf-report.pdf"
-"08:45:48","<mischat>","cygri: will talk about the \"problem\", the \"open issues\", and will give us a view of other potential issues"
-"08:46:17","<mischat>","the charter says we must standardising a model for multiple graphs"
-"08:47:06","<mischat>","the charter also states that we must standardise turtle and a something similar with multi graph support"
-"08:47:34","<mischat>","a decision was made for the turtle to focus on syntax and the graphs tf can look at extending turtle"
-"08:48:16","<pfps>","It's *turqle*!!!"
+timestamp,name,text,intent
+"07:56:20","<RRSAgent>","RRSAgent has joined #rdf-wg",other
+"07:56:20","<RRSAgent>","logging to http://www.w3.org/2011/04/13-rdf-wg-irc",other
+"07:56:25","<gavinc>","Mmm... 1 am is in fact morning I guess ;)",argue
+"07:56:27","<ivan>","rrsagent, set log public",other
+"07:56:44","<ivan>","gavinc: just a minute, we will dial in soonish",other
+"07:56:50","<Zakim>","+ +1.404.978.aabb",other
+"07:57:19","<tomayac>","zakim, aabb is me",other
+"07:57:19","<Zakim>","+tomayac; got it",affirm
+"07:57:35","<Guus>","Guus has joined #rdf-wg",other
+"07:59:54","<OlivierCorby>","OlivierCorby has joined #rdf-wg",other
+"08:01:56","<pgroth>","pgroth has joined #rdf-wg",other
+"08:03:13","<davidwood>","davidwood has joined #rdf-wg",other
+"08:05:31","<Zakim>","+ +31.20.592.aacc",other
+"08:05:54","<pfps>","zakim, who is here?",other
+"08:05:54","<Zakim>","On the phone I see gavinc, tomayac, +31.20.592.aacc",explain
+"08:05:55","<sandro>","zakim, who is on the call?",ask
+"08:05:56","<Zakim>","On the phone I see gavinc, tomayac, +31.20.592.aacc",explain
+"08:06:11","<AZ>","AZ has joined #rdf-wg",other
+"08:06:35","<AZ>","Hello",greet
+"08:09:13","<Zakim>","+ +1.760.705.aaee",other
+"08:09:24","<AZ>","zakim, +1.760.705.aaee is me",explain
+"08:09:24","<Zakim>","+AZ; got it",affirm
+"08:09:28","<ivan>","zakim, who is here?",ask
+"08:09:28","<Zakim>","On the phone I see gavinc, tomayac, +31.20.592.aacc, OlivierCorby, AZ",explain
+"#08:09:47","<sandro>","AZ, you're a bit loud",other
+"08:09:55","<AZ>","zakim, mute me",other
+"08:09:55","<Zakim>","AZ should now be muted",explain
+"08:10:01","<ivan>","zakim, aacc is ivan",explain
+"08:10:01","<Zakim>","+ivan; got it",affirm
+"08:10:03","<pfps>","zakim, aacc is CWI",explain
+"08:10:03","<Zakim>","sorry, pfps, I do not recognize a party named 'aacc'",other
+"08:10:25","<sandro>","zakim, ivan is Meeting_Room",explain
+"08:10:25","<Zakim>","+Meeting_Room; got it",affirm
+"08:10:53","<SteveH>","Scribe: mischat",other
+"08:11:00","<mischat>","http://www.w3.org/2011/rdf-wg/wiki/F2F1",other
+"08:11:27","<FabGandon>"," zakim, who is here?",ask
+"08:11:27","<Zakim>","On the phone I see gavinc, tomayac, Meeting_Room, OlivierCorby, AZ (muted)",explain
+"08:11:55","<mischat>","Guus: are we happy with the agenda ?",ask
+"08:12:11","<mischat>","Guus: does anything need to be amended?",ask
+"08:12:46","<mischat>","as thomas is not here so matteo will be giving the json roundup",explain
+"08:13:38","<mischat>","thanks",other
+"08:17:27","<raphael>","raphael has joined #rdf-wg",other
+"08:18:23","<mischat>","is everyone physically at CWI turning up to dinner tonight ?",ask
+"08:18:26","<mischat>","if not shout ...",propose
+"08:18:54","<mbrunati>","mbrunati has joined #rdf-wg",other
+"08:19:02","<mischat>","anyone for agenda changes ?",ask
+"08:19:16","<mischat>","we are looking at this now",explain
+"08:19:16","<mischat>","http://www.w3.org/2011/rdf-wg/wiki/F2F1-objectives",other
+"08:19:26","<mischat>","^^ are the objectives for this f2f",explain
+"08:19:57","<mischat>","Guus: this f2f to move us from an open discussion to a more targeted effort",explain
+"08:20:24","<mischat>","we are looking to get documents in place",explain
+"08:21:02","<mischat>","from now on we should have our long threads turn into something tangible and useful for the process",explain
+"08:21:33","<mischat>","we are now looking to identify starting documents for the various tasks",explain
+"08:21:50","<mischat>","Guus: would like to have names against the various documents, so that we can push work forward",explain
+"08:21:59","<mischat>","Graph's tasks force",other
+"08:22:40","<mischat>","we have some standard terminology now in terms of GraphTerminology",explain
+"08:23:11","<mischat>","Guus: another issues is the alignment with the SPARQL work",explain
+"08:23:26","<NickH>","http://plixi.com/p/92009392",other
+"08:24:03","<mischat>","Guus: so what will be the starting document for the GRaphs TF, should it be the RDF concepts",question
+"08:24:05","<mischat>","?",question
+"08:24:19","<mischat>","that is the current feeling, and these are things which we need to discuss",explain
+"08:24:38","<tomayac>","thanks, NickH for the photo :-)",other
+"08:25:18","<mischat>","Guus: we have some cleanup tasks, and there are discussions needed to identify what changes need to happen to the various RDF documents",explain
+"08:25:48","<mischat>","Guus: we seem to have a good grasp of the issues, re: a good issue list has been developed",explain
+"08:25:59","<mischat>","Guus: do people think we have a good grasp of the problem domain ?",ask
+"08:26:04","<mischat>","question for the room ^^",explain
+"08:26:30","<FabGandon>","for ecah identifier we define (e.g. g-box identifiers) we should also discuss what happens when we dereference that identifier (e.g. what do I get when I dereference the IRI of g-box? triples in the g-box? triples about g-box? both)",propose
+"08:27:57","<pgroth>","- moving on to discussing turtle",explain
+"08:28:03","<FabGandon>","Guus: for TURTLE starting point is the doc from team submission",explain
+"08:28:56","<FabGandon>","Guus: N-triple considered as a limited sub-set of Turtle",explain
+"08:29:04","<mischat>","mischat has joined #rdf-wg",other
+"08:29:07","<ivan>","zakim, who is here?",ask
+"08:29:07","<Zakim>","On the phone I see gavinc, tomayac, Meeting_Room, OlivierCorby, AZ (muted)",explain
+"08:29:22","<NickH>","pchampin: very impressive!",affirm
+"08:30:16","<ivan>","zakim, Meeting_Room has David Wood, Sandro, Mateo, Steve Harris, Fabien, Pierre Antoine, Cygri, Yves, Nick, Jean-François, Jan, PFPS, Paul Groth, Chris Matheus, Dan Brickley, Misha Tuffield, Ivan",other
+"08:30:16","<Zakim>","+David, Wood, Sandro, Mateo, Steve, Harris, Fabien, Pierre, Antoine, Cygri, Yves, Nick, Jean-François, Jan, PFPS, Paul, Groth, Chris, Matheus, Dan, Brickley, Misha, Tuffield,",other
+"08:30:20","<Zakim>","... Ivan; got it",affirm
+"08:30:35","<mischat>","JSON, we have documents to start from, in terms of the Talis submission",explain
+"08:30:47","<yvesr>","if we're not able to standardise object-based json, can we at least standardise a canonical mapping from an rdf graph to some straight-fw json?",propose
+"08:31:14","<mischat>","davidWood: just asked about Talis submitting a member submission",explain
+"08:31:48","<mischat>","Guus: it is important to figure out what is achievable in terms of work in the JSON TF",explain
+"08:32:31","<mischat>","danbri: JSON developers learn new formats all the time",explain
+"08:33:04","<mischat>","danbri: we can get it wrong, and push out three syntaxes, and we will get it right eventually",explain
+"08:33:47","<mischat>","in the JSON TF, we need to elicit what our objectives should be",explain
+"08:34:07","<mischat>","if we develop more than one syntax then we will have doubled the work",explain
+"08:34:18","<mischat>","ivan: asked about cleanup related actions",explain
+"08:34:26","<mischat>","Guus: there is time set aside for that tomorrow",explain
+"08:34:51","<mischat>","Guus: has no idea how much work the cleanup will be",explain
+"08:35:35","<mischat>","ivan there are a bunch of small issues, URIRef vs IRI",explain
+"08:35:42","<pchampin>","ivan: following discussion on the ML, we need to agree on what 'deprecation' means for this WG",explain
+"08:36:00","<tomayac>","(audio no longer understandable on the US no. anyone else on the phone have this issue, too?)",ask
+"08:36:04","<mischat>","ivan: the meta-issue regarding \"deprecation\" should be discussed and sorted out here at the f2f",propose
+"08:36:33","<mischat>","the issue will be tackled tomorrow, but we are going to try and touch upon it now",explain
+"08:36:34","<mischat>","for 20 mins",explain
+"08:37:12","<ivan>","q?",other
+"08:37:17","<mischat>","so lunch at somepoint between 12:30-13:00 central european summer time",explain
+"08:37:46","<mischat>","davidwood: re: turtle, dave wants to know what standardised will be developed by tthe WG",explain
+"08:37:56","<tomayac>","(audio back to normal. phew)",other
+"08:38:26","<Danbri>","Danbri has joined #rdf-wg",other
+"08:38:27","<mischat>","i.e. we will have turtle, will we have qturtle, trig, or what combination of serialisations will we develop",ask
+"08:39:12","<tomayac>","sandro FTW! thanks!",other
+"08:39:15","<mischat>","peter: question should we have Qturtle, or turtle, should one be a superset ?",ask
+"08:39:37","<mischat>","so dave would like to see issue sorted out",explain
+"08:40:00","<mischat>","SteveH: said we could have one document which lists all of the turtle(related) serialisations",propose
+"08:40:16","<pchampin>","sounds like a great idea to me",affirm
+"08:40:31","<mischat>","Dave's goal for the f2f is to nail the turtle work",explain
+"08:40:48","<mischat>","so we have clear goals, turtle work seems to be the most advanced",explain
+"08:41:27","<mischat>","danbri, we have a big archive \"www rdf comments\", will someone go through the archives",ask
+"08:41:38","<mischat>","where we have had lots of feedback from people about RDF",explain
+"08:42:27","<tomayac>","sandro, i up-scale it client-side, works perfect for me. thanks!",affirm
+"08:42:31","<davidwood>","davidwood has joined #rdf-wg",other
+"08:43:24","<davidwood>","http://www.w3.org/2000/03/rdf-tracking/#/%23futures - historical RDF issues",other
+"08:43:35","<mischat>","we are going to move on to the Graph's discussion, if we are happy with the objectives ?",propose
+"08:43:59","<mischat>","Richard is about to give some slides summarising the graphs work",explain
+"08:44:28","<danbri>","danbri has joined #rdf-wg",other
+"08:44:52","<mischat>","there are some slides on the wiki for richard's talk",explain
+"08:44:56","<cygri>"," slides: http://www.w3.org/2011/rdf-wg/wiki/images/3/3b/Rdfwg-graphs-tf-report.pdf",other
+"08:45:48","<mischat>","cygri: will talk about the \"problem\", the \"open issues\", and will give us a view of other potential issues",explain
+"08:46:17","<mischat>","the charter says we must standardising a model for multiple graphs",explain
+"08:47:06","<mischat>","the charter also states that we must standardise turtle and a something similar with multi graph support",explain
+"08:47:34","<mischat>","a decision was made for the turtle to focus on syntax and the graphs tf can look at extending turtle",explain
+"08:48:16","<pfps>","It's *turqle*!!!",other
 "08:48:21","<mischat>","davidwood: missed the call where the work of putting in mutlli graph support to turtle should be a task for the graphs tf"
 "08:49:01","<mischat>","Guus: turtle tf can talk about the syntax, but the graphs tf will inform what the multi graph syntax should represent"
 "08:49:21","<mischat>","cygri: is listing inputs to the graphs tf"

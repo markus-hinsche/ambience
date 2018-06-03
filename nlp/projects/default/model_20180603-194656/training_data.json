@@ -1,0 +1,876 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "other",
+        "text": "MacTed has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "mbrunati has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "mbrunati has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "mbrunati has left #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "pgroth has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "pgroth_ has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "tomlurge has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "danbri has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "OlivierCorby has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "FabGandon has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "ivan has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "tomayac has joined #rdf-wg"
+      },
+      {
+        "intent": "greet",
+        "text": "bonjour monsieur!"
+      },
+      {
+        "intent": "other",
+        "text": "pgroth has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "AZ has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "mbrunati has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "pchampin has joined #rdf-wg"
+      },
+      {
+        "intent": "ask",
+        "text": "have the dial-in details changed? using rdfwg1# code"
+      },
+      {
+        "intent": "explain",
+        "text": "should work but we haven't called yet and a number of participants are still missing in the room"
+      },
+      {
+        "intent": "explain",
+        "text": " 9:30 sharp-ish ;-)"
+      },
+      {
+        "intent": "other",
+        "text": "PatH has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "Guus has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "SteveH has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "Steven_ has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "zakim, list"
+      },
+      {
+        "intent": "explain",
+        "text": "I see SW_RDFWG(RDFWG1)2:00AM active and no others scheduled to start in the next 15 minutes"
+      },
+      {
+        "intent": "other",
+        "text": "mischat has joined #rdf-wg"
+      },
+      {
+        "intent": "explain",
+        "text": "we will have to do an adhoc teleconf the teleconf chanel is not available for today"
+      },
+      {
+        "intent": "other",
+        "text": "pfps has joined #rdf-wg"
+      },
+      {
+        "intent": "question",
+        "text": "zakim, code?"
+      },
+      {
+        "intent": "explain",
+        "text": "the conference code is 733941 (tel:+1.617.761.6200 tel:+33.4.26.46.79.03 tel:+44.203.318.0479), Steven_"
+      },
+      {
+        "intent": "other",
+        "text": "trying again..."
+      },
+      {
+        "intent": "other",
+        "text": "cmatheus has joined #rdf-wg"
+      },
+      {
+        "intent": "question",
+        "text": "zakim, who is on the call?"
+      },
+      {
+        "intent": "explain",
+        "text": "On the phone I see OlivierCorby, OlivierCorby.a, OlivierCorby.aa, OlivierCorby.aaa"
+      },
+      {
+        "intent": "other",
+        "text": "cygri has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "davidwood has joined #rdf-wg"
+      },
+      {
+        "intent": "explain",
+        "text": "Same message here"
+      },
+      {
+        "intent": "explain",
+        "text": "same here"
+      },
+      {
+        "intent": "proposal",
+        "text": "We're working on it - please stand by"
+      },
+      {
+        "intent": "question",
+        "text": "zakim, room for 15 for 600 minutes?"
+      },
+      {
+        "intent": "other",
+        "text": "ok, Steven_; conference Team_(rdf-wg)07:42Z scheduled with code 26631 (CONF1) for 600 minutes until 1742Z"
+      },
+      {
+        "intent": "explain",
+        "text": "We'll announce a new dial in code shortly"
+      },
+      {
+        "intent": "explain",
+        "text": "dial 26631"
+      },
+      {
+        "intent": "explain",
+        "text": "PLEASE USE CONFERENCE CODE 26631"
+      },
+      {
+        "intent": "other",
+        "text": "Steven_ has changed the topic to: CODE is 26631"
+      },
+      {
+        "intent": "explain",
+        "text": "Sorry for the confusion.  Our bridge was not configured as we expected."
+      },
+      {
+        "intent": "question",
+        "text": "zakim, who is on the call?"
+      },
+      {
+        "intent": "explain",
+        "text": "On the phone I see OlivierCorby, OlivierCorby.a, OlivierCorby.aa, OlivierCorby.aaa"
+      },
+      {
+        "intent": "greet",
+        "text": "Good Morning!"
+      },
+      {
+        "intent": "greet",
+        "text": "zakim, this is rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "Steven_, this was SW_RDFWG(RDFWG1)2:00AM"
+      },
+      {
+        "intent": "other",
+        "text": "ok, Steven_; that matches Team_(rdf-wg)07:42Z"
+      },
+      {
+        "intent": "question",
+        "text": "zakim, who is on the call?"
+      },
+      {
+        "intent": "proposal",
+        "text": "PatH: lets not call it the names then."
+      },
+      {
+        "intent": "affirm",
+        "text": "+1 pat"
+      },
+      {
+        "intent": "explain",
+        "text": "pfps: RDF is agnostic as to the use of the same IRI to name a graph or a person.  "
+      },
+      {
+        "intent": "explain",
+        "text": "ack pchampin "
+      },
+      {
+        "intent": "other",
+        "text": "pchampin, you wanted to talk about named graphs in SPARQL endpoints"
+      },
+      {
+        "intent": "question",
+        "text": "sandro - so you think that you shouldn't use \\\"anyone else's\\\"  IRIs in a named graph?"
+      },
+      {
+        "intent": "deny",
+        "text": "q+ to disagree with sandro -- web crawling use case"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes we can"
+      },
+      {
+        "intent": "explain",
+        "text": "davidwood: some people say we should always use http://"
+      },
+      {
+        "intent": "explain",
+        "text": "danbri: there is a drift from using http:// URIs"
+      },
+      {
+        "intent": "affirm",
+        "text": "SteveH: I don't see anything wrong with that."
+      },
+      {
+        "intent": "proposal",
+        "text": "davidwood: moving to ISSUE 15 ; let's try to rephrase it."
+      },
+      {
+        "intent": "affirm",
+        "text": "1"
+      },
+      {
+        "intent": "affirm",
+        "text": "1"
+      },
+      {
+        "intent": "affirm",
+        "text": "1"
+      },
+      {
+        "intent": "affirm",
+        "text": "1"
+      },
+      {
+        "intent": "affirm",
+        "text": "1"
+      },
+      {
+        "intent": "affirm",
+        "text": "1"
+      },
+      {
+        "intent": "deny",
+        "text": "-1"
+      },
+      {
+        "intent": "affirm",
+        "text": "1"
+      },
+      {
+        "intent": "affirm",
+        "text": "1"
+      },
+      {
+        "intent": "affirm",
+        "text": "1"
+      },
+      {
+        "intent": "explain",
+        "text": "+.5 as I'm not exactly sure just what REST is"
+      },
+      {
+        "intent": "affirm",
+        "text": "@AZ yes, found that surprising"
+      },
+      {
+        "intent": "affirm",
+        "text": "+1 (but agree that REST isn't very well specified)"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: we are only considering the notions behind REST."
+      },
+      {
+        "intent": "proposal",
+        "text": "guus: two groups;  (1) json, (2) skolemization"
+      },
+      {
+        "intent": "affirm",
+        "text": "ack pchampin"
+      },
+      {
+        "intent": "affirm",
+        "text": "ack pchampin "
+      },
+      {
+        "intent": "proposal",
+        "text": "pchampin: We shoudl specify what is ok for the system to do"
+      },
+      {
+        "intent": "affirm",
+        "text": "az, no problem"
+      },
+      {
+        "intent": "proposal",
+        "text": "davidwood: if we're close to a solution, let's keep on on that"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a good lunch, guys."
+      },
+      {
+        "intent": "goodbye",
+        "text": "enjoy your meal"
+      },
+      {
+        "intent": "proposal",
+        "text": "cygri: we should use the same short names to avoid having multiple REC documents floating around"
+      },
+      {
+        "intent": "proposal",
+        "text": "guus: i don't hear objections, so let's work on that assumption"
+      },
+      {
+        "intent": "affirm",
+        "text": "guus: Turtle"
+      },
+      {
+        "intent": "question",
+        "text": "zakim, who is here"
+      },
+      {
+        "intent": "explain",
+        "text": "zwu2_, you need to end that query with '?'"
+      },
+      {
+        "intent": "explain",
+        "text": "Created ACTION-39 - Look at respec's handling of references [on Sandro Hawke - due 2011-04-21]."
+      },
+      {
+        "intent": "proposal",
+        "text": "SteveH: don't use xmlspec"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye remote folks!"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye and have a safe trip home!"
+      },
+      {
+        "intent": "deny",
+        "text": "Sorry, cygri, I don't understand 'trackbot, generate minutes'. Please refer to http://www.w3.org/2005/06/tracker/irc for help"
+      },
+      {
+        "intent": "other",
+        "text": "RRSAgent has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "logging to http://www.w3.org/2011/04/13-rdf-wg-irc"
+      },
+      {
+        "intent": "other",
+        "text": "rrsagent, set log public"
+      },
+      {
+        "intent": "other",
+        "text": "gavinc: just a minute, we will dial in soonish"
+      },
+      {
+        "intent": "other",
+        "text": "+ +1.404.978.aabb"
+      },
+      {
+        "intent": "other",
+        "text": "zakim, aabb is me"
+      },
+      {
+        "intent": "affirm",
+        "text": "+tomayac; got it"
+      },
+      {
+        "intent": "other",
+        "text": "Guus has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "OlivierCorby has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "pgroth has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "davidwood has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "+ +31.20.592.aacc"
+      },
+      {
+        "intent": "other",
+        "text": "zakim, who is here?"
+      },
+      {
+        "intent": "explain",
+        "text": "On the phone I see gavinc, tomayac, +31.20.592.aacc"
+      },
+      {
+        "intent": "ask",
+        "text": "zakim, who is on the call?"
+      },
+      {
+        "intent": "explain",
+        "text": "On the phone I see gavinc, tomayac, +31.20.592.aacc"
+      },
+      {
+        "intent": "other",
+        "text": "AZ has joined #rdf-wg"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "other",
+        "text": "+ +1.760.705.aaee"
+      },
+      {
+        "intent": "explain",
+        "text": "zakim, +1.760.705.aaee is me"
+      },
+      {
+        "intent": "affirm",
+        "text": "+AZ; got it"
+      },
+      {
+        "intent": "ask",
+        "text": "zakim, who is here?"
+      },
+      {
+        "intent": "explain",
+        "text": "On the phone I see gavinc, tomayac, +31.20.592.aacc, OlivierCorby, AZ"
+      },
+      {
+        "intent": "other",
+        "text": "AZ, you're a bit loud"
+      },
+      {
+        "intent": "other",
+        "text": "zakim, mute me"
+      },
+      {
+        "intent": "explain",
+        "text": "AZ should now be muted"
+      },
+      {
+        "intent": "explain",
+        "text": "zakim, aacc is ivan"
+      },
+      {
+        "intent": "affirm",
+        "text": "+ivan; got it"
+      },
+      {
+        "intent": "explain",
+        "text": "zakim, aacc is CWI"
+      },
+      {
+        "intent": "other",
+        "text": "sorry, pfps, I do not recognize a party named 'aacc'"
+      },
+      {
+        "intent": "explain",
+        "text": "zakim, ivan is Meeting_Room"
+      },
+      {
+        "intent": "affirm",
+        "text": "+Meeting_Room; got it"
+      },
+      {
+        "intent": "other",
+        "text": "Scribe: mischat"
+      },
+      {
+        "intent": "other",
+        "text": "http://www.w3.org/2011/rdf-wg/wiki/F2F1"
+      },
+      {
+        "intent": "ask",
+        "text": " zakim, who is here?"
+      },
+      {
+        "intent": "explain",
+        "text": "On the phone I see gavinc, tomayac, Meeting_Room, OlivierCorby, AZ (muted)"
+      },
+      {
+        "intent": "ask",
+        "text": "Guus: are we happy with the agenda ?"
+      },
+      {
+        "intent": "ask",
+        "text": "Guus: does anything need to be amended?"
+      },
+      {
+        "intent": "explain",
+        "text": "as thomas is not here so matteo will be giving the json roundup"
+      },
+      {
+        "intent": "other",
+        "text": "thanks"
+      },
+      {
+        "intent": "other",
+        "text": "raphael has joined #rdf-wg"
+      },
+      {
+        "intent": "ask",
+        "text": "is everyone physically at CWI turning up to dinner tonight ?"
+      },
+      {
+        "intent": "propose",
+        "text": "if not shout ..."
+      },
+      {
+        "intent": "other",
+        "text": "mbrunati has joined #rdf-wg"
+      },
+      {
+        "intent": "ask",
+        "text": "anyone for agenda changes ?"
+      },
+      {
+        "intent": "explain",
+        "text": "we are looking at this now"
+      },
+      {
+        "intent": "other",
+        "text": "http://www.w3.org/2011/rdf-wg/wiki/F2F1-objectives"
+      },
+      {
+        "intent": "explain",
+        "text": "^^ are the objectives for this f2f"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: this f2f to move us from an open discussion to a more targeted effort"
+      },
+      {
+        "intent": "explain",
+        "text": "we are looking to get documents in place"
+      },
+      {
+        "intent": "explain",
+        "text": "from now on we should have our long threads turn into something tangible and useful for the process"
+      },
+      {
+        "intent": "explain",
+        "text": "we are now looking to identify starting documents for the various tasks"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: would like to have names against the various documents, so that we can push work forward"
+      },
+      {
+        "intent": "other",
+        "text": "Graph's tasks force"
+      },
+      {
+        "intent": "explain",
+        "text": "we have some standard terminology now in terms of GraphTerminology"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: another issues is the alignment with the SPARQL work"
+      },
+      {
+        "intent": "other",
+        "text": "http://plixi.com/p/92009392"
+      },
+      {
+        "intent": "question",
+        "text": "Guus: so what will be the starting document for the GRaphs TF, should it be the RDF concepts"
+      },
+      {
+        "intent": "question",
+        "text": "?"
+      },
+      {
+        "intent": "explain",
+        "text": "that is the current feeling, and these are things which we need to discuss"
+      },
+      {
+        "intent": "other",
+        "text": "thanks, NickH for the photo :-)"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: we have some cleanup tasks, and there are discussions needed to identify what changes need to happen to the various RDF documents"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: we seem to have a good grasp of the issues, re: a good issue list has been developed"
+      },
+      {
+        "intent": "ask",
+        "text": "Guus: do people think we have a good grasp of the problem domain ?"
+      },
+      {
+        "intent": "explain",
+        "text": "question for the room ^^"
+      },
+      {
+        "intent": "propose",
+        "text": "for ecah identifier we define (e.g. g-box identifiers) we should also discuss what happens when we dereference that identifier (e.g. what do I get when I dereference the IRI of g-box? triples in the g-box? triples about g-box? both)"
+      },
+      {
+        "intent": "explain",
+        "text": "- moving on to discussing turtle"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: for TURTLE starting point is the doc from team submission"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: N-triple considered as a limited sub-set of Turtle"
+      },
+      {
+        "intent": "other",
+        "text": "mischat has joined #rdf-wg"
+      },
+      {
+        "intent": "ask",
+        "text": "zakim, who is here?"
+      },
+      {
+        "intent": "explain",
+        "text": "On the phone I see gavinc, tomayac, Meeting_Room, OlivierCorby, AZ (muted)"
+      },
+      {
+        "intent": "affirm",
+        "text": "pchampin: very impressive!"
+      },
+      {
+        "intent": "other",
+        "text": "zakim, Meeting_Room has David Wood, Sandro, Mateo, Steve Harris, Fabien, Pierre Antoine, Cygri, Yves, Nick, Jean-François, Jan, PFPS, Paul Groth, Chris Matheus, Dan Brickley, Misha Tuffield, Ivan"
+      },
+      {
+        "intent": "other",
+        "text": "+David, Wood, Sandro, Mateo, Steve, Harris, Fabien, Pierre, Antoine, Cygri, Yves, Nick, Jean-François, Jan, PFPS, Paul, Groth, Chris, Matheus, Dan, Brickley, Misha, Tuffield,"
+      },
+      {
+        "intent": "affirm",
+        "text": "... Ivan; got it"
+      },
+      {
+        "intent": "explain",
+        "text": "JSON, we have documents to start from, in terms of the Talis submission"
+      },
+      {
+        "intent": "propose",
+        "text": "if we're not able to standardise object-based json, can we at least standardise a canonical mapping from an rdf graph to some straight-fw json?"
+      },
+      {
+        "intent": "explain",
+        "text": "davidWood: just asked about Talis submitting a member submission"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: it is important to figure out what is achievable in terms of work in the JSON TF"
+      },
+      {
+        "intent": "explain",
+        "text": "danbri: JSON developers learn new formats all the time"
+      },
+      {
+        "intent": "explain",
+        "text": "danbri: we can get it wrong, and push out three syntaxes, and we will get it right eventually"
+      },
+      {
+        "intent": "explain",
+        "text": "in the JSON TF, we need to elicit what our objectives should be"
+      },
+      {
+        "intent": "explain",
+        "text": "if we develop more than one syntax then we will have doubled the work"
+      },
+      {
+        "intent": "explain",
+        "text": "ivan: asked about cleanup related actions"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: there is time set aside for that tomorrow"
+      },
+      {
+        "intent": "explain",
+        "text": "Guus: has no idea how much work the cleanup will be"
+      },
+      {
+        "intent": "explain",
+        "text": "ivan there are a bunch of small issues, URIRef vs IRI"
+      },
+      {
+        "intent": "explain",
+        "text": "ivan: following discussion on the ML, we need to agree on what 'deprecation' means for this WG"
+      },
+      {
+        "intent": "ask",
+        "text": "(audio no longer understandable on the US no. anyone else on the phone have this issue, too?)"
+      },
+      {
+        "intent": "propose",
+        "text": "ivan: the meta-issue regarding \\\"deprecation\\\" should be discussed and sorted out here at the f2f"
+      },
+      {
+        "intent": "explain",
+        "text": "the issue will be tackled tomorrow, but we are going to try and touch upon it now"
+      },
+      {
+        "intent": "explain",
+        "text": "for 20 mins"
+      },
+      {
+        "intent": "other",
+        "text": "q?"
+      },
+      {
+        "intent": "explain",
+        "text": "so lunch at somepoint between 12:30-13:00 central european summer time"
+      },
+      {
+        "intent": "explain",
+        "text": "davidwood: re: turtle, dave wants to know what standardised will be developed by tthe WG"
+      },
+      {
+        "intent": "other",
+        "text": "(audio back to normal. phew)"
+      },
+      {
+        "intent": "other",
+        "text": "Danbri has joined #rdf-wg"
+      },
+      {
+        "intent": "ask",
+        "text": "i.e. we will have turtle, will we have qturtle, trig, or what combination of serialisations will we develop"
+      },
+      {
+        "intent": "other",
+        "text": "sandro FTW! thanks!"
+      },
+      {
+        "intent": "ask",
+        "text": "peter: question should we have Qturtle, or turtle, should one be a superset ?"
+      },
+      {
+        "intent": "explain",
+        "text": "so dave would like to see issue sorted out"
+      },
+      {
+        "intent": "propose",
+        "text": "SteveH: said we could have one document which lists all of the turtle(related) serialisations"
+      },
+      {
+        "intent": "affirm",
+        "text": "sounds like a great idea to me"
+      },
+      {
+        "intent": "explain",
+        "text": "Dave's goal for the f2f is to nail the turtle work"
+      },
+      {
+        "intent": "explain",
+        "text": "so we have clear goals, turtle work seems to be the most advanced"
+      },
+      {
+        "intent": "explain",
+        "text": "where we have had lots of feedback from people about RDF"
+      },
+      {
+        "intent": "affirm",
+        "text": "sandro, i up-scale it client-side, works perfect for me. thanks!"
+      },
+      {
+        "intent": "other",
+        "text": "davidwood has joined #rdf-wg"
+      },
+      {
+        "intent": "other",
+        "text": "http://www.w3.org/2000/03/rdf-tracking/#/%23futures - historical RDF issues"
+      },
+      {
+        "intent": "propose",
+        "text": "we are going to move on to the Graph's discussion, if we are happy with the objectives ?"
+      },
+      {
+        "intent": "explain",
+        "text": "Richard is about to give some slides summarising the graphs work"
+      },
+      {
+        "intent": "other",
+        "text": "danbri has joined #rdf-wg"
+      },
+      {
+        "intent": "explain",
+        "text": "there are some slides on the wiki for richard's talk"
+      },
+      {
+        "intent": "other",
+        "text": " slides: http://www.w3.org/2011/rdf-wg/wiki/images/3/3b/Rdfwg-graphs-tf-report.pdf"
+      },
+      {
+        "intent": "explain",
+        "text": "the charter says we must standardising a model for multiple graphs"
+      },
+      {
+        "intent": "explain",
+        "text": "the charter also states that we must standardise turtle and a something similar with multi graph support"
+      },
+      {
+        "intent": "explain",
+        "text": "a decision was made for the turtle to focus on syntax and the graphs tf can look at extending turtle"
+      },
+      {
+        "intent": "other",
+        "text": "It's *turqle*!!!"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

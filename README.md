@@ -73,3 +73,5 @@ https://chatvisualizer.com/
 ## Data
 
 https://www.kaggle.com/datasets?sortBy=relevance&group=public&search=chat&page=1&pageSize=20&size=all&filetype=all&license=all
+https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-13
+https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-14

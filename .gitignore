@@ -1,5 +1,6 @@
 rasa_nlu
 data
+nlp/projects
 
 backend/node_modules
 backend/uploads

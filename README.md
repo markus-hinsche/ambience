@@ -97,10 +97,19 @@ https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-14
 
 ### Combine sets
 
+Shell
+
     cat set1.csv > set12.csv
     tail -n +2 set2.csv >> set12.csv
+
+Ipython
 
     import pandas as pd
     df = pd.read_csv('set12.csv')
     out = df[df.intent.notnull()]
     out.to_csv('set12_cleaned.csv', index=False)
+
+Shell
+
+    pip install csvkit
+    csvjson set12_cleaned.csv > nlp/set12_cleaned.json

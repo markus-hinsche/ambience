@@ -2,6 +2,7 @@ const express = require("express");
 const multer = require("multer");
 const cors = require("cors");
 const { exec } = require("child_process");
+const axios = require("axios");
 
 // Initialization
 const app = express();
@@ -9,7 +10,7 @@ const upload = multer({});
 
 app.use(cors());
 
-function matchWhatsappChat(content) {
+function getWhatsappMessages(content) {
   return content
     .split("\n")
     .map(line => {
@@ -25,9 +26,22 @@ function parseFile(file) {
   //TODO: Parse file and send to
 
   const content = file.buffer.toString("utf8");
-  const matches = matchWhatsappChat(content);
 
-  console.log(matches);
+  return getWhatsappMessages(content);
+}
+
+function askRasa(messages) {
+  return Promise.all(
+    messages.map(message => {
+      return axios
+        .post("http://localhost:5000/parse", JSON.stringify({ q: message.text }))
+        .then(response => ({
+          ...message,
+          intent: response.data.intent.name,
+          confidence: response.data.intent.confidence,
+        }));
+    })
+  );
 }
 
 // Routes
@@ -35,10 +49,13 @@ app.post("/chats", upload.single("chat"), function(req, res, next) {
   const { file } = req;
   // req.body will hold the text fields, if there were any
 
-  parseFile(file);
+  const matches = parseFile(file);
 
-  res.json({
-    message: "success",
+  askRasa(matches).then(messages => {
+    res.json({
+      message: "success",
+      data: messages,
+    });
   });
 });
 

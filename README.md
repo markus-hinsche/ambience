@@ -24,6 +24,7 @@ and
 ```
 pip install rasa_nlu
 pip install rasa_nlu[spacy]
+pip install coloredlogs
 
 python -m spacy download en_core_web_md
 python -m spacy link en_core_web_md en
@@ -54,6 +55,22 @@ python -m rasa_nlu.train \
 python -m rasa_nlu.server --path projects
 ```
 
+Querying Rasa then gives us:
+
+```
+❯ curl -XPOST localhost:5000/parse -d '{"q":"hello there"}'
+{
+  "intent": {
+    "name": "greet",
+    "confidence": 1.0
+  },
+  "entities": [],
+  "text": "hello there",
+  "project": "default",
+  "model": "fallback"
+}
+```
+
 ## Intent list:
 
 Analogously to [rasa intents](https://github.com/RasaHQ/rasa_nlu/blob/master/data/examples/rasa/demo-rasa.md):
@@ -79,9 +96,10 @@ https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-13
 https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-14
 
 ### Combine sets
+
     cat set1.csv > set12.csv
     tail -n +2 set2.csv >> set12.csv
-    
+
     import pandas as pd
     df = pd.read_csv('set12.csv')
     out = df[df.intent.notnull()]

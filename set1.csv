@@ -38,7 +38,7 @@ timestamp,name,text,intent
 07:41:55,<davidwood>,davidwood has joined #rdf-wg,other
 07:42:13,<PatH>,Same message here,explain
 07:42:23,<tomayac>,same here,explain
-07:42:45,<davidwood>,We're working on it - please stand by,proposal
+07:42:45,<davidwood>,We're working on it - please stand by,propose
 07:42:56,<Steven_>,"zakim, room for 15 for 600 minutes?",question
 07:42:58,<Zakim>,"ok, Steven_; conference Team_(rdf-wg)07:42Z scheduled with code 26631 (CONF1) for 600 minutes until 1742Z",other
 07:43:06,<davidwood>,We'll announce a new dial in code shortly,explain
@@ -141,7 +141,7 @@ timestamp,name,text,intent
 08:15:20,<AZ>,"A name can name several things, like in OWL 2 DL, a name can name a class and a property",
 08:15:38,<pgroth>,could we do both? a name and a tag?,
 08:15:40,<AZ>,and classes are disjoint from properties in OWL 2 DL,
-08:15:42,<FabGandon>,PatH: lets not call it the names then.,proposal
+08:15:42,<FabGandon>,PatH: lets not call it the names then.,propose
 08:16:43,<sandro>,+1 pat,affirm
 08:16:51,<FabGandon>,pfps: RDF is agnostic as to the use of the same IRI to name a graph or a person.  ,explain
 08:16:51,<ivan>,ack pchampin ,explain
@@ -330,7 +330,7 @@ timestamp,name,text,intent
 09:10:31,<trackbot>,ISSUE-15 -- What is the relationship between the IRI and the triples in a dataset/quad-syntax/etc -- open,
 09:10:31,<trackbot>,http://www.w3.org/2011/rdf-wg/track/issues/15,
 09:10:56,<PatH>,+1 also my vote,
-09:11:11,<FabGandon>,davidwood: moving to ISSUE 15 ; let's try to rephrase it.,proposal
+09:11:11,<FabGandon>,davidwood: moving to ISSUE 15 ; let's try to rephrase it.,propose
 09:11:41,<AZ>,"AZ: isn't it implicitly asking \""how\"" one can associate a URI to a g-* ?",
 09:12:00,<PatH>,"propose, uri always refers to g-box, but some boxes are immutable.",
 09:12:12,<pgroth>,agree with pat,
@@ -470,7 +470,7 @@ timestamp,name,text,intent
 09:47:34,<cygri>,good point pchampin. language negotiation etc,
 09:47:43,<danbri>,"maybe i'm pulling Web-derrived data from a local Lucene store; from Mahout clustering, or prolog, doing stuff in code and stuffing bits into graphs with URI tags. REST is in the environment but the data flow is much more complex than fetch'n'store",
 09:47:46,<pchampin>,"yes, this too",
-09:48:02,<sandro>,"guus: two groups;  (1) json, (2) skolemization",proposal
+09:48:02,<sandro>,"guus: two groups;  (1) json, (2) skolemization",propose
 09:48:13,<tomayac>,json += tomayac,
 09:48:19,<PatH>,will skolem have a phone link?,
 09:48:44,<danbri>,"SteveH, sure, considered as an analogy it can be instructive (and in fact I'm trying to extend REST concepts a bit more into XMPP message types)",
@@ -710,7 +710,7 @@ timestamp,name,text,intent
 10:55:48,<davidwood>,ack pchampin,affirm
 10:55:49,<Zakim>,"pchampin, you wanted to talk about the fresh URIs and them leaking from the store",
 10:55:53,<ivan>,ack pchampin ,affirm
-10:56:34,<yvesr>,pchampin: We shoudl specify what is ok for the system to do,proposal
+10:56:34,<yvesr>,pchampin: We shoudl specify what is ok for the system to do,propose
 10:56:39,<PatH>,"az, no problem",affirm
 10:56:43,<yvesr>,pchampin: We should specify what the system would return,
 10:56:44,<SteveH>,"AZ, that wouldn't be legal RDF syntax, though you could write it by hand",
@@ -811,7 +811,7 @@ timestamp,name,text,intent
 11:18:59,<PatH>,"we artent saying anything about meaning, sandro.",
 11:19:17,<PatH>,we are just making them recognizable.,
 11:19:58,<PatH>,dawn is breaking here. ,
-11:20:04,<yvesr>,"davidwood: if we're close to a solution, let's keep on on that",proposal
+11:20:04,<yvesr>,"davidwood: if we're close to a solution, let's keep on on that",propose
 11:21:04,<sandro>,"PROPOSAL: If systems are going to reveal Skolemized bnodes, without doing damage to the graph, they MUST use a fresh URI (per bnode) and SHOULD follow the form http[s]://[domain]/.well-known/genid/[locally-uniq-id][#] or tag:[domain],[year]/.well-known/genid/[locally-unique-id] (or, someday, genid:...).  Such IRIs are considered more disposable.  \""genid\"" to be reg'd with IETF.",
 11:21:31,<FabGandon>,yvesr: still not happy with the SHOULD part,
 11:21:40,<PatH>,-1 to that. way too restricting. overkill.,
@@ -1382,7 +1382,7 @@ timestamp,name,text,intent
 14:16:51,<cygri>,ivan: test cases were REC in 2004. i don't see why they should be,
 14:17:16,<cygri>,".. formally, would that mean we re-use the same short names?",
 14:17:31,<cygri>,... so would they formally be new versions of the same documents?,
-14:18:30,<cygri>,cygri: we should use the same short names to avoid having multiple REC documents floating around,proposal
+14:18:30,<cygri>,cygri: we should use the same short names to avoid having multiple REC documents floating around,propose
 14:18:35,<cygri>,ivan: what does SPARQL do?,
 14:18:36,<Zakim>,-AZ,
 14:18:48,<cygri>,steveh: (scribe got lost. not yet decided?),
@@ -1391,7 +1391,7 @@ timestamp,name,text,intent
 14:19:28,<cygri>,steveh: in SPARQL isn't decided yet,
 14:19:43,<cygri>,sandro: OWL rewrote everything and new short names,
 14:19:50,<cygri>,davidwood: that was not a good idea,
-14:20:07,<cygri>,"guus: i don't hear objections, so let's work on that assumption",proposal
+14:20:07,<cygri>,"guus: i don't hear objections, so let's work on that assumption",propose
 14:20:16,<sandro>,"sandro: sounds like we're just talking about 2nd editions of Recs, not new Recs.",
 14:20:40,<cygri>,Subtopic: RDF Concepts,
 14:20:41,<cygri>,guus: these are lots of documents,
@@ -1519,7 +1519,7 @@ timestamp,name,text,intent
 14:56:34,<cygri>,sandro: i should look at respec and look at how it handles [something],
 14:56:38,<sandro>,ACTION: sandro look at respec's handling of references,
 14:56:38,<trackbot>,Created ACTION-39 - Look at respec's handling of references [on Sandro Hawke - due 2011-04-21].,explain
-14:57:05,<cygri>,SteveH: don't use xmlspec,proposal
+14:57:05,<cygri>,SteveH: don't use xmlspec,propose
 14:57:36,<cygri>,"... especially if only small changes, just do them in xht�ml",
 14:58:10,<mischat>,mischat: votes for a distributed version control system instead of a centralised one ,
 14:59:17,<Souri>,Souri: based upon my R2RML editing experience: +1 for option 1 (edit xhtml in cvs); +0.5 for option 4 (wiki),

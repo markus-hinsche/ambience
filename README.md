@@ -25,6 +25,7 @@ and
 pip install rasa_nlu
 pip install rasa_nlu[spacy]
 pip install coloredlogs
+pip install csvkit
 
 python -m spacy download en_core_web_md
 python -m spacy link en_core_web_md en
@@ -101,15 +102,23 @@ Shell
 
     cat set1.csv > set12.csv
     tail -n +2 set2.csv >> set12.csv
+    tail -n +2 set3.csv >> set12.csv
 
-Ipython
-
+    python -c "
     import pandas as pd
     df = pd.read_csv('set12.csv')
     out = df[df.intent.notnull()]
     out.to_csv('set12_cleaned.csv', index=False)
+    "
+    
+    echo '{"rasa_nlu_data": {"common_examples":' > nlp/set12_cleaned.json
+    csvjson set12_cleaned.csv >> nlp/set12_cleaned.json
+    echo '}}' >> nlp/set12_cleaned.json
 
-Shell
-
-    pip install csvkit
-    csvjson set12_cleaned.csv > nlp/set12_cleaned.json
+Get statistic
+    
+    python -c "
+    import pandas as pd
+    df = pd.read_csv('set12.csv')
+    print(df[['text', 'intent']].groupby('intent').count())
+    "

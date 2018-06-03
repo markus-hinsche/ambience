@@ -1,0 +1,73 @@
+timestamp,name,text,intent
+,,It’s your turn to make dinner today. I made dinner yesterday.,argue
+,,You’re making dinner all of this week. I have an exam next week. That’s what we agreed.,argue
+,,"Since life begins at conception, abortion is akin to murder as it is the act of taking human life. Abortion is in direct defiance of the commonly accepted idea of the sanctity of human life",argue
+,,"No civilized society permits one human to intentionally harm or take the life of another human without punishment, and abortion is no different.",argue
+,,"Adoption is a viable alternative to abortion and accomplishes the same result. And with 1.5 million American families wanting to adopt a child, there is no such thing as an unwanted child.",argue
+,,An abortion can result in medical complications later in life; the risk of ectopic pregnancies doubles and the chance of a miscarriage and pelvic inflammatory disease also increases.,argue
+,,"In the instance of rape and incest, proper medical care can ensure that a woman will not get pregnant. Abortion punishes the unborn child who committed no crime; instead, it is the perpetrator who should be punished.",argue
+,,Abortion should not be used as another form of contraception.,argue
+,,"For women who demand complete control of their body, control should include preventing the risk of unwanted pregnancy through the responsible use of contraception or, if that is not possible, through abstinence.",argue
+,,"Many Americans who pay taxes are opposed to abortion, therefore it's morally wrong to use tax dollars to fund abortion.",argue
+,,Those who choose abortions are often minors or young women with insufficient life experience to understand fully what they are doing. Many have lifelong regrets afterward.,argue
+,,Abortion frequently causes intense psychological pain and stress.,argue
+,,"Nearly all abortions take place in the first trimester when a fetus is attached by the placenta and umbilical cord to the mother. As such, its health is dependent on her health, and cannot be regarded as a separate entity as it cannot exist outside her womb.",argue
+,,"The concept of personhood is different from the concept of human life. Human life occurs at conception, but fertilized eggs used for in vitro fertilization are also human lives and those not implanted are routinely thrown away. Is this murder, and if not, then how is abortion murder?",argue
+,,Adoption is not an alternative to abortion because it remains the woman's choice whether or not to give her child up for adoption. Statistics show that very few women who give birth choose to give up their babies; less than 3 percent of white unmarried women and less than 2 percent of percent black​ unmarried women.,argue
+,,Abortion is a safe medical procedure. The vast majority of women (88 percent) who have an abortion do so in their first trimester. Medical abortions have less than 0.5 percent risk of serious complications and do not affect a woman's health or future ability to become pregnant or give birth.,argue
+,,"In the case of rape or incest, forcing a woman made pregnant by this violent act would cause further psychological harm to the victim. Often a woman is too afraid to speak up or is unaware she is pregnant, thus the morning after pill is ineffective in these situations.",argue
+,,"Abortion is not used as a form of contraception. Pregnancy can occur even with responsible contraceptive use. Only 8 percent of women who have abortions do not use any form of birth control, and that is due more to individual carelessness than to the availability of abortion.",argue
+,,"The ability of a woman to have control of her body is critical to civil rights. Take away her reproductive choice and you step onto a slippery slope. If the government can force a woman to continue a pregnancy, what about forcing a woman to use contraception or undergo sterilization?",argue
+,,"Taxpayer dollars are used to enable poor women to access the same medical services as rich women, and abortion is one of these services. Funding abortion is no different from funding a war in the Mideast. For those who are opposed, the place to express outrage is in the voting booth.",argue
+,,Teenagers who become mothers have grim prospects for the future. They are much more likely to leave school; receive inadequate prenatal care; rely on public assistance to raise a child; develop health problems; or end up divorced.,argue
+,,"Like any other difficult situation, abortion creates stress. Yet the American Psychological Association found that stress was greatest prior to an abortion and that there was no evidence of post-abortion syndrome.",argue
+,,No thank you,deny
+,,I don't want it ,deny
+,,I don't need it,deny
+,,Not today,deny
+,,Leave me in peace,deny
+,,Get off me,deny
+,,Fuck off,deny
+,,F**k off,deny
+,,Fuck you,deny
+,,F**k you,deny
+,,I don't drink,deny
+,,I don't wanna go,deny
+,,adieu,goodbye
+,,bye-bye,goodbye
+,,Godspeed,goodbye
+,,adios,goodbye
+,,cheerio,goodbye
+,,ciao,goodbye
+,,leave-taking,goodbye
+,,parting,goodbye
+,,so long,goodbye
+,,swan song,goodbye
+,,toodle-oo,goodbye
+,,farewell,goodbye
+,,aloha,greet
+,,cheerio,goodbye
+,,greetings,greet
+,,hi,greet
+,,howdy,greet
+,,welcome,greet
+,,bonjour,greet
+,,buenas noches,greet
+,,buenos dias,greet
+,,good day,greet
+,,good morning,greet
+,,hey,greet
+,,hi-ya,greet
+,,how are you,greet
+,,how goes it,greet
+,,howdy-do,greet
+,,shalom,greet
+,,what's happening,greet
+,,what's up,greet
+,,What do you think,question
+,,Why,question
+,,When,question
+,,Today?,question
+,,Now?,question
+,,Do you wanna go for burgers?,question
+,,Lasertag – today?,question

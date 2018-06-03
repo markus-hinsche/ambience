@@ -158,7 +158,7 @@
         "text": "same here"
       },
       {
-        "intent": "proposal",
+        "intent": "propose",
         "text": "We're working on it - please stand by"
       },
       {
@@ -218,7 +218,7 @@
         "text": "zakim, who is on the call?"
       },
       {
-        "intent": "proposal",
+        "intent": "propose",
         "text": "PatH: lets not call it the names then."
       },
       {
@@ -262,7 +262,7 @@
         "text": "SteveH: I don't see anything wrong with that."
       },
       {
-        "intent": "proposal",
+        "intent": "propose",
         "text": "davidwood: moving to ISSUE 15 ; let's try to rephrase it."
       },
       {
@@ -322,7 +322,7 @@
         "text": "Guus: we are only considering the notions behind REST."
       },
       {
-        "intent": "proposal",
+        "intent": "propose",
         "text": "guus: two groups;  (1) json, (2) skolemization"
       },
       {
@@ -334,7 +334,7 @@
         "text": "ack pchampin "
       },
       {
-        "intent": "proposal",
+        "intent": "propose",
         "text": "pchampin: We shoudl specify what is ok for the system to do"
       },
       {
@@ -342,7 +342,7 @@
         "text": "az, no problem"
       },
       {
-        "intent": "proposal",
+        "intent": "propose",
         "text": "davidwood: if we're close to a solution, let's keep on on that"
       },
       {
@@ -354,11 +354,11 @@
         "text": "enjoy your meal"
       },
       {
-        "intent": "proposal",
+        "intent": "propose",
         "text": "cygri: we should use the same short names to avoid having multiple REC documents floating around"
       },
       {
-        "intent": "proposal",
+        "intent": "propose",
         "text": "guus: i don't hear objections, so let's work on that assumption"
       },
       {
@@ -378,7 +378,7 @@
         "text": "Created ACTION-39 - Look at respec's handling of references [on Sandro Hawke - due 2011-04-21]."
       },
       {
-        "intent": "proposal",
+        "intent": "propose",
         "text": "SteveH: don't use xmlspec"
       },
       {
@@ -400,6 +400,10 @@
       {
         "intent": "other",
         "text": "logging to http://www.w3.org/2011/04/13-rdf-wg-irc"
+      },
+      {
+        "intent": "argue",
+        "text": "Mmm... 1 am is in fact morning I guess ;)"
       },
       {
         "intent": "other",
@@ -868,6 +872,294 @@
       {
         "intent": "other",
         "text": "It's *turqle*!!!"
+      },
+      {
+        "intent": "argue",
+        "text": "It’s your turn to make dinner today. I made dinner yesterday."
+      },
+      {
+        "intent": "argue",
+        "text": "You’re making dinner all of this week. I have an exam next week. That’s what we agreed."
+      },
+      {
+        "intent": "argue",
+        "text": "Since life begins at conception, abortion is akin to murder as it is the act of taking human life. Abortion is in direct defiance of the commonly accepted idea of the sanctity of human life"
+      },
+      {
+        "intent": "argue",
+        "text": "No civilized society permits one human to intentionally harm or take the life of another human without punishment, and abortion is no different."
+      },
+      {
+        "intent": "argue",
+        "text": "Adoption is a viable alternative to abortion and accomplishes the same result. And with 1.5 million American families wanting to adopt a child, there is no such thing as an unwanted child."
+      },
+      {
+        "intent": "argue",
+        "text": "An abortion can result in medical complications later in life; the risk of ectopic pregnancies doubles and the chance of a miscarriage and pelvic inflammatory disease also increases."
+      },
+      {
+        "intent": "argue",
+        "text": "In the instance of rape and incest, proper medical care can ensure that a woman will not get pregnant. Abortion punishes the unborn child who committed no crime; instead, it is the perpetrator who should be punished."
+      },
+      {
+        "intent": "argue",
+        "text": "Abortion should not be used as another form of contraception."
+      },
+      {
+        "intent": "argue",
+        "text": "For women who demand complete control of their body, control should include preventing the risk of unwanted pregnancy through the responsible use of contraception or, if that is not possible, through abstinence."
+      },
+      {
+        "intent": "argue",
+        "text": "Many Americans who pay taxes are opposed to abortion, therefore it's morally wrong to use tax dollars to fund abortion."
+      },
+      {
+        "intent": "argue",
+        "text": "Those who choose abortions are often minors or young women with insufficient life experience to understand fully what they are doing. Many have lifelong regrets afterward."
+      },
+      {
+        "intent": "argue",
+        "text": "Abortion frequently causes intense psychological pain and stress."
+      },
+      {
+        "intent": "argue",
+        "text": "Nearly all abortions take place in the first trimester when a fetus is attached by the placenta and umbilical cord to the mother. As such, its health is dependent on her health, and cannot be regarded as a separate entity as it cannot exist outside her womb."
+      },
+      {
+        "intent": "argue",
+        "text": "The concept of personhood is different from the concept of human life. Human life occurs at conception, but fertilized eggs used for in vitro fertilization are also human lives and those not implanted are routinely thrown away. Is this murder, and if not, then how is abortion murder?"
+      },
+      {
+        "intent": "argue",
+        "text": "Adoption is not an alternative to abortion because it remains the woman's choice whether or not to give her child up for adoption. Statistics show that very few women who give birth choose to give up their babies; less than 3 percent of white unmarried women and less than 2 percent of percent black​ unmarried women."
+      },
+      {
+        "intent": "argue",
+        "text": "Abortion is a safe medical procedure. The vast majority of women (88 percent) who have an abortion do so in their first trimester. Medical abortions have less than 0.5 percent risk of serious complications and do not affect a woman's health or future ability to become pregnant or give birth."
+      },
+      {
+        "intent": "argue",
+        "text": "In the case of rape or incest, forcing a woman made pregnant by this violent act would cause further psychological harm to the victim. Often a woman is too afraid to speak up or is unaware she is pregnant, thus the morning after pill is ineffective in these situations."
+      },
+      {
+        "intent": "argue",
+        "text": "Abortion is not used as a form of contraception. Pregnancy can occur even with responsible contraceptive use. Only 8 percent of women who have abortions do not use any form of birth control, and that is due more to individual carelessness than to the availability of abortion."
+      },
+      {
+        "intent": "argue",
+        "text": "The ability of a woman to have control of her body is critical to civil rights. Take away her reproductive choice and you step onto a slippery slope. If the government can force a woman to continue a pregnancy, what about forcing a woman to use contraception or undergo sterilization?"
+      },
+      {
+        "intent": "argue",
+        "text": "Taxpayer dollars are used to enable poor women to access the same medical services as rich women, and abortion is one of these services. Funding abortion is no different from funding a war in the Mideast. For those who are opposed, the place to express outrage is in the voting booth."
+      },
+      {
+        "intent": "argue",
+        "text": "Teenagers who become mothers have grim prospects for the future. They are much more likely to leave school; receive inadequate prenatal care; rely on public assistance to raise a child; develop health problems; or end up divorced."
+      },
+      {
+        "intent": "argue",
+        "text": "Like any other difficult situation, abortion creates stress. Yet the American Psychological Association found that stress was greatest prior to an abortion and that there was no evidence of post-abortion syndrome."
+      },
+      {
+        "intent": "deny",
+        "text": "No thank you"
+      },
+      {
+        "intent": "deny",
+        "text": "I don't want it "
+      },
+      {
+        "intent": "deny",
+        "text": "I don't need it"
+      },
+      {
+        "intent": "deny",
+        "text": "Not today"
+      },
+      {
+        "intent": "deny",
+        "text": "Leave me in peace"
+      },
+      {
+        "intent": "deny",
+        "text": "Get off me"
+      },
+      {
+        "intent": "deny",
+        "text": "Fuck off"
+      },
+      {
+        "intent": "deny",
+        "text": "F**k off"
+      },
+      {
+        "intent": "deny",
+        "text": "Fuck you"
+      },
+      {
+        "intent": "deny",
+        "text": "F**k you"
+      },
+      {
+        "intent": "deny",
+        "text": "I don't drink"
+      },
+      {
+        "intent": "deny",
+        "text": "I don't wanna go"
+      },
+      {
+        "intent": "goodbye",
+        "text": "adieu"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye-bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Godspeed"
+      },
+      {
+        "intent": "goodbye",
+        "text": "adios"
+      },
+      {
+        "intent": "goodbye",
+        "text": "cheerio"
+      },
+      {
+        "intent": "goodbye",
+        "text": "ciao"
+      },
+      {
+        "intent": "goodbye",
+        "text": "leave-taking"
+      },
+      {
+        "intent": "goodbye",
+        "text": "parting"
+      },
+      {
+        "intent": "goodbye",
+        "text": "so long"
+      },
+      {
+        "intent": "goodbye",
+        "text": "swan song"
+      },
+      {
+        "intent": "goodbye",
+        "text": "toodle-oo"
+      },
+      {
+        "intent": "goodbye",
+        "text": "farewell"
+      },
+      {
+        "intent": "greet",
+        "text": "aloha"
+      },
+      {
+        "intent": "goodbye",
+        "text": "cheerio"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "welcome"
+      },
+      {
+        "intent": "greet",
+        "text": "bonjour"
+      },
+      {
+        "intent": "greet",
+        "text": "buenas noches"
+      },
+      {
+        "intent": "greet",
+        "text": "buenos dias"
+      },
+      {
+        "intent": "greet",
+        "text": "good day"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hi-ya"
+      },
+      {
+        "intent": "greet",
+        "text": "how are you"
+      },
+      {
+        "intent": "greet",
+        "text": "how goes it"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy-do"
+      },
+      {
+        "intent": "greet",
+        "text": "shalom"
+      },
+      {
+        "intent": "greet",
+        "text": "what's happening"
+      },
+      {
+        "intent": "greet",
+        "text": "what's up"
+      },
+      {
+        "intent": "question",
+        "text": "What do you think"
+      },
+      {
+        "intent": "question",
+        "text": "Why"
+      },
+      {
+        "intent": "question",
+        "text": "When"
+      },
+      {
+        "intent": "question",
+        "text": "Today?"
+      },
+      {
+        "intent": "question",
+        "text": "Now?"
+      },
+      {
+        "intent": "question",
+        "text": "Do you wanna go for burgers?"
+      },
+      {
+        "intent": "question",
+        "text": "Lasertag – today?"
       }
     ],
     "regex_features": [],

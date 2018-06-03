@@ -19,6 +19,9 @@ and
 ```
 pip install rasa_nlu
 pip install rasa_nlu[spacy]
+
+python -m spacy download en_core_web_md
+python -m spacy link en_core_web_md en
 ```
 
 ## Usage
@@ -32,12 +35,9 @@ yarn start
 ### Rasa
 
 ```
-python -m spacy download en_core_web_md
-python -m spacy link en_core_web_md en
-
 python -m rasa_nlu.train \
-    --config sample_configs/config_spacy.yml \
-    --data data/examples/rasa/demo-rasa.json \
+    --config backend/config_spacy.yml \
+    --data backend/demo-rasa.json \
     --path projects
 
 python -m rasa_nlu.server --path projects

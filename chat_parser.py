@@ -17,7 +17,6 @@ def parse_chat(chat: str) -> List[dict]:
 
     return messages
 
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--chat', type=str, default='chat.txt')

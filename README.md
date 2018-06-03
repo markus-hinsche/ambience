@@ -47,9 +47,9 @@ yarn start
 
 ```
 python -m rasa_nlu.train \
-    --config backend/config_spacy.yml \
-    --data backend/demo-rasa.json \
-    --path projects
+    --config nlp/config_spacy.yml \
+    --data nlp/demo-rasa.json \
+    --path nlp/projects
 
 python -m rasa_nlu.server --path projects
 ```

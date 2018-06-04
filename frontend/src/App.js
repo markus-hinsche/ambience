@@ -12,8 +12,15 @@ import SectionHeadline from "./SectionHeadline";
 
 const All = styled.div`
   background-color: #fefefe;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
 `;
 const Results = styled.div``;
+const StyledChatFileDrop = styled(ChatFileDrop)`
+  flex: 1;
+`;
 
 class App extends Component {
   constructor(props) {
@@ -29,9 +36,9 @@ class App extends Component {
 
     return (
       <All>
-        <Header hasMessages={hasMessages} />
+        <Header />
         {!hasMessages && (
-          <ChatFileDrop onAnalysisFinished={messages => this.setState({ messages })} />
+          <StyledChatFileDrop onAnalysisFinished={messages => this.setState({ messages })} />
         )}
         {hasMessages && (
           <Results>

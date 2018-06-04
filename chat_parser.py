@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import csv
 import json
 import re
 from typing import List
@@ -12,10 +13,11 @@ def parse_chat(chat: str) -> List[dict]:
     matches = re.finditer(whatsapp_regex_pattern, chat)
     messages = [m.groupdict() for m in matches]
 
-    for m in messages:
-        m['intent'] = ''
+    # for m in messages:
+    #     m['intent'] = ''
 
     return messages
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -25,4 +27,9 @@ if __name__ == '__main__':
 
     chat = open(args.chat).read()
     messages = parse_chat(chat)
-    json.dump(messages, open(args.out, mode='w', encoding='utf-8'), indent=2, sort_keys=True)
+    f = open(args.out, mode='w')
+    # json.dump(messages, f, indent=2, sort_keys=True)
+
+    writer = csv.DictWriter(f, ["text", "time", "name"])
+    writer.writeheader()
+    writer.writerows(messages)

@@ -49,7 +49,7 @@ yarn start
 
 ```
 python -m rasa_nlu.train \
-    --config nlp/config_spacy.yml \
+    --config nlp/config_mitie.yml \
     --data nlp/demo-rasa.json \
     --path nlp/projects
 

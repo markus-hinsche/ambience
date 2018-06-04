@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Spinner from "./Spinner";
 import Disclaimer from "./Disclaimer";
 
+import { BASE_URL } from "./environment";
+
 function onDropFile(files, onStart, onSuccess, onError) {
   onStart();
 
@@ -11,7 +13,7 @@ function onDropFile(files, onStart, onSuccess, onError) {
 
   data.append("chat", files[0]);
 
-  fetch("http://localhost:3030/chats", {
+  fetch(`${BASE_URL}/chats`, {
     method: "POST",
     "Content-Type": "multipart/form-data",
     body: data,

@@ -32,7 +32,9 @@ class App extends Component {
         )}
         {hasMessages && (
           <Results>
+            <SectionHeadline>Statistics</SectionHeadline>
             <AuthorsStats messages={this.state.messages} />
+            <SectionHeadline>Chat history</SectionHeadline>
             <Chat messages={this.state.messages} />
           </Results>
         )}

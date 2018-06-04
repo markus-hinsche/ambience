@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Dropzone from "react-dropzone";
 import styled from "styled-components";
 
 import Message from "./Message";
@@ -8,7 +7,7 @@ const All = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #fefefe;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 `;
 
@@ -22,7 +21,7 @@ const MessageWrapper = styled.div`
 const StyledMessage = styled(Message)`
   border-top-left-radius: ${props => (props.isPrimaryAuthor ? "8px" : "0")};
   border-top-right-radius: ${props => (props.isPrimaryAuthor ? "0" : "8px")};
-  background-color: ${props => (props.isGreet ? "red" : "white")};
+  background-color: white;
   text-align: ${props => (props.isPrimaryAuthor ? "right" : "left")};
 `;
 

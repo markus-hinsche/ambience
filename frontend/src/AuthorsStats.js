@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Dropzone from "react-dropzone";
 import styled from "styled-components";
+import { getColorByIntent } from "./helpers";
 
 const All = styled.div`
   display: flex;
@@ -8,8 +9,7 @@ const All = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 1000px;
-  margin: 0 auto 50px;
-  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
   padding: 0 0 50px;
 `;
 
@@ -25,8 +25,8 @@ const Author = styled.div`
 `;
 
 const AuthorName = styled.p`
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   text-align: center;
   margin: 30px;
   padding: 10px;
@@ -38,6 +38,7 @@ const AuthorName = styled.p`
   box-shadow: 1px 1px 10px 0 rgba(50, 50, 50, 0.2);
   color: #0d3b66;
   font-weight: 700;
+  border: 1px solid #0d3b66;
 `;
 
 const Intents = styled.div`
@@ -63,9 +64,10 @@ const IntentValue = styled.div`
 
 const IntentBar = styled.div`
   width: ${props => Math.floor(props.fraction * 100).toString() + "%"};
-  background-color: #0d3b66;
+  background-color: ${props => getColorByIntent(props.intent)};
   height: 40px;
   border-radius: 3px;
+  min-width: 3px;
 `;
 
 const IntentName = styled.p`
@@ -129,7 +131,7 @@ class AuthorsStats extends Component {
                 <Intent>
                   <IntentName>{intent[0]}</IntentName>
                   <IntentDetails isLeft={i === 0}>
-                    <IntentBar fraction={intent[1].fraction} />
+                    <IntentBar intent={intent[0]} fraction={intent[1].fraction} />
                     <IntentValue>{intent[1].val}</IntentValue>
                   </IntentDetails>
                 </Intent>

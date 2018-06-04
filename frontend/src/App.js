@@ -7,6 +7,7 @@ import Header from "./Header";
 import Chat from "./Chat";
 import AuthorsStats from "./AuthorsStats";
 import SectionHeadline from "./SectionHeadline";
+import AboutUs from './AboutUs';
 
 // import exampleMessages from "./exampleMessages.json";
 
@@ -48,6 +49,7 @@ class App extends Component {
             <Chat messages={this.state.messages} />
           </Results>
         )}
+        <AboutUs />
       </All>
     );
   }

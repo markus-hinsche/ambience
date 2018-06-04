@@ -29,7 +29,7 @@ const Zone = styled(Dropzone)`
 
 const ZoneContainer = styled.div`
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 30px;
 `;
 
 class ChatfileDrop extends Component {

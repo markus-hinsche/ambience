@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Dropzone from "react-dropzone";
 import styled from "styled-components";
 import Spinner from "./Spinner";
+import Disclaimer from "./Disclaimer";
 
 function onDropFile(files, onStart, onSuccess, onError) {
   onStart();
@@ -32,10 +33,6 @@ const Zone = styled(Dropzone)`
   justify-content: center;
   cursor: pointer;
   height: 100%;
-
-  p {
-    font-size: 24px;
-  }
 `;
 
 const ZoneContainer = styled.div`
@@ -43,7 +40,11 @@ const ZoneContainer = styled.div`
   padding: 20px 20px 30px;
 `;
 
-const ErrorMsg = styled.p`
+const Msg = styled.p`
+  font-size: 24px;
+`;
+
+const ErrorMsg = styled(Msg)`
   color: #e33;
 `;
 
@@ -92,15 +93,13 @@ class ChatfileDrop extends Component {
             !this.state.success &&
             !this.state.error && (
               <Loading>
-                <p>
+                <Msg>
                   Crunching the data 🍤.<br />This can take a couple of seconds ⏳
-                </p>
+                </Msg>
                 <Spinner />
               </Loading>
             )}
-          {!this.state.loading &&
-            !this.state.success &&
-            !this.state.error && <p>Drop 💧 a chat file 💬, or click anywhere in this box.</p>}
+          {!this.state.loading && !this.state.success && !this.state.error && <Disclaimer />}
           {this.state.error && (
             <ErrorMsg>😭 Sorry, something went wrong, please try again.</ErrorMsg>
           )}

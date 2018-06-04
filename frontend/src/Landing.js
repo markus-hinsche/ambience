@@ -29,7 +29,7 @@ const Msg = styled.p`
   justify-content: center;
 `;
 
-class App extends Component {
+class Landing extends Component {
   constructor(props) {
     super(props);
 
@@ -45,9 +45,7 @@ class App extends Component {
       <All>
         <Header />
         {!hasMessages && (
-          <StyledChatFileDrop
-            onAnalysisFinished={messages => this.setState({ messages })}
-          />
+          <StyledChatFileDrop onAnalysisFinished={messages => this.setState({ messages })} />
         )}
         {hasMessages && (
           <Results>
@@ -63,4 +61,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Landing;

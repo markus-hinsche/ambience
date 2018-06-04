@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import "isomorphic-fetch";
 
 import "./index.css";
-import App from "./App";
+import Landing from "./Landing";
 import registerServiceWorker from "./registerServiceWorker";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Landing />, document.getElementById("root"));
 registerServiceWorker();

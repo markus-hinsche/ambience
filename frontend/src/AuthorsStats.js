@@ -7,7 +7,7 @@ const All = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 50px;
   border-bottom: 1px solid #ccc;
   padding: 0 0 50px;
@@ -15,7 +15,7 @@ const All = styled.div`
 
 const Author = styled.div`
   flex: 1;
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   flex-direction: ${props => (props.isLeft ? "row-reverse" : "row")};
   align-items: center;
@@ -28,14 +28,14 @@ const AuthorName = styled.p`
   width: 100px;
   height: 100px;
   text-align: center;
-  margin: 20px;
+  margin: 30px;
   padding: 10px;
   background-color: #ebebeb;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid #0d3b66;
+  box-shadow: 1px 1px 10px 0 rgba(50, 50, 50, 0.2);
   color: #0d3b66;
   font-weight: 700;
 `;
@@ -97,21 +97,24 @@ class AuthorsStats extends Component {
     //   markus: [["affirm", {val: 5, fraction: 10}], ["greet", { val: 10, fraction: 0.5}]]
     // }
     const intentCountsPerAuthorWithFraction = Object.keys(intentCountsPerAuthor).reduce(
-      (all, name) => {
+      (authors, name) => {
         const maxCount = Object.keys(intentCountsPerAuthor[name])
           .map(intent => intentCountsPerAuthor[name][intent])
           .reduce((max, i) => Math.max(max, i.val), 0);
 
-        all[name] = Object.keys(intentCountsPerAuthor[name]).reduce((intents, intentName) => {
-          intents[intentName] = {
-            val: intentCountsPerAuthor[name][intentName].val,
-            fraction: intentCountsPerAuthor[name][intentName].val / maxCount,
-          };
+        authors[name] = Object.keys(intentCountsPerAuthor[name])
+          .map(intentName => [
+            intentName,
+            {
+              val: intentCountsPerAuthor[name][intentName].val,
+              fraction: intentCountsPerAuthor[name][intentName].val / maxCount,
+            },
+          ])
+          .sort((a, b) => {
+            return b[1].val - a[1].val;
+          });
 
-          return intents;
-        }, {});
-
-        return all;
+        return authors;
       },
       {}
     );
@@ -122,16 +125,12 @@ class AuthorsStats extends Component {
           <Author isLeft={i === 0}>
             <AuthorName>{author}</AuthorName>
             <Intents>
-              {Object.keys(intentCountsPerAuthorWithFraction[author]).map(intent => (
+              {intentCountsPerAuthorWithFraction[author].map(intent => (
                 <Intent>
-                  <IntentName>{intent}</IntentName>
+                  <IntentName>{intent[0]}</IntentName>
                   <IntentDetails isLeft={i === 0}>
-                    <IntentBar
-                      fraction={intentCountsPerAuthorWithFraction[author][intent].fraction}
-                    />
-                    <IntentValue>
-                      {intentCountsPerAuthorWithFraction[author][intent].val}
-                    </IntentValue>
+                    <IntentBar fraction={intent[1].fraction} />
+                    <IntentValue>{intent[1].val}</IntentValue>
                   </IntentDetails>
                 </Intent>
               ))}

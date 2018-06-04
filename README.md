@@ -22,13 +22,16 @@ and
 [tutorial](https://nlu.rasa.com/tutorial.html):
 
 ```
-pip install rasa_nlu
-pip install rasa_nlu[spacy]
-pip install coloredlogs
-pip install csvkit
+pip3.6 install rasa_nlu --user
+pip3.6 install git+https://github.com/mit-nlp/MITIE.git --user
+pip3.6 install rasa_nlu[mitie] --user
+pip3.6 install coloredlogs --user
+pip3.6 install csvkit --user
 
-python -m spacy download en_core_web_md
-python -m spacy link en_core_web_md en
+cd nlp
+wget https://github.com/mit-nlp/MITIE/releases/download/v0.4/MITIE-models-v0.2.tar.bz2
+tar jxf MITIE-models-v0.2.tar.bz2
+bzip2 -dk MITIE-models-v0.2.tar.bz2
 ```
 
 ## Usage
@@ -48,7 +51,7 @@ yarn start
 ### Rasa
 
 ```
-python -m rasa_nlu.train \
+python3.6 -m rasa_nlu.train \
     --config nlp/config_mitie.yml \
     --data nlp/demo-rasa.json \
     --path nlp/projects
@@ -104,7 +107,7 @@ Shell
     tail -n +2 set2.csv >> set12.csv
     tail -n +2 set3.csv >> set12.csv
 
-    python -c "
+    python3.6 -c "
     import pandas as pd
     df = pd.read_csv('set12.csv')
     out = df[df.intent.notnull()]
@@ -117,7 +120,7 @@ Shell
 
 Get statistic
     
-    python -c "
+    python3.6 -c "
     import pandas as pd
     df = pd.read_csv('set12.csv')
     print(df[['text', 'intent']].groupby('intent').count())

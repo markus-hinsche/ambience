@@ -53,7 +53,7 @@ python -m rasa_nlu.train \
     --data nlp/demo-rasa.json \
     --path nlp/projects
 
-python -m rasa_nlu.server --path projects
+python -m rasa_nlu.server --path nlp/projects
 ```
 
 Querying Rasa then gives us:

@@ -7,7 +7,7 @@ cat set1.csv > set12.csv
 tail -n +2 set2.csv >> set12.csv
 tail -n +2 set3.csv >> set12.csv
 
-python3 -c "
+python3.6 -c "
 import pandas as pd
 df = pd.read_csv('set12.csv')
 out = df[df.intent.notnull()]

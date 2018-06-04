@@ -22,14 +22,18 @@ and
 [tutorial](https://nlu.rasa.com/tutorial.html):
 
 ```bash
-pip install rasa_nlu
-pip install rasa_nlu[spacy]
-pip install coloredlogs
-pip install csvkit
-pip install pandas
 
-python -m spacy download en_core_web_md
-python -m spacy link en_core_web_md en
+pip3.6 install rasa_nlu --user
+pip3.6 install git+https://github.com/mit-nlp/MITIE.git --user
+pip3.6 install rasa_nlu[mitie] --user
+pip3.6 install coloredlogs --user
+pip3.6 install csvkit --user
+pip3.6 install pandas -- user
+
+cd nlp
+wget https://github.com/mit-nlp/MITIE/releases/download/v0.4/MITIE-models-v0.2.tar.bz2
+tar jxf MITIE-models-v0.2.tar.bz2
+bzip2 -dk MITIE-models-v0.2.tar.bz2
 ```
 
 ## Usage
@@ -49,18 +53,18 @@ yarn start
 ### Rasa
 
 ```bash
-python -m rasa_nlu.train \
-    --config nlp/config_spacy.yml \
+python3.6 -m rasa_nlu.train \
+    --config nlp/config_mitie.yml \
     --data nlp/set12_cleaned.json \
     --path nlp/projects
 
-python -m rasa_nlu.server --path nlp/projects
+python3.6 -m rasa_nlu.server --port 3054 --path nlp/projects
 ```
 
 Querying Rasa then gives us:
 
 ```bash
-❯ curl -XPOST localhost:5000/parse -d '{"q":"hello there"}'
+❯ curl -XPOST localhost:3054/parse -d '{"q":"hello there"}'
 {
   "intent": {
     "name": "greet",
@@ -101,6 +105,7 @@ https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-14
 
 Shell
 
+<<<<<<< HEAD
 ```bash
 ./combine-sets.sh
 ```
@@ -108,7 +113,7 @@ Shell
 Get statistic
 
 ```bash
-python -c "
+python3.6 -c "
 import pandas as pd
 df = pd.read_csv('set12.csv')
 print(df[['text', 'intent']].groupby('intent').count())

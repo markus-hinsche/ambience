@@ -4,12 +4,12 @@
 
 ### Frontend + Backend
 
-```
+```bash
 cd frontend
 yarn
 ```
 
-```
+```bash
 cd backend
 yarn
 ```
@@ -21,11 +21,12 @@ As described in:
 and
 [tutorial](https://nlu.rasa.com/tutorial.html):
 
-```
+```bash
 pip install rasa_nlu
 pip install rasa_nlu[spacy]
 pip install coloredlogs
 pip install csvkit
+pip install pandas
 
 python -m spacy download en_core_web_md
 python -m spacy link en_core_web_md en
@@ -35,22 +36,22 @@ python -m spacy link en_core_web_md en
 
 ### Frontend + Backend
 
-```
+```bash
 cd frontend
 yarn start
 ```
 
-```
+```bash
 cd backend
 yarn start
 ```
 
 ### Rasa
 
-```
+```bash
 python -m rasa_nlu.train \
     --config nlp/config_spacy.yml \
-    --data nlp/demo-rasa.json \
+    --data nlp/set12_cleaned.json \
     --path nlp/projects
 
 python -m rasa_nlu.server --path nlp/projects
@@ -58,7 +59,7 @@ python -m rasa_nlu.server --path nlp/projects
 
 Querying Rasa then gives us:
 
-```
+```bash
 ❯ curl -XPOST localhost:5000/parse -d '{"q":"hello there"}'
 {
   "intent": {
@@ -100,25 +101,16 @@ https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-14
 
 Shell
 
-    cat set1.csv > set12.csv
-    tail -n +2 set2.csv >> set12.csv
-    tail -n +2 set3.csv >> set12.csv
-
-    python -c "
-    import pandas as pd
-    df = pd.read_csv('set12.csv')
-    out = df[df.intent.notnull()]
-    out.to_csv('set12_cleaned.csv', index=False)
-    "
-    
-    echo '{"rasa_nlu_data": {"common_examples":' > nlp/set12_cleaned.json
-    csvjson set12_cleaned.csv >> nlp/set12_cleaned.json
-    echo '}}' >> nlp/set12_cleaned.json
+```bash
+./combine-sets.sh
+```
 
 Get statistic
-    
-    python -c "
-    import pandas as pd
-    df = pd.read_csv('set12.csv')
-    print(df[['text', 'intent']].groupby('intent').count())
-    "
+
+```bash
+python -c "
+import pandas as pd
+df = pd.read_csv('set12.csv')
+print(df[['text', 'intent']].groupby('intent').count())
+"
+```

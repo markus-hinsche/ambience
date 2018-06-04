@@ -57,8 +57,8 @@ timestamp,name,text,intent
 08:22:40,<mischat>,we have some standard terminology now in terms of GraphTerminology,explain
 08:23:11,<mischat>,Guus: another issues is the alignment with the SPARQL work,explain
 08:23:26,<NickH>,http://plixi.com/p/92009392,other
-08:24:03,<mischat>,"Guus: so what will be the starting document for the GRaphs TF, should it be the RDF concepts",question
-08:24:05,<mischat>,?,question
+08:24:03,<mischat>,"Guus: so what will be the starting document for the GRaphs TF, should it be the RDF concepts",ask
+08:24:05,<mischat>,?,ask
 08:24:19,<mischat>,"that is the current feeling, and these are things which we need to discuss",explain
 08:24:38,<tomayac>,"thanks, NickH for the photo :-)",other
 08:25:18,<mischat>,"Guus: we have some cleanup tasks, and there are discussions needed to identify what changes need to happen to the various RDF documents",explain

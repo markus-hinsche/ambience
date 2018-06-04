@@ -64,10 +64,10 @@ timestamp,name,text,intent
 ,,shalom,greet
 ,,what's happening,greet
 ,,what's up,greet
-,,What do you think,question
-,,Why,question
-,,When,question
-,,Today?,question
-,,Now?,question
-,,Do you wanna go for burgers?,question
-,,Lasertag – today?,question
+,,What do you think,ask
+,,Why,ask
+,,When,ask
+,,Today?,ask
+,,Now?,ask
+,,Do you wanna go for burgers?,ask
+,,Lasertag – today?,ask

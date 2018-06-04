@@ -28,31 +28,31 @@ timestamp,name,text,intent
 07:40:43,<mischat>,mischat has joined #rdf-wg,other
 07:40:49,<FabGandon>,we will have to do an adhoc teleconf the teleconf chanel is not available for today,explain
 07:41:10,<pfps>,pfps has joined #rdf-wg,other
-07:41:13,<Steven_>,"zakim, code?",question
+07:41:13,<Steven_>,"zakim, code?",ask
 07:41:13,<Zakim>,"the conference code is 733941 (tel:+1.617.761.6200 tel:+33.4.26.46.79.03 tel:+44.203.318.0479), Steven_",explain
 07:41:38,<FabGandon>,trying again...,other
 07:41:39,<cmatheus>,cmatheus has joined #rdf-wg,other
-07:41:40,<Steven_>,"zakim, who is on the call?",question
+07:41:40,<Steven_>,"zakim, who is on the call?",ask
 07:41:40,<Zakim>,"On the phone I see OlivierCorby, OlivierCorby.a, OlivierCorby.aa, OlivierCorby.aaa",explain
 07:41:41,<cygri>,cygri has joined #rdf-wg,other
 07:41:55,<davidwood>,davidwood has joined #rdf-wg,other
 07:42:13,<PatH>,Same message here,explain
 07:42:23,<tomayac>,same here,explain
 07:42:45,<davidwood>,We're working on it - please stand by,propose
-07:42:56,<Steven_>,"zakim, room for 15 for 600 minutes?",question
+07:42:56,<Steven_>,"zakim, room for 15 for 600 minutes?",ask
 07:42:58,<Zakim>,"ok, Steven_; conference Team_(rdf-wg)07:42Z scheduled with code 26631 (CONF1) for 600 minutes until 1742Z",other
 07:43:06,<davidwood>,We'll announce a new dial in code shortly,explain
 07:43:12,<FabGandon>,dial 26631,explain
 07:43:18,<davidwood>,PLEASE USE CONFERENCE CODE 26631,explain
 07:43:35,<Steven_>,Steven_ has changed the topic to: CODE is 26631,other
 07:43:41,<davidwood>,Sorry for the confusion.  Our bridge was not configured as we expected.,explain
-07:44:04,<Steven_>,"zakim, who is on the call?",question
+07:44:04,<Steven_>,"zakim, who is on the call?",ask
 07:44:04,<Zakim>,"On the phone I see OlivierCorby, OlivierCorby.a, OlivierCorby.aa, OlivierCorby.aaa",explain
 07:44:21,<NickH>,Good Morning!,greet
 07:44:25,<Steven_>,"zakim, this is rdf-wg",greet
 07:44:25,<Zakim>,"Steven_, this was SW_RDFWG(RDFWG1)2:00AM",other
 07:44:27,<Zakim>,"ok, Steven_; that matches Team_(rdf-wg)07:42Z",other
-07:44:33,<Steven_>,"zakim, who is on the call?",question
+07:44:33,<Steven_>,"zakim, who is on the call?",ask
 07:44:34,<Zakim>,"On the phone I see Meeting_Room, PatH, tomayac, OlivierCorby",
 07:44:40,<OlivierCorby>,"Hi, phone is ok now",
 07:44:48,<Zakim>,+AZ,
@@ -148,7 +148,7 @@ timestamp,name,text,intent
 08:16:51,<Zakim>,"pchampin, you wanted to talk about named graphs in SPARQL endpoints",other
 08:18:07,<sandro>,+100000 the world here would be MUCH CLEARER if SPARQL forced you to only use graph IDs that you own!!,
 08:18:24,<cygri>,sandro -100000,
-08:18:56,<pfps>,"sandro - so you think that you shouldn't use \""anyone else's\""  IRIs in a named graph?",question
+08:18:56,<pfps>,"sandro - so you think that you shouldn't use \""anyone else's\""  IRIs in a named graph?",ask
 08:19:03,<cygri>,q+ to disagree with sandro -- web crawling use case,deny
 08:19:34,<FabGandon>,sandro: I wish SPARQL restricted you to use only URIs that you own i.e. use graphs in a domain you control,
 08:20:01,<danbri>,"sandro, that feels to me like having the SQL spec specify that you can only store things that are true",
@@ -901,7 +901,7 @@ timestamp,name,text,intent
 12:18:46,<Steven> ->,http://www.w3.org/2011/04/14-rdf-json-minutes.html Minutes of JSON breakout,
 12:18:53,<cmatheus>,davidwood: core issue: how are people external to the skolem process able to tell they were bnodes. ,
 12:18:57,<danbri>,"(@cygri, I made a twitter list with rdfwg members, from your post - https://twitter.com/#!/danbri/rdfwg )",
-12:19:45,<cmatheus>,question to peter: do you object to there being a way to be able to tell that these are bnodes?,
+12:19:45,<cmatheus>,ask to peter: do you object to there being a way to be able to tell that these are bnodes?,
 12:19:53,<sandro>,"davidwood: Peter, do you object to there being a mechanism for indicating skolem nodes?",
 12:20:07,<sandro>,Peter: I object to it being mandated.,
 12:20:16,<cmatheus>,peter: against it being manditory,
@@ -1438,7 +1438,7 @@ timestamp,name,text,intent
 14:33:06,<Zakim>,"sorry, zwu2_, I do not know which phone connection belongs to you",
 14:34:00,<cygri>,"sandro: zwu2, can you be ed of n-triples to make sure nothing bad happens to it?",
 14:34:02,<cygri>,zwu2: i can do that,
-14:34:08,<zwu2_>,"zakim, who is here",question
+14:34:08,<zwu2_>,"zakim, who is here",ask
 14:34:09,<Zakim>,"zwu2_, you need to end that query with '?'",explain
 14:34:14,<zwu2_>,"zakim, who is here?",
 14:34:14,<Zakim>,"On the phone I see gavinc, LeeF, Meeting_Room, zwu2, AlexHall, Souri",

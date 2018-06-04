@@ -20,11 +20,11 @@ function onDropFile(files, action) {
 
 const Zone = styled(Dropzone)`
   border: 4px dashed #bbb;
-  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  height: 100%;
 `;
 
 const ZoneContainer = styled.div`
@@ -35,7 +35,7 @@ const ZoneContainer = styled.div`
 class ChatfileDrop extends Component {
   render() {
     return (
-      <ZoneContainer>
+      <ZoneContainer className={this.props.className}>
         <Zone onDrop={files => onDropFile(files, this.props.onAnalysisFinished)}>
           <p>Drop a chat file, or click here</p>
         </Zone>

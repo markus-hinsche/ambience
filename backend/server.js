@@ -10,6 +10,10 @@ const upload = multer({});
 
 app.use(cors());
 
+function flatmap(arr, mapFn) {
+  return arr.map(mapFn).reduce((all, r) => [...all, ...r], []);
+}
+
 function getWhatsappMessages(content) {
   return content
     .split("\n")
@@ -21,42 +25,65 @@ function getWhatsappMessages(content) {
     .filter(line => !!line);
 }
 
-// Functions
 function parseFile(file) {
-  //TODO: Parse file and send to
-
   const content = file.buffer.toString("utf8");
 
   return getWhatsappMessages(content);
 }
 
-function askRasa(messages) {
-  return Promise.all(
-    messages.map(message => {
-      return axios
-        .post("http://localhost:5000/parse", JSON.stringify({ q: message.text }))
-        .then(response => ({
-          ...message,
-          intent: response.data.intent.name,
-          confidence: response.data.intent.confidence,
-        }));
-    })
-  );
+function bucketizeMessages(messages, bucketSize) {
+  let a = [];
+
+  for (var i = 0; i < messages.length; i += bucketSize) {
+    a.push(messages.slice(i, i + bucketSize));
+  }
+
+  return a;
+}
+
+function mapMessageToRasaCall(message) {
+  return axios
+    .post("http://localhost:5000/parse", JSON.stringify({ q: message.text }))
+    .then(response => ({
+      ...message,
+      intent: response.data.intent.name,
+      confidence: response.data.intent.confidence,
+    }));
+}
+
+async function askRasa(messages) {
+  const buckets = bucketizeMessages(messages, 20);
+
+  const results = await buckets.reduce((all, messagesBucket, i) => {
+    return all.then(result => {
+      console.log(`Sending messagesBucket number ${i}`);
+
+      return Promise.all(messagesBucket.map(mapMessageToRasaCall)).then(responses =>
+        result.concat(responses)
+      );
+    });
+  }, Promise.resolve([]));
+
+  return results;
 }
 
 // Routes
-app.post("/chats", upload.single("chat"), function(req, res, next) {
+app.post("/chats", upload.single("chat"), async function(req, res, next) {
   const { file } = req;
   // req.body will hold the text fields, if there were any
 
   const matches = parseFile(file);
 
-  askRasa(matches).then(messages => {
+  try {
+    const messages = await askRasa(matches);
+
     res.json({
       message: "success",
       data: messages,
     });
-  });
+  } catch (e) {
+    console.error(e);
+  }
 });
 
 // Start server

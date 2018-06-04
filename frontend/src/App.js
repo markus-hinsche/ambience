@@ -1,31 +1,42 @@
 import React, { Component } from "react";
 import Dropzone from "react-dropzone";
+import styled from "styled-components";
 
-function onDropFile(files) {
-  const data = new FormData();
+import ChatFileDrop from "./ChatFileDrop";
+import Header from "./Header";
+import Chat from "./Chat";
+import AuthorsStats from "./AuthorsStats";
 
-  data.append("chat", files[0]);
+// import exampleMessages from "./exampleMessages.json";
 
-  fetch("http://localhost:3030/chats", {
-    method: "POST",
-    "Content-Type": "multipart/form-data",
-    body: data,
-  }).then(response => {
-    response.json().then(m => console.log(m));
-  });
-}
+const All = styled.div``;
+const Results = styled.div``;
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Ambience</h1>
-        </header>
-        <p className="App-intro">To get started, drop a text file.</p>
+  constructor(props) {
+    super(props);
 
-        <Dropzone onDrop={onDropFile} />
-      </div>
+    this.state = {
+      messages: [],
+      // messages: exampleMessages,
+    };
+  }
+  render() {
+    const hasMessages = this.state.messages && this.state.messages.length > 0;
+
+    return (
+      <All>
+        <Header hasMessages={hasMessages} />
+        {!hasMessages && (
+          <ChatFileDrop onAnalysisFinished={messages => this.setState({ messages })} />
+        )}
+        {hasMessages && (
+          <Results>
+            <AuthorsStats messages={this.state.messages} />
+            <Chat messages={this.state.messages} />
+          </Results>
+        )}
+      </All>
     );
   }
 }

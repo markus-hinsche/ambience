@@ -91,7 +91,15 @@ class AuthorsStats extends Component {
 
         return all;
       },
-      { [authors[0]]: {}, [authors[1]]: {} }
+      authors.reduce(
+        (initial,
+        a) => {
+          initial[a] = {};
+
+          return initial;
+        },
+        {}
+      )
     );
 
     // Will look like:

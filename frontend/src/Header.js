@@ -11,7 +11,7 @@ const All = styled.div`
 `;
 
 const HeadlineWrap = styled.div`
-  padding: 40px 0 0;
+  padding: 30px 0 0;
   margin: 0;
   width: 100%;
   background-color: #2c3e50;
@@ -22,10 +22,11 @@ const Headline = styled.h1`
   letter-spacing: 3px;
   font-weight: 300;
   text-align: right;
-  line-height: 0.35;
-  margin: 0;
+  line-height: 0.5;
+  margin: 0 20px;
 
   color: #fefefe;
+  opacity: ${props => (props.loaded ? "1" : "0.2")};
 `;
 
 class Header extends Component {
@@ -33,7 +34,7 @@ class Header extends Component {
     return (
       <All>
         <HeadlineWrap>
-          <Headline>Ambience</Headline>
+          <Headline loaded={this.props.loaded}>Ambience</Headline>
         </HeadlineWrap>
       </All>
     );

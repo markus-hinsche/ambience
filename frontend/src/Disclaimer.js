@@ -10,7 +10,7 @@ const All = styled.div`
 `;
 
 const Large = styled.p`
-  font-size: 24px;
+  font-size: 26px;
 `;
 const Small = styled.p`
   font-size: 14px;

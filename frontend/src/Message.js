@@ -34,8 +34,9 @@ const Intent = styled.p`
   height: 100%;
   width: 100%;
   margin: 0;
+  padding: 2px 5px;
   color: white;
-  font-size: 24px;
+  font-size: 26px;
   background-color: ${props => getColorByIntent(props.intent)};
   display: flex;
   align-items: flex-start;

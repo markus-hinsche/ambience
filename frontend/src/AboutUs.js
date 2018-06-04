@@ -32,14 +32,11 @@ class AboutUs extends Component {
         <Link target="_blank" href="https://twitter.com/kairollmann">
           Kai
         </Link>
-        <span>
-          {" "}
-          with ♡ in{" "}
-        </span>
-          <Link href="https://en.wikipedia.org/wiki/Fehmarn" target="_blank">
-            Fehmarn
-          </Link><span>.
-        </span>
+        <span> with ♡ in </span>
+        <Link href="https://en.wikipedia.org/wiki/Fehmarn" target="_blank">
+          Fehmarn
+        </Link>
+        <span>.</span>
       </All>
     );
   }

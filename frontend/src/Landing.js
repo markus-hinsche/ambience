@@ -43,7 +43,7 @@ class Landing extends Component {
 
     return (
       <All>
-        <Header />
+        <Header loaded={hasMessages} />
         {!hasMessages && (
           <StyledChatFileDrop onAnalysisFinished={messages => this.setState({ messages })} />
         )}

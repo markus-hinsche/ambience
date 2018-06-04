@@ -53,13 +53,13 @@ python -m rasa_nlu.train \
     --data nlp/demo-rasa.json \
     --path nlp/projects
 
-python -m rasa_nlu.server --path nlp/projects
+python3.6 -m rasa_nlu.server --port 3054 --path nlp/projects
 ```
 
 Querying Rasa then gives us:
 
 ```
-❯ curl -XPOST localhost:5000/parse -d '{"q":"hello there"}'
+❯ curl -XPOST localhost:3054/parse -d '{"q":"hello there"}'
 {
   "intent": {
     "name": "greet",

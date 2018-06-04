@@ -6,10 +6,13 @@ import ChatFileDrop from "./ChatFileDrop";
 import Header from "./Header";
 import Chat from "./Chat";
 import AuthorsStats from "./AuthorsStats";
+import SectionHeadline from "./SectionHeadline";
 
 // import exampleMessages from "./exampleMessages.json";
 
-const All = styled.div``;
+const All = styled.div`
+  background-color: #fefefe;
+`;
 const Results = styled.div``;
 
 class App extends Component {

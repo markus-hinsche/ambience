@@ -7,7 +7,7 @@ import Header from "./Header";
 import Chat from "./Chat";
 import AuthorsStats from "./AuthorsStats";
 import SectionHeadline from "./SectionHeadline";
-import AboutUs from './AboutUs';
+import AboutUs from "./AboutUs";
 
 // import exampleMessages from "./exampleMessages.json";
 
@@ -21,6 +21,12 @@ const All = styled.div`
 const Results = styled.div``;
 const StyledChatFileDrop = styled(ChatFileDrop)`
   flex: 1;
+`;
+
+const Msg = styled.p`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 class App extends Component {
@@ -39,7 +45,9 @@ class App extends Component {
       <All>
         <Header />
         {!hasMessages && (
-          <StyledChatFileDrop onAnalysisFinished={messages => this.setState({ messages })} />
+          <StyledChatFileDrop
+            onAnalysisFinished={messages => this.setState({ messages })}
+          />
         )}
         {hasMessages && (
           <Results>

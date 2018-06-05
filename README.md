@@ -14,6 +14,21 @@ cd backend
 yarn
 ```
 
+### Deploy
+
+```bash
+cd frontend
+npm install
+npm run build
+cp -r build/* ~/html/
+```
+
+```bash
+cd backend
+npm install
+npm start
+```
+
 ### Rasa
 
 As described in:

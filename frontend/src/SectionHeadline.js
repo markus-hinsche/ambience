@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { COLS } from "./colors";
 
 const All = styled.p`
   font-size: 50px;
@@ -7,7 +8,7 @@ const All = styled.p`
   width: 100%;
   padding: 0;
   height: 100px;
-  background-color: #16a085;
+  background-color: ${COLS["light"]};
   color: white;
   display: flex;
   align-items: flex-end;

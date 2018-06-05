@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { COLS } from "./colors";
 
 const All = styled.div`
   position: absolute;
@@ -14,7 +15,7 @@ const HeadlineWrap = styled.div`
   padding: 30px 0 0;
   margin: 0;
   width: 100%;
-  background-color: #2c3e50;
+  background: linear-gradient(${COLS["gray"]}, #aaa);
 `;
 
 const Headline = styled.h1`
@@ -25,8 +26,8 @@ const Headline = styled.h1`
   line-height: 0.5;
   margin: 0 20px;
 
-  color: #fefefe;
-  opacity: ${props => (props.loaded ? "1" : "0.2")};
+  color: white;
+  opacity: ${props => (props.loaded ? "1" : "0.3")};
 `;
 
 class Header extends Component {

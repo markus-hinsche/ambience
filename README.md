@@ -22,7 +22,6 @@ and
 [tutorial](https://nlu.rasa.com/tutorial.html):
 
 ```bash
-
 pip3.6 install rasa_nlu --user
 pip3.6 install git+https://github.com/mit-nlp/MITIE.git --user
 pip3.6 install rasa_nlu[mitie] --user
@@ -105,7 +104,6 @@ https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-14
 
 Shell
 
-<<<<<<< HEAD
 ```bash
 ./combine-sets.sh
 ```

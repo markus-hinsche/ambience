@@ -31,7 +31,7 @@ npm start
 
 ```
 pip3.6 install -r nlp/requirements.txt --user
-./get_mitie_models.sh
+./nlp/get_mitie_models.sh
 ```
 
 ### Rasa

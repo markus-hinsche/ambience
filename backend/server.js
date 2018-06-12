@@ -43,7 +43,7 @@ function bucketizeMessages(messages, bucketSize) {
 
 function mapMessageToRasaCall(message) {
   return axios
-    .post("http://localhost:3054/parse", JSON.stringify({ q: message.text }))
+    .post("http://localhost:61729/parse", JSON.stringify({ q: message.text }))
     .then(response => ({
       ...message,
       intent: response.data.intent.name,
@@ -87,4 +87,4 @@ app.post("/chats", upload.single("chat"), async function(req, res, next) {
 });
 
 // Start server
-app.listen(3030, () => console.log("Backend listening on 3030!"));
+app.listen(62729, () => console.log("Backend listening on 62729!"));

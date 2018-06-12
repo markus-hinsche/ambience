@@ -29,6 +29,11 @@ npm install
 npm start
 ```
 
+```
+pip3.6 install -r nlp/requirements.txt --user
+./get_mitie_models.sh
+```
+
 ### Rasa
 
 As described in:
@@ -37,17 +42,8 @@ and
 [tutorial](https://nlu.rasa.com/tutorial.html):
 
 ```bash
-pip3.6 install rasa_nlu --user
-pip3.6 install git+https://github.com/mit-nlp/MITIE.git --user
-pip3.6 install rasa_nlu[mitie] --user
-pip3.6 install coloredlogs --user
-pip3.6 install csvkit --user
-pip3.6 install pandas -- user
-
-cd nlp
-wget https://github.com/mit-nlp/MITIE/releases/download/v0.4/MITIE-models-v0.2.tar.bz2
-tar jxf MITIE-models-v0.2.tar.bz2
-bzip2 -dk MITIE-models-v0.2.tar.bz2
+pip install -r nlp/requirements.txt
+./nlp/get_mitie_models.sh
 ```
 
 ## Usage

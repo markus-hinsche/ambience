@@ -43,7 +43,7 @@ function bucketizeMessages(messages, bucketSize) {
 
 function mapMessageToRasaCall(message) {
   return axios
-    .post("http://localhost:5000/parse", JSON.stringify({ q: message.text }))
+    .post("http://localhost:3054/parse", JSON.stringify({ q: message.text }))
     .then(response => ({
       ...message,
       intent: response.data.intent.name,

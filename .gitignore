@@ -1,6 +1,6 @@
 notes
 rasa_nlu
-data
+data/*
 
 set12.csv
 set12_cleaned.csv

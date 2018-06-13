@@ -4,3 +4,7 @@ rasa_nlu[mitie]
 coloredlogs
 csvkit
 pandas
+numpy
+scipy
+scikit-learn
+

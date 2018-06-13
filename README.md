@@ -1,8 +1,6 @@
 # ambience
 
-## Setup
-
-### Frontend + Backend
+## Local Setup
 
 ```bash
 cd frontend
@@ -13,33 +11,6 @@ yarn
 cd backend
 yarn
 ```
-
-### Deploy
-
-```bash
-cd frontend
-npm install
-npm run build
-cp -r build/* ~/html/
-```
-
-```bash
-cd backend
-npm install
-npm start
-```
-
-```
-pip3.6 install -r nlp/requirements.txt --user
-./nlp/get_mitie_models.sh
-```
-
-### Rasa
-
-As described in:
-[installation](https://nlu.rasa.com/tutorial.html)
-and
-[tutorial](https://nlu.rasa.com/tutorial.html):
 
 ```bash
 pip install -r nlp/requirements.txt
@@ -47,8 +18,6 @@ pip install -r nlp/requirements.txt
 ```
 
 ## Usage
-
-### Frontend + Backend
 
 ```bash
 cd frontend
@@ -105,26 +74,11 @@ Analogously to [rasa intents](https://github.com/RasaHQ/rasa_nlu/blob/master/dat
 
 https://chatvisualizer.com/
 
-## Data
+## Deploy on uberspace
 
-https://www.kaggle.com/datasets?sortBy=relevance&group=public&search=chat&page=1&pageSize=20&size=all&filetype=all&license=all
-https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-13
-https://www.w3.org/2011/rdf-wg/wiki/Chatlog_2011-04-14
+Follow the instructions in `deploy/README.md`
 
-### Combine sets
-
-Shell
-
-```bash
-./combine-sets.sh
-```
-
-Get statistic
-
-```bash
-python3.6 -c "
-import pandas as pd
-df = pd.read_csv('set12.csv')
-print(df[['text', 'intent']].groupby('intent').count())
-"
-```
+### Resources
+Rasa:
+- [installation](https://nlu.rasa.com/tutorial.html)
+- [tutorial](https://nlu.rasa.com/tutorial.html)

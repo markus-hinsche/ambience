@@ -7,12 +7,13 @@ import Disclaimer from "./Disclaimer";
 import { BASE_URL } from "./environment";
 
 function onDropFile(files, onStart, onSuccess, onError) {
+  console.log('onDropFile');
   onStart();
-
+  
   const data = new FormData();
 
   data.append("chat", files[0]);
-
+  console.log(`${BASE_URL}`);
   fetch(`${BASE_URL}/chats`, {
     method: "POST",
     "Content-Type": "multipart/form-data",
@@ -96,20 +97,20 @@ class ChatfileDrop extends Component {
             !this.state.error && (
               <Loading>
                 <Msg>
-                  Crunching the data 🍤.<br />This can take a couple of seconds ⏳
+                  Crunching the data 🍤.<br />This can take a couple of seconds ⏳ loading: {this.state.loading}
                 </Msg>
                 <Spinner />
               </Loading>
             )}
           {!this.state.loading && !this.state.success && !this.state.error && <Disclaimer />}
           {this.state.error && (
-            <ErrorMsg>😭 Sorry, something went wrong, please try again.</ErrorMsg>
+            <ErrorMsg>😭 Sorry, something went wrong, please try again. {this.state.error} </ErrorMsg>
           )}
           {!this.state.loading &&
             this.state.success && (
               <ErrorMsg>
                 🤔 We're still here, but couldn't find any messages.<br />Please try again with
-                another file.
+                another file. {this.state.error}
               </ErrorMsg>
             )}
         </Zone>

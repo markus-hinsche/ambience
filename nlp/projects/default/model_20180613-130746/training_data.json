@@ -118,7 +118,7 @@
         "text": "pfps has joined #rdf-wg"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "zakim, code?"
       },
       {
@@ -134,7 +134,7 @@
         "text": "cmatheus has joined #rdf-wg"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "zakim, who is on the call?"
       },
       {
@@ -162,7 +162,7 @@
         "text": "We're working on it - please stand by"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "zakim, room for 15 for 600 minutes?"
       },
       {
@@ -190,7 +190,7 @@
         "text": "Sorry for the confusion.  Our bridge was not configured as we expected."
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "zakim, who is on the call?"
       },
       {
@@ -214,7 +214,7 @@
         "text": "ok, Steven_; that matches Team_(rdf-wg)07:42Z"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "zakim, who is on the call?"
       },
       {
@@ -238,7 +238,7 @@
         "text": "pchampin, you wanted to talk about named graphs in SPARQL endpoints"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "sandro - so you think that you shouldn't use \\\"anyone else's\\\"  IRIs in a named graph?"
       },
       {
@@ -366,7 +366,7 @@
         "text": "guus: Turtle"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "zakim, who is here"
       },
       {
@@ -626,11 +626,11 @@
         "text": "http://plixi.com/p/92009392"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "Guus: so what will be the starting document for the GRaphs TF, should it be the RDF concepts"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "?"
       },
       {
@@ -1134,31 +1134,31 @@
         "text": "what's up"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "What do you think"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "Why"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "When"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "Today?"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "Now?"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "Do you wanna go for burgers?"
       },
       {
-        "intent": "question",
+        "intent": "ask",
         "text": "Lasertag – today?"
       }
     ],

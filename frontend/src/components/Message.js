@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import { getColorByIntent } from "./helpers";
+import { getColorByIntent } from "../helpers";
 
 const All = styled.div`
   border: 1px solid #ededed;

@@ -18,7 +18,7 @@ https://goo.gl/maps/d4qifoQ28AN2
 4/21/18, 9:04 AM - Kai Rollmann: Haha, busy dude 🙂
 4/21/18, 9:04 AM - Kai Rollmann: Ok
 4/22/18, 1:50 PM - Markus: Noch am NordBahnhof?
-4/22/18, 1:51 PM - Kai Rollmann: Yes
+4/22/18, 1:51 PM - Yet another dude: Yes
 4/22/18, 1:51 PM - Kai Rollmann: Noch ein Spiel übrig
 4/22/18, 2:24 PM - Markus: Unterwegs wo seid ihr in 10min?
 4/23/18, 8:44 PM - Markus: Also morgen Mittag passt, hast du n Vorschlag für ne Oranienplatz location?
@@ -104,7 +104,7 @@ Ich hab grad noch ein wenig wegen Kitelocations geschaut: Rügen, z.B bei Sellin
 5/16/18, 6:18 PM - Markus: Wenn zum Beispiel kein Wind ist, dann wär ich ja eh am Start. Laut vielen Leuten ist das 50% der  Tage der Fall (unter 10-12 Knoten glaub ich wirds schwer). Falls Wind ist geht der Kurs immer so 4Std bei den meisten Kiteschulen. Da ist ja noch viel Zeit übrig - hast du eigentlich eine Idee? Ich hab so ein Paper gesehen, wo ein Algorithmus Bilder erzeugt (https://arxiv.org/pdf/1502.04623.pdf). Das Paper ist sehr Machine Learning-"lastig" aber vielleicht könnte man was bauen wo man immer ein ästhetisches Bild von mehreren vorgeschlagenen aussucht und dann wieder ähnliche Bilder generiert werden unter denen man weiter aussuchen kann etc.
 5/16/18, 6:29 PM - Kai Rollmann: Hmm, aber meinste bei dem Kurs ist dann keine Theorie oder Gruppen-Aktion dabei, so dass es wirklich nur 4 Stunden wären?
 5/16/18, 6:32 PM - Kai Rollmann: Das Paper hab ich nicht ganz verstanden. Die haben sich eine neural network architecture ausgedacht, womit man Images "nachgenerieren" kann, wenn man ne Vorlage hat?
-5/16/18, 6:32 PM - Markus: Gruppen action nicht, weil accomodation ja auch separate ist, 
+5/16/18, 6:32 PM - Markus: Gruppen action nicht, weil accomodation ja auch separate ist,
 Höchstens dass man bei gutem Wetter noch auf eigene Faust üben geht erlauben manche
 5/16/18, 6:33 PM - Markus: Paper: ja so ungefähr, ich müsste das auch erst mal lesen, aber für Designer (z.B. Mode) hab ich das auch schon mal gehört, dass die das als Inspirationtool nehmen
 5/16/18, 6:37 PM - Markus: Hattest du noch Ideen?
@@ -189,11 +189,11 @@ Der Veranstalter vermittelt den Mietwagen vom Vermieter und fügt eigene Leistun
 
 Bei Europcar bekommen wir noch 10% Frühlingsrabatt. Anleitung: Hauptseite -> Angebote -> Frühlingsangebot -> dann von da aus suchen!
 
-Bevor wir buchen muss ich mit dem Kitekurs noch mal anfragen, ob die noch Kapazitäten haben an den Tagen. 
+Bevor wir buchen muss ich mit dem Kitekurs noch mal anfragen, ob die noch Kapazitäten haben an den Tagen.
 
 Donnerstag klingt sinnvoll, dann machen wir uns da kein Stress.
 
-Überlege nur ob Samstag oder Sonntag dann los. 
+Überlege nur ob Samstag oder Sonntag dann los.
 
 Hab heut Corni getroffen, vllt kommt der auch spontan dazu am Wochenende^^
 5/25/18, 10:19 PM - Kai Rollmann: Haha nice
@@ -231,7 +231,7 @@ Hab heut Corni getroffen, vllt kommt der auch spontan dazu am Wochenende^^
 5/26/18, 8:47 PM - Markus: ok super
 5/26/18, 8:47 PM - Kai Rollmann: Jo wenn wir was haben bis dann :-)
 5/26/18, 9:10 PM - Markus: Hab jetzt gefunden:
-- https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p2434861 81Euro p. Nacht 
+- https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p2434861 81Euro p. Nacht
 - https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p2501323 68Euro p. Nacht leider wird Internet hier aber nicht erwähnt
 5/26/18, 9:21 PM - Kai Rollmann: 81 wäre happig :-/ ich schau gleich auch rein
 5/26/18, 9:28 PM - Markus: https://www.booking.com/hotel/de/villa-cliffkante-studio-lounge-03.de.html 68Euro p. Nacht ganz cool
@@ -292,7 +292,7 @@ https://www.booking.com/hotel/de/meerblick-lemkenhafen.de.html?label=gen173nr-1D
 5/29/18, 9:03 AM - Kai Rollmann: Platz wäre genug
 5/29/18, 9:04 AM - Markus: Kannst gern Leute überzeugen, ich habs schon versucht, aber meistens haben Leute unter der Woche nicht frei. (Idee: Lass nen Portal bauen wo man Leute findet, mit denen man in den Urlaub fahren kann 😅)
 
-http://www.booking.com/Share-wPEUxi ist weit im Landesinneren, dafür ist 90Euro p. Nacht auch schon viel. 
+http://www.booking.com/Share-wPEUxi ist weit im Landesinneren, dafür ist 90Euro p. Nacht auch schon viel.
 
 http://www.booking.com/Share-nXpkQ5 mit 162 Euro p. Nacht ist mir zu viel, dafür das ich auch nicht den ganzen Tag das nutzen kann.
 
@@ -313,7 +313,7 @@ https://www.booking.com/hotel/de/villa-cliffkante-studio-lounge-03.de.html 68Eur
 5/29/18, 6:32 PM - Kai Rollmann: Soo, bin @ Home
 5/29/18, 6:37 PM - Markus: Gleich da
 5/29/18, 7:40 PM - Markus: https://booki.ng/2L4PKSY 70 Euro p. Nacht Rakow bei Pepelow
-5/30/18, 4:57 PM - Markus: Und, was sagen deine spontanen Kollegen. Will noch irgendwer mit? Meine Kollegen haben zwar keine Zeit, meinten aber wir sollten einfach mal in Polen gucken, weil da die richtig guten Sachen trotzdem noch ganz bezahlbar sind. Hatte aber noch keine Zeit zu suchen. 
+5/30/18, 4:57 PM - Markus: Und, was sagen deine spontanen Kollegen. Will noch irgendwer mit? Meine Kollegen haben zwar keine Zeit, meinten aber wir sollten einfach mal in Polen gucken, weil da die richtig guten Sachen trotzdem noch ganz bezahlbar sind. Hatte aber noch keine Zeit zu suchen.
 
 Wegen LTE, es gibt hier die Übersicht, also wenn man sich Telekom holt mit ein paar GB, sollten wir ein gutes Internet backup haben:
 https://www.4g.de/check/fehmarn/muehlenweg/38/?q=true&srcurl=%2Fcheck%2Ffehmarn%2F&srcform=Main#query_5
@@ -325,12 +325,12 @@ https://www.4g.de/check/fehmarn/muehlenweg/38/?q=true&srcurl=%2Fcheck%2Ffehmarn%
 5/30/18, 5:48 PM - Markus: Ich kann das gerne raussuchen, aber wärst du dann ok mit der Ruhe-Insel?
 5/30/18, 5:54 PM - Kai Rollmann: Wenn du das hinkriegst und wir dann sicher schnelles WLAN haben auch unabhängig vom Ort (dann ginge ja auch ins Café / an den Strand setzen), dann wäre ich ok mit Ruhe Insel
 5/30/18, 5:57 PM - Markus: Ok bin erst mal beachen, danach such ich mal
-5/30/18, 10:56 PM - Markus: Hast recht, viele sind 2Jahres Verträge, 
+5/30/18, 10:56 PM - Markus: Hast recht, viele sind 2Jahres Verträge,
 Das einzige ist so ein Daypass, aber den kriegen auch nur (siehe "So buchen Sie") bestehende Telekom Kunden https://www.telekom.de/unterwegs/tarife-und-optionen/dayflat-unlimited
 5/30/18, 11:07 PM - Markus: Ich ruf morgen früh mal die Kundenberatung an, find jetzt keine Infos mehr wie man das bekommt
 5/30/18, 11:32 PM - Kai Rollmann: alles klar
 5/30/18, 11:33 PM - Kai Rollmann: hab jetzt meine alte wohnung komplett ready für die abnahme gemacht, hab morgen super früh die übergabe und bin dann wohl erst so ab 11 uhr wieder erreichbar
-5/31/18, 11:19 AM - Markus: Also man kann schon auch nur eine SIM card kaufen (ohne Vertrag) und dann Datenoptionen buchen, die kosten dann mehr aber es geht: 
+5/31/18, 11:19 AM - Markus: Also man kann schon auch nur eine SIM card kaufen (ohne Vertrag) und dann Datenoptionen buchen, die kosten dann mehr aber es geht:
 https://www.telekom.de/unterwegs/tarife-und-optionen/prepaid-tarife
 https://www.telekom.de/unterwegs/tarife-und-optionen/prepaid-daten-tarife/data-start
 
@@ -354,7 +354,7 @@ Wollen wir dann heut alles buchen?
 5/31/18, 12:48 PM - Kai Rollmann: Kommst du irgendwo an einem 1&1 Shop vorbei?
 5/31/18, 1:19 PM - Markus: Ich hab einen wlan Router daheim
 5/31/18, 1:20 PM - Markus: Da tut man eine SIM karte rein und dann ist gut denk ich
-5/31/18, 1:21 PM - Markus: Glaub ich hab den 
+5/31/18, 1:21 PM - Markus: Glaub ich hab den
 Huawei E5330 weiß
 5/31/18, 1:26 PM - Markus: Aber der is zu langsam vllt
 5/31/18, 1:29 PM - Markus: Also heut abend hab ich lange Artory Abschiedsfeier, dann buche ich jetzt nachmittags Unterkunft und du buchst Auto heut abend. Und um Internet 1und1 kümmer ich mich heut oder morgen. Ok ? Buchen?
@@ -413,7 +413,7 @@ WLAN
 Schlafmöglichkeiten:
 1 Zimmer doppelbett, wohnzimmer Schlafcouch, Bild schick er gleich
 
-Was ist den die genaue Adresse der Wohnung in Orth. 
+Was ist den die genaue Adresse der Wohnung in Orth.
 - Am Hafen 2, 23769 Orth
 6/1/18, 12:47 PM - Markus: Bilder kommen gleich
 6/1/18, 12:47 PM - Kai Rollmann: Mmh
@@ -423,7 +423,7 @@ Was ist den die genaue Adresse der Wohnung in Orth.
 6/1/18, 12:53 PM - Kai Rollmann: Haste ne Idee wo man einen LTE-kompatiblen herbekommt? Amazon wird ja ein wenig zu knapp ^^
 6/1/18, 12:53 PM - Markus: Doch es gibt noch eine in Lemkenhafen, irgendwo anders in der mühlenstraße wieder. Der Typ sitzt in Hamburg, hat viele Wohunungen auf Fehmarn, kann uns auch in Petersdorf und Wenkendorf was geben, hat sich auch oft entschuldigt, dass es einen Kabelbrand wegen des vorherigen Gastes in der Ruhe Insel gibt, und versucht grad alles um uns einen gute Alternative zu bieten. Da ist Orth das beste, weil die Wohnung sogar mit Blick auf den hafen ist
 6/1/18, 12:54 PM - Kai Rollmann: Okay jo na da ist am Hafen natürlich doch noch am besten
-6/1/18, 12:58 PM - Markus: LTE-kompatiblen hotspot hatten sie gestern im mobicom-debitel shop am Hermannplatz. 
+6/1/18, 12:58 PM - Markus: LTE-kompatiblen hotspot hatten sie gestern im mobicom-debitel shop am Hermannplatz.
 Hab bei Media Markt, Saturn, und Conrad auch geschaut, aber da ist nicht klar was sie in der Filiale haben
 6/1/18, 12:56 PM - Markus: <Media omitted>
 6/1/18, 12:56 PM - Markus: <Media omitted>

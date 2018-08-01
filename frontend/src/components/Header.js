@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { COLS } from "./colors";
+import { COLS } from "../colors";
 
 const All = styled.div`
   position: absolute;
@@ -25,6 +25,7 @@ const Headline = styled.h1`
   text-align: right;
   line-height: 0.5;
   margin: 0 20px;
+  font-family: "Lobster", cursive;
 
   color: white;
   opacity: ${props => (props.loaded ? "1" : "0.3")};

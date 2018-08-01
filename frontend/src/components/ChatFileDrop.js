@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Spinner from "./Spinner";
 import Disclaimer from "./Disclaimer";
 
-import { BASE_URL } from "./environment";
+import { BASE_URL } from "../environment";
 
 function onDropFile(files, onStart, onSuccess, onError) {
   onStart();

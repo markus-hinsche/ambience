@@ -1,23 +1,17 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { COLS } from "./colors";
+import { COLS } from "../colors";
 
 const All = styled.p`
   font-size: 50px;
   margin: 0;
   width: 100%;
   padding: 0;
-  height: 100px;
-  background-color: ${COLS["light"]};
-  color: white;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  text-align: left;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 0.6;
-  margin-bottom: 40px;
+  color: #555;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 1;
+  font-family: "Lobster", cursive;
 `;
 
 class SectionHeadline extends Component {

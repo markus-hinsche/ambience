@@ -29,11 +29,11 @@ class Chat extends Component {
   render() {
     return (
       <All>
-        {this.props.messages.map(message => {
+        {this.props.messages.map((message, i) => {
           const isPrimaryAuthor = this.props.messages[0].name === message.name;
 
           return (
-            <MessageWrapper isPrimaryAuthor={isPrimaryAuthor}>
+            <MessageWrapper key={message.time + i} isPrimaryAuthor={isPrimaryAuthor}>
               <StyledMessage
                 isPrimaryAuthor={isPrimaryAuthor}
                 isGreet={message.intent === "greet"}

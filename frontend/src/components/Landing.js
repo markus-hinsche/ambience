@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Dropzone from "react-dropzone";
 import styled from "styled-components";
 
 import ChatFileDrop from "./ChatFileDrop";
@@ -9,7 +8,9 @@ import AuthorsStats from "./AuthorsStats";
 import SectionHeadline from "./SectionHeadline";
 import AboutUs from "./AboutUs";
 
-// import exampleMessages from "./exampleMessages.json";
+import exampleMessages from "../exampleMessages.json";
+
+const USE_EXAMPLE_MESSAGES = true;
 
 const All = styled.div`
   background-color: #fefefe;
@@ -20,13 +21,7 @@ const All = styled.div`
 `;
 const Results = styled.div``;
 const StyledChatFileDrop = styled(ChatFileDrop)`
-  flex: 1;
-`;
-
-const Msg = styled.p`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-grow: 1;
 `;
 
 class Landing extends Component {
@@ -34,8 +29,7 @@ class Landing extends Component {
     super(props);
 
     this.state = {
-      messages: [],
-      // messages: exampleMessages,
+      messages: USE_EXAMPLE_MESSAGES ? exampleMessages : [],
     };
   }
   render() {
@@ -49,9 +43,9 @@ class Landing extends Component {
         )}
         {hasMessages && (
           <Results>
-            <SectionHeadline>Statistics</SectionHeadline>
+            <SectionHeadline>Articulation</SectionHeadline>
             <AuthorsStats messages={this.state.messages} />
-            <SectionHeadline>Chat history</SectionHeadline>
+            <SectionHeadline>Chat Analysis</SectionHeadline>
             <Chat messages={this.state.messages} />
           </Results>
         )}

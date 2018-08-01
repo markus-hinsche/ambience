@@ -17,7 +17,7 @@ const MessageWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: ${props => (props.isPrimaryAuthor ? "flex-end" : "flex-start")};
-  margin: 3px;
+  padding: 3px;
 `;
 
 const StyledMessage = styled(Message)`
@@ -58,10 +58,10 @@ class Chat extends Component {
           const isPrimaryAuthor = this.props.messages[0].name === message.name;
 
           return (
-            <Fragment>
+            <Fragment key={message.time + i}>
               {i > 0 &&
                 isHourSwitch(i, this.props.messages) && <Line>{getHourStamp(message)}</Line>}
-              <MessageWrapper key={message.time + i} isPrimaryAuthor={isPrimaryAuthor}>
+              <MessageWrapper isPrimaryAuthor={isPrimaryAuthor}>
                 <StyledMessage
                   isPrimaryAuthor={isPrimaryAuthor}
                   isGreet={message.intent === "greet"}

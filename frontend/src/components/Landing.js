@@ -20,6 +20,7 @@ const All = styled.div`
   padding-top: 64px;
   width: 100%;
   overflow-x: hidden;
+  position: relative;
 `;
 const Results = styled.div``;
 const StyledChatFileDrop = styled(ChatFileDrop)`
@@ -45,7 +46,7 @@ class Landing extends Component {
         )}
         {hasMessages && (
           <Results>
-            <SectionHeadline>Articulation</SectionHeadline>
+            <SectionHeadline>Articulation Statistic</SectionHeadline>
             <AuthorsStats messages={this.state.messages} />
             <SectionHeadline>Chat Analysis</SectionHeadline>
             <Chat messages={this.state.messages} />

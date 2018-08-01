@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import { MOBILE_MAX } from "../settings";
 import { getColorByIntent } from "../helpers";
 
 const All = styled.div`
@@ -25,6 +26,9 @@ const Author = styled.p`
 const Text = styled.p`
   margin: 0;
   font-size: 16px;
+  @media (max-width: ${MOBILE_MAX}) {
+    font-size: 14px;
+  }
 `;
 
 const Intent = styled.p`

@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { getColorByIntent } from "../helpers";
 import { COLS } from "../colors";
+import { MOBILE_MAX } from "../settings";
 
 import User from "./User";
 
@@ -11,16 +12,22 @@ const All = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: ${MOBILE_MAX}) {
+    align-items: flex-start;
+  }
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 0 50px;
 `;
 
 const Author = styled.div`
-  flex: 1;
+  flex-grow: 1;
   padding: 10px 0;
   display: flex;
   flex-direction: ${props => (props.isLeft ? "row-reverse" : "row")};
+  @media (max-width: ${MOBILE_MAX}) {
+    flex-direction: column;
+  }
   align-items: center;
   &:first-child {
     text-align: right;
@@ -38,6 +45,10 @@ const AuthorDetails = styled.div`
   text-align: center;
   margin: 20px;
   padding: 10px;
+  @media (max-width: ${MOBILE_MAX}) {
+    margin: 5px 0 30px;
+    padding: 5px;
+  }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +57,9 @@ const AuthorDetails = styled.div`
 `;
 
 const Intents = styled.div`
-  flex: 1;
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
 `;
 
 const Intent = styled.div`

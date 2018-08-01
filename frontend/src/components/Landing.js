@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import styled from "styled-components";
 
 import ChatFileDrop from "./ChatFileDrop";
@@ -12,16 +12,6 @@ import exampleMessages from "../exampleMessages.json";
 
 const USE_EXAMPLE_MESSAGES = true;
 
-const All = styled.div`
-  background-color: #fefefe;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 64px;
-  width: 100%;
-  overflow-x: hidden;
-  position: relative;
-`;
 const Results = styled.div``;
 const StyledChatFileDrop = styled(ChatFileDrop)`
   flex-grow: 1;
@@ -39,7 +29,7 @@ class Landing extends Component {
     const hasMessages = this.state.messages && this.state.messages.length > 0;
 
     return (
-      <All>
+      <Fragment>
         <Header loaded={hasMessages} />
         {!hasMessages && (
           <StyledChatFileDrop onAnalysisFinished={messages => this.setState({ messages })} />
@@ -53,7 +43,7 @@ class Landing extends Component {
           </Results>
         )}
         <AboutUs />
-      </All>
+      </Fragment>
     );
   }
 }

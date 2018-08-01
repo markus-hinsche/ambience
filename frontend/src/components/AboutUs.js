@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 const All = styled.div`
   position: fixed;
@@ -9,9 +10,10 @@ const All = styled.div`
   padding: 5px 20px;
   color: #ccc;
   font-size: 13px;
+  text-align: right;
 `;
 
-const Link = styled.a`
+const linkStyle = css`
   color: #bbb;
   text-decoration: underline;
 
@@ -20,23 +22,33 @@ const Link = styled.a`
   }
 `;
 
+const StyledLink = styled.a`
+  ${linkStyle};
+`;
+
+const StyledImprintLink = styled(Link)`
+  ${linkStyle};
+`;
+
 class AboutUs extends Component {
   render() {
     return (
       <All>
         <span>Built by </span>
-        <Link target="_blank" href="https://twitter.com/markus_hinsche">
+        <StyledLink target="_blank" href="https://twitter.com/markus_hinsche">
           Markus
-        </Link>
+        </StyledLink>
         <span> and </span>
-        <Link target="_blank" href="https://twitter.com/kairollmann">
+        <StyledLink target="_blank" href="https://twitter.com/kairollmann">
           Kai
-        </Link>
+        </StyledLink>
         <span> with ♡ in </span>
-        <Link href="https://en.wikipedia.org/wiki/Fehmarn" target="_blank">
+        <StyledLink href="https://en.wikipedia.org/wiki/Fehmarn" target="_blank">
           Fehmarn
-        </Link>
-        <span>.</span>
+        </StyledLink>
+        <span>. (</span>
+        <StyledImprintLink to="/imprint">Imprint</StyledImprintLink>
+        <span>)</span>
       </All>
     );
   }

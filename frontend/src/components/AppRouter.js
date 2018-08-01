@@ -20,10 +20,10 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
       <All>
-      <Route exact={true} path="/" component={Landing} />
-      <Route path="/imprint" component={Imprint} />
-    </All>
-  </BrowserRouter>
+        <Route exact={true} path="/" component={Landing} />
+        <Route path="/imprint" component={Imprint} />
+      </All>
+    </BrowserRouter>
   );
 };
 

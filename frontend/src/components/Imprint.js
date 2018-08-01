@@ -1,11 +1,11 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const All = styled.div`
   max-width: 900px;
   margin: 0 auto;
   padding: 10px;
-`
+`;
 
 const Imprint = () => (
   <All>

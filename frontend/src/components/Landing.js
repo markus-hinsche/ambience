@@ -10,7 +10,7 @@ import AboutUs from "./AboutUs";
 
 import exampleMessages from "../exampleMessages.json";
 
-const USE_EXAMPLE_MESSAGES = true;
+const USE_EXAMPLE_MESSAGES = false;
 
 const Results = styled.div``;
 const StyledChatFileDrop = styled(ChatFileDrop)`

@@ -18,6 +18,8 @@ const All = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 64px;
+  width: 100%;
+  overflow-x: hidden;
 `;
 const Results = styled.div``;
 const StyledChatFileDrop = styled(ChatFileDrop)`

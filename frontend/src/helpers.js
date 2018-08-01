@@ -3,7 +3,7 @@ const COLORS = {
   affirm: "#2ecc71",
   greet: "#9b59b6",
   deny: "#e74c3c",
-  other: "#b5c5c6",
+  other: "#ccc",
   ask: "#3498db",
   argue: "#e67e22",
   explain: "#f1c40f",

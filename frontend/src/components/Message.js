@@ -7,7 +7,7 @@ const All = styled.div`
   border: 1px solid #ededed;
   color: #333;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 2px 2px 12px 0 rgba(46, 61, 73, 0.1);
   padding: 10px;
   position: relative;
@@ -45,8 +45,7 @@ const Intent = styled.p`
   transition: background-color 0.2s, opacity 0.2s, color 0.2s;
 
   &:hover {
-    background-color: transparent;
-    color: black;
+    opacity: 0.3;
   }
 `;
 

@@ -76,7 +76,7 @@ const Imprint = () => (
     </p>
     <br />
     Website Impressum erstellt durch{" "}
-    <a href="https://www.impressum-generator.de">impressum-generator.de</a> von der
+    <a href="https://www.impressum-generator.de">impressum-generator.de</a> von der{" "}
     <a href="https://www.kanzlei-hasselbach.de/">Kanzlei Hasselbach</a>
   </All>
 );

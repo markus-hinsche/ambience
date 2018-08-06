@@ -8,13 +8,23 @@ import AuthorsStats from "./AuthorsStats";
 import SectionHeadline from "./SectionHeadline";
 import AboutUs from "./AboutUs";
 
-import exampleMessages from "../exampleMessages.json";
+import exampleMessages from "../demo_chat.json";
 
-const USE_EXAMPLE_MESSAGES = false;
+const USE_EXAMPLE_MESSAGES = true;
 
 const Results = styled.div``;
-const StyledChatFileDrop = styled(ChatFileDrop)`
-  flex-grow: 1;
+const StyledChatFileDrop = styled(ChatFileDrop)``;
+
+const ExampleHeadline = styled.h3`
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  color: #777;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 20px 40px;
+  margin: 0 auto;
+  display: inline-block;
 `;
 
 class Landing extends Component {
@@ -22,25 +32,28 @@ class Landing extends Component {
     super(props);
 
     this.state = {
-      messages: USE_EXAMPLE_MESSAGES ? exampleMessages : [],
+      hasExampleMessages: true,
+      messages: exampleMessages,
     };
   }
   render() {
-    const hasMessages = this.state.messages && this.state.messages.length > 0;
+    const { hasExampleMessages, messages } = this.state;
 
     return (
       <Fragment>
-        <Header loaded={hasMessages} />
-        {!hasMessages && (
-          <StyledChatFileDrop onAnalysisFinished={messages => this.setState({ messages })} />
+        <Header loaded={hasExampleMessages} />
+        {hasExampleMessages && (
+          <StyledChatFileDrop
+            onAnalysisFinished={messages => this.setState({ messages, hasExampleMessages: false })}
+          />
         )}
-        {hasMessages && (
-          <Results>
-            <SectionHeadline>Articulation Statistic</SectionHeadline>
-            <AuthorsStats messages={this.state.messages} />
-            <SectionHeadline>Chat Analysis</SectionHeadline>
-            <Chat messages={this.state.messages} />
-          </Results>
+        {hasExampleMessages && <ExampleHeadline>EXAMPLE 👇</ExampleHeadline>}
+        <Results>
+          <SectionHeadline>Articulation Statistic</SectionHeadline>
+          <AuthorsStats messages={messages} />
+          <SectionHeadline>Chat Analysis</SectionHeadline>
+          <Chat messages={messages} />
+        </Results>
         )}
         <AboutUs />
       </Fragment>

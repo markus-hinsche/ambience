@@ -39,7 +39,7 @@ const Zone = styled(Dropzone)`
 
 const ZoneContainer = styled.div`
   width: 100%;
-  padding: 20px 20px 30px;
+  padding: 20px 20px 50px;
 `;
 
 const Msg = styled.p`
@@ -53,6 +53,7 @@ const ErrorMsg = styled(Msg)`
 const Loading = styled.div`
   max-width: 500px;
   text-align: center;
+  padding: 50px;
 `;
 
 class ChatfileDrop extends Component {

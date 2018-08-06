@@ -1,0 +1,511 @@
+[
+  {
+    "time": "4/20/18, 12:37 PM",
+    "name": "Lotti",
+    "text": "Hi!",
+    "intent": "greet",
+    "confidence": 0.26254203442546026
+  },
+  {
+    "time": "4/20/18, 6:23 PM",
+    "name": "Dirk",
+    "text": "Hello",
+    "intent": "greet",
+    "confidence": 0.6337240453200874
+  },
+  {
+    "time": "4/20/18, 6:23 PM",
+    "name": "Dirk",
+    "text": "What are you doing?",
+    "intent": "ask",
+    "confidence": 0.37490823837652265
+  },
+  {
+    "time": "4/20/18, 7:41 PM",
+    "name": "Lotti",
+    "text": "laying in bed",
+    "intent": "explain",
+    "confidence": 0.35428515432822283
+  },
+  {
+    "time": "4/20/18, 8:47 PM",
+    "name": "Dirk",
+    "text": "Hmm... Just laying in bed? Nothing else..?",
+    "intent": "ask",
+    "confidence": 0.4390711687091767
+  },
+  {
+    "time": "4/20/18, 8:48 PM",
+    "name": "Lotti",
+    "text": "im eating cereal",
+    "intent": "explain",
+    "confidence": 0.3010541788004002
+  },
+  {
+    "time": "4/20/18, 8:48 PM",
+    "name": "Dirk",
+    "text": "Haha nice",
+    "intent": "other",
+    "confidence": 0.3989992174150695
+  },
+  {
+    "time": "4/20/18, 8:49 PM",
+    "name": "Dirk",
+    "text": "What would you do if I was in bed next to you?",
+    "intent": "ask",
+    "confidence": 0.2958541933498237
+  },
+  {
+    "time": "4/21/18, 12:09 AM",
+    "name": "Lotti",
+    "text": "eat my cereal",
+    "intent": "other",
+    "confidence": 0.25466436338349646
+  },
+  {
+    "time": "4/21/18, 9:00 AM",
+    "name": "Dirk",
+    "text": "Lol I mean if the cereal wasn't there",
+    "intent": "ask",
+    "confidence": 0.27554213585812204
+  },
+  {
+    "time": "4/21/18, 9:03 AM",
+    "name": "Lotti",
+    "text": "then id get out of bed and go get cereal",
+    "intent": "ask",
+    "confidence": 0.4928740732589282
+  },
+  {
+    "time": "4/22/18, 1:50 PM",
+    "name": "Lotti",
+    "text": "Still at the North Station?",
+    "intent": "ask",
+    "confidence": 0.4281740043274729
+  },
+  {
+    "time": "4/22/18, 1:51 PM",
+    "name": "Dirk",
+    "text": "Yes",
+    "intent": "affirm",
+    "confidence": 0.5534608656433064
+  },
+  {
+    "time": "4/22/18, 1:51 PM",
+    "name": "Dirk",
+    "text": "One more game left",
+    "intent": "other",
+    "confidence": 0.5136307121073566
+  },
+  {
+    "time": "4/22/18, 2:24 PM",
+    "name": "Lotti",
+    "text": "On the way - where are you in 10min?",
+    "intent": "ask",
+    "confidence": 0.43869844428796123
+  },
+  {
+    "time": "4/23/18, 8:44 PM",
+    "name": "Lotti",
+    "text": "So tomorrow's lunch, do you have a suggestion for a Oranienplatz location?",
+    "intent": "ask",
+    "confidence": 0.2056334708668295
+  },
+  {
+    "time": "4/23/18, 9:22 PM",
+    "name": "Dirk",
+    "text": "Perfect",
+    "intent": "affirm",
+    "confidence": 0.33477961648948407
+  },
+  {
+    "time": "4/23/18, 9:23 PM",
+    "name": "Dirk",
+    "text": "Can we look for something right there?",
+    "intent": "ask",
+    "confidence": 0.3809439118545542
+  },
+  {
+    "time": "4/23/18, 9:23 PM",
+    "name": "Dirk",
+    "text": "Can not be there until 12:30 tomorrow?",
+    "intent": "ask",
+    "confidence": 0.39197834791660946
+  },
+  {
+    "time": "4/23/18, 10:23 PM",
+    "name": "Lotti",
+    "text": "Yes Perfect",
+    "intent": "affirm",
+    "confidence": 0.2444003384806316
+  },
+  {
+    "time": "4/24/18, 12:21 PM",
+    "name": "Lotti",
+    "text": "Right in the square",
+    "intent": "other",
+    "confidence": 0.7489635300813889
+  },
+  {
+    "time": "4/24/18, 12:22 PM",
+    "name": "Dirk",
+    "text": "I'll be there :-)",
+    "intent": "affirm",
+    "confidence": 0.4716451494568146
+  },
+  {
+    "time": "4/27/18, 10:31 AM",
+    "name": "Lotti",
+    "text":
+      "Hey there, for better planning I would really like to know if you are coming on Saturday 🙂 please let me know until tomorrow afternoon, much appreciated! Cheers",
+    "intent": "propose",
+    "confidence": 0.27564392942736954
+  },
+  {
+    "time": "4/27/18, 1:54 PM",
+    "name": "Dirk",
+    "text": "Main street 11",
+    "intent": "explain",
+    "confidence": 0.4418681664650644
+  },
+  {
+    "time": "4/29/18, 10:48 AM",
+    "name": "Lotti",
+    "text": "Do we want to meet soon?",
+    "intent": "propose",
+    "confidence": 0.1866538057154287
+  },
+  {
+    "time": "4/29/18, 10:51 AM",
+    "name": "Dirk",
+    "text": "Yes! How about 1 pm?",
+    "intent": "affirm",
+    "confidence": 0.2894175760978779
+  },
+  {
+    "time": "4/29/18, 11:06 AM",
+    "name": "Dirk",
+    "text": "12:30?",
+    "intent": "propose",
+    "confidence": 0.4203836501589723
+  },
+  {
+    "time": "4/29/18, 11:09 AM",
+    "name": "Lotti",
+    "text": "That's fine",
+    "intent": "affirm",
+    "confidence": 0.4701194091011093
+  },
+  {
+    "time": "4/29/18, 11:09 AM",
+    "name": "Dirk",
+    "text": "👍 Alright, see you soon! 🙂",
+    "intent": "affirm",
+    "confidence": 0.328698562452146
+  },
+  {
+    "time": "4/30/18, 5:31 PM",
+    "name": "Lotti",
+    "text":
+      "I didn't know any Peru expert just yet, so I was super happy when Meggan mentioned that you are. ",
+    "intent": "ask",
+    "confidence": 0.24815867630172678
+  },
+  {
+    "time": "5/1/18, 10:10 PM",
+    "name": "Dirk",
+    "text":
+      "Hi Lotti! I am in Gran Canaria atm, trying out the digital nomad life. Let me know if you have specific questions! I am happy to help you out as much as I can.",
+    "intent": "explain",
+    "confidence": 0.26460959242475773
+  },
+  {
+    "time": "5/2/18, 9:18 PM",
+    "name": "Lotti",
+    "text": "Cheers",
+    "intent": "argue",
+    "confidence": 0.3539301901610775
+  },
+  {
+    "time": "5/2/18, 9:20 PM",
+    "name": "Lotti",
+    "text":
+      "Hey Dirk, We still haven't met, and I think we should do that soon! This past week was super busy for me, but now I'm back to the normal amount of busy and I'm more available. Let me know when you're free!",
+    "intent": "propose",
+    "confidence": 0.23373210946573297
+  },
+  {
+    "time": "5/2/18, 9:21 PM",
+    "name": "Dirk",
+    "text": "Hey Lotti, we could meet tomorrow! ",
+    "intent": "affirm",
+    "confidence": 0.30313388320471346
+  },
+  {
+    "time": "5/2/18, 9:22 PM",
+    "name": "Dirk",
+    "text":
+      "I have to study because I have not been able to do a lot yet, so I will need a long break tomorrow afternoon. We could use that to meet and have a coffee downtown. I also wanted to watch the coldwater classics tomorrow, if there will be something going on. Do you want to join me for one of those? During the week I have less time, but we could also figure something out I think. ",
+    "intent": "propose",
+    "confidence": 0.46289993631214893
+  },
+  {
+    "time": "5/2/18, 9:22 PM",
+    "name": "Dirk",
+    "text": "Have a good saturday evening.",
+    "intent": "greet",
+    "confidence": 0.27110179407230406
+  },
+  {
+    "time": "5/2/18, 9:23 PM",
+    "name": "Lotti",
+    "text":
+      "Yeah, I'd be down to meet up tomorrow. Send me a text tomorrow and we can figure out a good time",
+    "intent": "affirm",
+    "confidence": 0.3533957293446309
+  },
+  {
+    "time": "5/2/18, 9:23 PM",
+    "name": "Dirk",
+    "text": "Thanksss",
+    "intent": "affirm",
+    "confidence": 0.2627535401988344
+  },
+  {
+    "time": "5/2/18, 9:24 PM",
+    "name": "Lotti",
+    "text": "I guess we can find a nicer day for the hike, do you guys agree?!",
+    "intent": "ask",
+    "confidence": 0.30132555070740485
+  },
+  {
+    "time": "5/2/18, 9:25 PM",
+    "name": "Dirk",
+    "text":
+      "so tomorrow I have this meeting at 11am, so I guess it takes about an hour or a bit longer. ",
+    "intent": "other",
+    "confidence": 0.2811979909392247
+  },
+  {
+    "time": "5/2/18, 9:25 PM",
+    "name": "Dirk",
+    "text":
+      "As I don't know exactly I think I will just call you as soon as I get out, and then we can meet at the Dining hall. Would that work for you?",
+    "intent": "propose",
+    "confidence": 0.39024363411461277
+  },
+  {
+    "time": "5/2/18, 9:26 PM",
+    "name": "Lotti",
+    "text": "Sounds good! And we can go wherever you like",
+    "intent": "affirm",
+    "confidence": 0.2981407635964125
+  },
+  {
+    "time": "5/2/18, 9:26 PM",
+    "name": "Dirk",
+    "text":
+      "I don't want to go to 9/10. Thats the only Dining Hall where I have already been to. So if Merill is tasty, lets go there, if sth. is even better lets go there, you tell me.",
+    "intent": "deny",
+    "confidence": 0.28970541047976917
+  },
+  {
+    "time": "5/2/18, 9:27 PM",
+    "name": "Lotti",
+    "text": "Merrill is pretty good IMO. ",
+    "intent": "explain",
+    "confidence": 0.2899901791897543
+  },
+  {
+    "time": "5/2/18, 9:28 PM",
+    "name": "Lotti",
+    "text": "Just give me a call tomorrow when you're ready.",
+    "intent": "propose",
+    "confidence": 0.18170590044723903
+  },
+  {
+    "time": "5/2/18, 9:31 PM",
+    "name": "Dirk",
+    "text":
+      "Happy new Year, how you doin' Lotti? Hope you enjoied the time at home, we were just one day in LA in the end and wanted to stay somewhere in the center.",
+    "intent": "greet",
+    "confidence": 0.4577492069989281
+  },
+  {
+    "time": "5/2/18, 9:37 PM",
+    "name": "Lotti",
+    "text":
+      "Frohes neues Dirk! Yeah, no worries, I was probably in San Diego anyway. I'm sure you've seen more of California than me by now. And that could be fun, where about? Tomorrow I'm free after 3 if you wanna come over and catch up a bit. ",
+    "intent": "propose",
+    "confidence": 0.26038626539668
+  },
+  {
+    "time": "5/2/18, 9:38 PM",
+    "name": "Dirk",
+    "text":
+      "lol, my only class tomorrow is at 3.30, so worst case... let me see when the bday stuff starts",
+    "intent": "deny",
+    "confidence": 0.18985354083217398
+  },
+  {
+    "time": "5/2/18, 9:41 PM",
+    "name": "Lotti",
+    "text": "XD aight, sounds good",
+    "intent": "affirm",
+    "confidence": 0.24808686145646477
+  },
+  {
+    "time": "5/3/18, 9:08 AM",
+    "name": "Dirk",
+    "text": "hey, do you have edillas facebook, wanna ask her for the tiesto tickets..",
+    "intent": "ask",
+    "confidence": 0.22122505493316003
+  },
+  {
+    "time": "5/3/18, 7:14 PM",
+    "name": "Lotti",
+    "text": "Yes of course: http://www.facebook.com/adeela.allai",
+    "intent": "explain",
+    "confidence": 0.3548126196667139
+  },
+  {
+    "time": "5/5/18, 4:11 PM",
+    "name": "Lotti",
+    "text": "Hey Dirk",
+    "intent": "greet",
+    "confidence": 0.35653171119691673
+  },
+  {
+    "time": "5/5/18, 5:24 PM",
+    "name": "Dirk",
+    "text": "what up",
+    "intent": "greet",
+    "confidence": 0.41224257131620456
+  },
+  {
+    "time": "5/5/18, 5:25 PM",
+    "name": "Lotti",
+    "text": "not much, howve you been",
+    "intent": "greet",
+    "confidence": 0.23023856570710935
+  },
+  {
+    "time": "5/5/18, 5:26 PM",
+    "name": "Dirk",
+    "text": "very good ",
+    "intent": "other",
+    "confidence": 0.6648165252486703
+  },
+  {
+    "time": "5/5/18, 5:26 PM",
+    "name": "Dirk",
+    "text": "this long weekend felt like another vacation",
+    "intent": "other",
+    "confidence": 0.3562568952794636
+  },
+  {
+    "time": "5/6/18, 12:10 PM",
+    "name": "Lotti",
+    "text": "yup ^^ ",
+    "intent": "affirm",
+    "confidence": 0.28907839780966205
+  },
+  {
+    "time": "5/6/18, 1:44 PM",
+    "name": "Dirk",
+    "text": "but now I have to get sth done today",
+    "intent": "argue",
+    "confidence": 0.3096258794651499
+  },
+  {
+    "time": "5/6/18, 1:45 PM",
+    "name": "Dirk",
+    "text": "what are you doing?",
+    "intent": "ask",
+    "confidence": 0.3443237029258129
+  },
+  {
+    "time": "5/6/18, 1:45 PM",
+    "name": "Lotti",
+    "text": "chillin at my apartment, doing some homework ",
+    "intent": "explain",
+    "confidence": 0.33863498039427803
+  },
+  {
+    "time": "5/6/18, 1:46 PM",
+    "name": "Lotti",
+    "text": "you? ",
+    "intent": "ask",
+    "confidence": 0.6872644961280879
+  },
+  {
+    "time": "5/6/18, 1:46 PM",
+    "name": "Dirk",
+    "text": "library same ",
+    "intent": "explain",
+    "confidence": 0.7462113080319507
+  },
+  {
+    "time": "5/6/18, 5:14 PM",
+    "name": "Lotti",
+    "text": "well i'll be here if you wanna stop by.",
+    "intent": "propose",
+    "confidence": 0.2370676567351651
+  },
+  {
+    "time": "5/6/18, 6:48 PM",
+    "name": "Lotti",
+    "text": "but i think we're doing something thursday night, wanna come? ",
+    "intent": "propose",
+    "confidence": 0.3415630025559139
+  },
+  {
+    "time": "5/9/18, 4:53 PM",
+    "name": "Dirk",
+    "text": "got a meeting soon so right now it is not possible",
+    "intent": "deny",
+    "confidence": 0.32855080834981776
+  },
+  {
+    "time": "5/9/18, 5:04 PM",
+    "name": "Lotti",
+    "text": "no worries ;)",
+    "intent": "affirm",
+    "confidence": 0.22841739994476137
+  },
+  {
+    "time": "5/9/18, 5:09 PM",
+    "name": "Dirk",
+    "text": "what is it? mysterious something",
+    "intent": "ask",
+    "confidence": 0.3113030346723114
+  },
+  {
+    "time": "5/14/18, 11:16 PM",
+    "name": "Lotti",
+    "text": "just chilling, having a few drinks",
+    "intent": "explain",
+    "confidence": 0.4050417875547468
+  },
+  {
+    "time": "5/15/18, 12:02 AM",
+    "name": "Lotti",
+    "text": "\"italian night\"? ",
+    "intent": "propose",
+    "confidence": 0.38641247383476157
+  },
+  {
+    "time": "5/15/18, 12:03 AM",
+    "name": "Lotti",
+    "text": "maybe ",
+    "intent": "other",
+    "confidence": 0.6186261075606584
+  },
+  {
+    "time": "5/15/18, 12:03 AM",
+    "name": "Dirk",
+    "text": "hahah",
+    "intent": "other",
+    "confidence": 0.5164088181674349
+  }
+]

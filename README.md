@@ -80,5 +80,5 @@ Follow the instructions in `deploy/README.md`
 
 ### Resources
 Rasa:
-- [installation](https://nlu.rasa.com/tutorial.html)
+- [installation](https://nlu.rasa.com/installation.html)
 - [tutorial](https://nlu.rasa.com/tutorial.html)

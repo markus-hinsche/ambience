@@ -48,7 +48,7 @@ class Landing extends Component {
         {hasExampleMessages && (
           <ExampleHeadline>
             EXAMPLE{" "}
-            <span role="img" aria-label="down">
+            <span role="img" ara-label="down">
               👇
             </span>
           </ExampleHeadline>

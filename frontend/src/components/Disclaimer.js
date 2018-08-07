@@ -49,7 +49,16 @@ class Disclaimer extends Component {
   render() {
     return (
       <All>
-        <Large>Drop <span role="img" aria-label="drop">💧</span> a chat file <span role="img" aria-label="speechbubble">💬</span>, or click anywhere in this box.</Large>
+        <Large>
+          Drop{" "}
+          <span role="img" aria-label="drop">
+            💧
+          </span>{" "}
+          a chat file{" "}
+          <span role="img" aria-label="speechbubble">
+            💬
+          </span>, or click anywhere in this box.
+        </Large>
         <Images>
           <Step>
             <StepTitle>Step 1</StepTitle>

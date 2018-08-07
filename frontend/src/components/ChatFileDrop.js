@@ -97,19 +97,22 @@ class ChatfileDrop extends Component {
             !this.state.error && (
               <Loading>
                 <Msg>
-                  Crunching the data 🍤.<br />This can take a couple of seconds ⏳
+                  Crunching the data{" "}
+                  <span role="img" aria-label="crunch">
+                    🍤
+                  </span>.<br />This can take a couple of seconds ⏳
                 </Msg>
                 <Spinner />
               </Loading>
             )}
           {!this.state.loading && !this.state.success && !this.state.error && <Disclaimer />}
           {this.state.error && (
-            <ErrorMsg>😭 Sorry, something went wrong, please try again.</ErrorMsg>
+            <ErrorMsg><span role="img" aria-label="cry">😭</span> Sorry, something went wrong, please try again.</ErrorMsg>
           )}
           {!this.state.loading &&
             this.state.success && (
               <ErrorMsg>
-                🤔 We're still here, but couldn't find any messages.<br />Please try again with
+                <span role="img" aria-label="hmm">🤔</span> We're still here, but couldn't find any messages.<br />Please try again with
                 another file.
               </ErrorMsg>
             )}

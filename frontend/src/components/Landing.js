@@ -10,8 +10,6 @@ import AboutUs from "./AboutUs";
 
 import exampleMessages from "../demo_chat.json";
 
-const USE_EXAMPLE_MESSAGES = true;
-
 const Results = styled.div``;
 const StyledChatFileDrop = styled(ChatFileDrop)``;
 
@@ -47,7 +45,14 @@ class Landing extends Component {
             onAnalysisFinished={messages => this.setState({ messages, hasExampleMessages: false })}
           />
         )}
-        {hasExampleMessages && <ExampleHeadline>EXAMPLE 👇</ExampleHeadline>}
+        {hasExampleMessages && (
+          <ExampleHeadline>
+            EXAMPLE{" "}
+            <span role="img" aria-label="down">
+              👇
+            </span>
+          </ExampleHeadline>
+        )}
         <Results>
           <SectionHeadline>Articulation Statistic</SectionHeadline>
           <AuthorsStats messages={messages} />

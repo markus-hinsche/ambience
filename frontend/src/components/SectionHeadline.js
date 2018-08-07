@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { COLS } from "../colors";
 import { MOBILE_MAX } from "../settings";
 
 const All = styled.p`

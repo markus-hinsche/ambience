@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 import Imprint from "./Imprint";
 import Landing from "./Landing";
@@ -14,6 +14,7 @@ const All = styled.div`
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 `;
 
 const AppRouter = () => {

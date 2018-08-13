@@ -19,8 +19,17 @@ cd frontend
 yarn start
 ```
 
+### Train your RASA model
+```bash
+python3.6 -m rasa_nlu.train \
+    --config nlp/config_mitie.yml \
+    --data nlp/set12_cleaned.json \
+    --path nlp/projects
+
 ```
-python server.py
+
+```bash
+python3.6 server.py
 ```
 At the moment, the messages, the classified intent, and the confidence are
 printed to your console instead of being passed to the frontend.

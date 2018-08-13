@@ -8,11 +8,6 @@ yarn
 ```
 
 ```bash
-cd backend
-yarn
-```
-
-```bash
 pip install -r nlp/requirements.txt
 ./nlp/get_mitie_models.sh
 ```
@@ -24,37 +19,11 @@ cd frontend
 yarn start
 ```
 
-```bash
-cd backend
-yarn start
 ```
-
-### Rasa
-
-```bash
-python3.6 -m rasa_nlu.train \
-    --config nlp/config_mitie.yml \
-    --data nlp/set12_cleaned.json \
-    --path nlp/projects
-
-python3.6 -m rasa_nlu.server --port 61729 --path nlp/projects
+python server.py
 ```
-
-Querying Rasa then gives us:
-
-```bash
-❯ curl -XPOST localhost:61729/parse -d '{"q":"hello there"}'
-{
-  "intent": {
-    "name": "greet",
-    "confidence": 1.0
-  },
-  "entities": [],
-  "text": "hello there",
-  "project": "default",
-  "model": "fallback"
-}
-```
+At the moment, the messages, the classified intent, and the confidence are
+printed to your console instead of being passed to the frontend.
 
 ## Intent list:
 

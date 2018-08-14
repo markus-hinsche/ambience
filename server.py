@@ -18,7 +18,7 @@ interpreter = Interpreter.load(model_directory)
 
 def get_whatsapp_messages(content):
     # The date, time pattern at the beggining of whatsapps
-    date_time_ger = r"\d{1,2}\.\d{1,2}\.\d{2}, \d{2}:\d{2}"
+    date_time_ger = r"\d{2}\.\d{2}\.\d{2}, \d{2}:\d{2}"
     date_time_en = r"\d{1,2}\/\d{1,2}\/\d{2}, \d{2}:\d{2} (PM|AM)"
 
     # Match by regular expression
@@ -68,9 +68,8 @@ def map_message_to_rasa_call(
     parsed = interpreter.parse(message['text'])['intent']
     res = {'intent': parsed['name'],
            'confidence': parsed['confidence']}
-    # Update message dictionary IN PLACE
-    message.update(res)
-    return message
+    merged_dict = dict(**message, **res)
+    return merged_dict
 
 
 def parse_file(f: bytes) -> List:

@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 import unicodedata
 import re
-from typing import Dict
+from typing import List, Dict, Union
 
 from rasa_nlu.model import Interpreter
-from flask import Flask, request
-from flask import jsonify
+from flask import Flask, request, jsonify
 
 
 # Recover model from model directory
-model_directory = './nlp/projects/default/model'
+model_directory = './nlp/projects/default/model_20180613-130746'
 
 # Got a problem when trying to start interpreter
 # when putting the .py file into backend dir
@@ -19,12 +18,14 @@ interpreter = Interpreter.load(model_directory)
 
 def get_whatsapp_messages(content):
     # The date, time pattern at the beggining of whatsapps
-    date_time = r"\d{2}\.\d{2}\.\d{2}, \d{2}:\d{2}"
+    date_time_ger = r"\d{1,2}\.\d{1,2}\.\d{2}, \d{2}:\d{2}"
+    date_time_en = r"\d{1,2}\/\d{1,2}\/\d{2}, \d{2}:\d{2} (PM|AM)"
 
     # Match by regular expression
     # Using pythons named groups (?P<...>)
-    pattern = (r"(?P<time>{0}) - (?P<author>[\w \+]+):"
-               r"(?P<text>.+?(?=(\n{0}|$)))").format(date_time)
+    pattern = (r"(?P<time>({0}|{1})) - (?P<author>[\w \+]+):"
+               r"(?P<text>.+?(?=(\n({0}|{1})|$)))"
+               .format(date_time_ger, date_time_en))
     regex = re.compile(pattern, re.DOTALL)
     # groupdict() returns a dictionary {"name": "matched_string", ...}
     matches = [match.groupdict() for match in regex.finditer(content)]
@@ -33,6 +34,7 @@ def get_whatsapp_messages(content):
 
 
 def bucketize_messages(messages, bucket_size):
+    # This function actually only makes sense for an asynchronous task?!
     buckets = [messages[i: i+bucket_size] for i in
                range(0, len(messages), bucket_size)]
     # for i in range(0, len(messages), bucket_size):
@@ -42,7 +44,8 @@ def bucketize_messages(messages, bucket_size):
     return buckets
 
 
-def map_message_to_rasa_call(message: Dict[str, str]):
+def map_message_to_rasa_call(
+        message: Dict[str, str]) -> Dict[str, Union[float, str]]:
     '''Parses a message by a call to the RASA NLU module
 
     Arguments:
@@ -52,7 +55,7 @@ def map_message_to_rasa_call(message: Dict[str, str]):
              'text': 'Hey, hier Marcel'}]
 
     Returns:
-        Dict -- [
+        Dict[str, Union[float, str] -- [
             {'time': '12.04.18, 21:42',
              'author': 'Marcel Hinsche',
              'text': 'Hey, hier Marcel'
@@ -70,7 +73,7 @@ def map_message_to_rasa_call(message: Dict[str, str]):
     return message
 
 
-def parse_file(f):
+def parse_file(f: bytes) -> List:
     content = f.decode("utf-8", "ignore")
 
     # This seems to be necessary since there are stupid special unicode chars

@@ -49,29 +49,18 @@ def map_message_to_rasa_call(message: Dict[str, str]) -> Dict[str, Union[float, 
              'confidence': 0.982}
         ]
     """
-    import ipdb;ipdb.set_trace()
     parsed = INTERPRETER.parse(message['text'])['intent']  # type: dict
     parsed['intent'] = parsed.pop('name')
     return dict(**message, **parsed)
-
-
-def parse_file(f: bytes) -> List[Dict[str, str]]:
-    content = f.decode('utf-8', 'ignore')
-
-    # This seems to be necessary since there are stupid special unicode chars
-    # leading and trailing the phone number
-    filtered = filter(lambda c: unicodedata.category(c) != 'Cf', content)
-    return get_whatsapp_messages(''.join(filtered))
 
 
 @app.route('/chats', methods=['POST'])
 def upload_file() -> wrappers.Response:
     if request.method == 'POST':
         chat = request.files['chat']
-        raw_bytes_string = chat.read()
-
-        matches = parse_file(raw_bytes_string)
-        messages = list(map(map_message_to_rasa_call, matches))
+        content = chat.read().decode('utf-8', 'ignore')
+        messages = get_whatsapp_messages(''.join(content))
+        messages = list(map(map_message_to_rasa_call, messages))
 
         return jsonify({
             'message': 'success',

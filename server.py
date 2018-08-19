@@ -5,6 +5,8 @@ from typing import List, Dict, Union
 
 from flask import Flask, jsonify, request, wrappers
 from rasa_nlu.model import Interpreter
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 # Recover model from model directory
 MODEL_DIR = './nlp/projects/default/model_20180613-130746'
@@ -78,7 +80,7 @@ def parse_file(f: bytes) -> List[Dict[str, str]]:
 
 # Initialize the server
 app = Flask(__name__)
-
+CORS(app)
 
 # TODO kill?
 @app.route('/')

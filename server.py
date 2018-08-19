@@ -4,19 +4,15 @@ import re
 from typing import List, Dict, Union
 
 from flask import Flask, jsonify, request, wrappers
-from rasa_nlu.model import Interpreter
-from flask import Flask, request, jsonify
 from flask_cors import CORS
+from rasa_nlu.model import Interpreter
 
-# Recover model from model directory
 MODEL_DIR = './nlp/projects/default/model_20180613-130746'
+INTERPRETER = Interpreter.load(MODEL_DIR)
 
-# TODO
-# Got a problem when trying to start interpreter
-# when putting the .py file into backend dir
-
-# TODO why here?
-interpreter = Interpreter.load(MODEL_DIR)
+# Initialize the server
+app = Flask(__name__)
+CORS(app)
 
 
 def get_whatsapp_messages(content: str) -> List[Dict[str, str]]:
@@ -26,7 +22,6 @@ def get_whatsapp_messages(content: str) -> List[Dict[str, str]]:
         content: All messages in a string
 
     Returns: [{'name': 'matched_string', ...}]
-
     """
 
     pattern = r'(?P<time>[0-9\/, :AMP]+) \- (?P<name>[a-zA-Z ]+): (?P<text>.+)'
@@ -34,10 +29,6 @@ def get_whatsapp_messages(content: str) -> List[Dict[str, str]]:
     matches = [re.match(regex_, row) for row in content.split("\n")]
     real_matches = filter(lambda x: bool(x), matches)
     return list(map(lambda x: x.groupdict(), real_matches))
-
-# def bucketize_messages(messages: List, bucket_size: int):
-#     return [messages[i: i+bucket_size]
-#             for i in range(0, len(messages), bucket_size)]
 
 
 def map_message_to_rasa_call(message: Dict[str, str]) -> Dict[str, Union[float, str]]:
@@ -71,17 +62,6 @@ def parse_file(f: bytes) -> List[Dict[str, str]]:
     # leading and trailing the phone number
     filtered = filter(lambda c: unicodedata.category(c) != 'Cf', content)
     return get_whatsapp_messages(''.join(filtered))
-
-
-# Initialize the server
-app = Flask(__name__)
-CORS(app)
-
-# TODO kill?
-@app.route('/')
-@app.route('/index.html')
-def index() -> str:
-    return 'Hello, World!'
 
 
 @app.route('/chats', methods=['POST'])

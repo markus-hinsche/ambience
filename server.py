@@ -36,19 +36,20 @@ def map_message_to_rasa_call(message: Dict[str, str]) -> Dict[str, Union[float, 
 
     Arguments:
         message: [
-            {'time': '12.04.18, 21:42',
-             'name': 'Lotti',
-             'text': 'Hey, hier Marcel'}]
+            {'time': '4/20/18, 12:37 PM',
+             'name': 'Dirk',
+             'text': 'Hey, here is Dirk'}]
 
     Returns:
         [
-            {'time': '12.04.18, 21:42',
+            {'time': '4/20/18, 12:37 PM',
              'name': 'Dirk',
              'text': 'Hey, here is Dirk'
              'intent': 'greet'
              'confidence': 0.982}
         ]
     """
+    import ipdb;ipdb.set_trace()
     parsed = INTERPRETER.parse(message['text'])['intent']  # type: dict
     parsed['intent'] = parsed.pop('name')
     return dict(**message, **parsed)

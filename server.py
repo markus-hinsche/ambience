@@ -51,14 +51,14 @@ def map_message_to_rasa_call(message: Dict[str, str]) -> Dict[str, Union[float, 
     Arguments:
         message {Dict[str, str]} -- [
             {'time': '12.04.18, 21:42',
-             'author': 'Marcel Hinsche',
+             'name': 'Lotti',
              'text': 'Hey, hier Marcel'}]
 
     Returns:
         Dict[str, Union[float, str] -- [
             {'time': '12.04.18, 21:42',
-             'author': 'Marcel Hinsche',
-             'text': 'Hey, hier Marcel'
+             'name': 'Dirk',
+             'text': 'Hey, here is Dirk'
              'intent': 'greet'
              'confidence': 0.982}
         ]

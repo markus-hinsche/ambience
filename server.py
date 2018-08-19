@@ -3,50 +3,48 @@ import unicodedata
 import re
 from typing import List, Dict, Union
 
+from flask import Flask, jsonify, request, wrappers
 from rasa_nlu.model import Interpreter
-from flask import Flask, request, jsonify
-
 
 # Recover model from model directory
-model_directory = './nlp/projects/default/model_20180613-130746'
+MODEL_DIR = './nlp/projects/default/model_20180613-130746'
 
+# TODO
 # Got a problem when trying to start interpreter
 # when putting the .py file into backend dir
 
-interpreter = Interpreter.load(model_directory)
+# TODO why here?
+interpreter = Interpreter.load(MODEL_DIR)
 
 
-def get_whatsapp_messages(content):
-    # The date, time pattern at the beggining of whatsapps
-    date_time_ger = r"\d{2}\.\d{2}\.\d{2}, \d{2}:\d{2}"
-    date_time_en = r"\d{1,2}\/\d{1,2}\/\d{2}, \d{2}:\d{2} (PM|AM)"
+def get_whatsapp_messages(content: str) -> List[Dict[str, str]]:
+    """
 
-    # Match by regular expression
-    # Using pythons named groups (?P<...>)
-    pattern = (r"(?P<time>({0}|{1})) - (?P<author>[\w \+]+):"
-               r"(?P<text>.+?(?=(\n({0}|{1})|$)))"
+    Args:
+        content: All messages in a string
+
+    Returns: [{'name': 'matched_string', ...}]
+
+    """
+
+    # The date, time pattern at the beginning of WhatsApp messages
+    date_time_ger = r'\d{2}\.\d{2}\.\d{2}, \d{2}:\d{2}'
+    date_time_en = r'\d{1,2}\/\d{1,2}\/\d{2}, \d{2}:\d{2} (PM|AM)'
+
+    pattern = (r'(?P<time>({0}|{1})) - (?P<author>[\w \+]+):'
+               r'(?P<text>.+?(?=(\n({0}|{1})|$)))'
                .format(date_time_ger, date_time_en))
     regex = re.compile(pattern, re.DOTALL)
-    # groupdict() returns a dictionary {"name": "matched_string", ...}
-    matches = [match.groupdict() for match in regex.finditer(content)]
-
-    return matches
+    return [match.groupdict() for match in regex.finditer(content)]
 
 
-def bucketize_messages(messages, bucket_size):
-    # This function actually only makes sense for an asynchronous task?!
-    buckets = [messages[i: i+bucket_size] for i in
-               range(0, len(messages), bucket_size)]
-    # for i in range(0, len(messages), bucket_size):
-    #     bucket = messages[i: i + bucket_size]
-    #     buckets.append(bucket)
-
-    return buckets
+# def bucketize_messages(messages: List, bucket_size: int):
+#     return [messages[i: i+bucket_size]
+#             for i in range(0, len(messages), bucket_size)]
 
 
-def map_message_to_rasa_call(
-        message: Dict[str, str]) -> Dict[str, Union[float, str]]:
-    '''Parses a message by a call to the RASA NLU module
+def map_message_to_rasa_call(message: Dict[str, str]) -> Dict[str, Union[float, str]]:
+    """Parse a message by a call to the Rasa NLU module
 
     Arguments:
         message {Dict[str, str]} -- [
@@ -62,59 +60,46 @@ def map_message_to_rasa_call(
              'intent': 'greet'
              'confidence': 0.982}
         ]
-    '''
-
-    # interpreter.parse() also returns a dict
-    parsed = interpreter.parse(message['text'])['intent']
+    """
+    parsed = interpreter.parse(message['text'])['intent']  # type: dict
     res = {'intent': parsed['name'],
            'confidence': parsed['confidence']}
-    merged_dict = dict(**message, **res)
-    return merged_dict
+    return dict(**message, **res)
 
 
-def parse_file(f: bytes) -> List:
-    content = f.decode("utf-8", "ignore")
+def parse_file(f: bytes) -> List[Dict[str, str]]:
+    content = f.decode('utf-8', 'ignore')
 
     # This seems to be necessary since there are stupid special unicode chars
     # leading and trailing the phone number
     filtered = filter(lambda c: unicodedata.category(c) != 'Cf', content)
-    content = "".join(filtered)
-    return get_whatsapp_messages(content)
-
-
-def ask_rasa(messages):
-    list_of_messages = []
-    buckets = bucketize_messages(messages, 20)
-    for bucket in buckets:
-        for message in bucket:
-            message_parsed = map_message_to_rasa_call(message)
-            list_of_messages.append(message_parsed)
-    return list_of_messages
+    return get_whatsapp_messages(''.join(filtered))
 
 
 # Initialize the server
 app = Flask(__name__)
 
 
+# TODO kill?
 @app.route('/')
 @app.route('/index.html')
-def index():
+def index() -> str:
     return 'Hello, World!'
 
 
 @app.route('/chats', methods=['POST'])
-def upload_file():
+def upload_file() -> wrappers.Response:
     if request.method == 'POST':
         chat = request.files['chat']
-        f = chat.read()
+        raw_bytes_string = chat.read()
 
-        matches = parse_file(f)
-        messages = ask_rasa(matches)
+        matches = parse_file(raw_bytes_string)
+        messages = list(map(map_message_to_rasa_call, matches))
 
-        response = {"message": "success", "data": messages}
-        print(response)
-
-        return jsonify(response), 200
+        return jsonify({
+            'message': 'success',
+            'data': messages
+        })
 
 
 if __name__ == '__main__':

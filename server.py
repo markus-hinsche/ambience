@@ -49,10 +49,9 @@ def map_message_to_rasa_call(message: Dict[str, str]) -> Dict[str, Union[float, 
              'confidence': 0.982}
         ]
     """
-    parsed = interpreter.parse(message['text'])['intent']  # type: dict
-    res = {'intent': parsed['name'],
-           'confidence': parsed['confidence']}
-    return dict(**message, **res)
+    parsed = INTERPRETER.parse(message['text'])['intent']  # type: dict
+    parsed['intent'] = parsed.pop('name')
+    return dict(**message, **parsed)
 
 
 def parse_file(f: bytes) -> List[Dict[str, str]]:

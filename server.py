@@ -29,16 +29,11 @@ def get_whatsapp_messages(content: str) -> List[Dict[str, str]]:
 
     """
 
-    # The date, time pattern at the beginning of WhatsApp messages
-    date_time_ger = r'\d{2}\.\d{2}\.\d{2}, \d{2}:\d{2}'
-    date_time_en = r'\d{1,2}\/\d{1,2}\/\d{2}, \d{2}:\d{2} (PM|AM)'
-
-    pattern = (r'(?P<time>({0}|{1})) - (?P<author>[\w \+]+):'
-               r'(?P<text>.+?(?=(\n({0}|{1})|$)))'
-               .format(date_time_ger, date_time_en))
-    regex = re.compile(pattern, re.DOTALL)
-    return [match.groupdict() for match in regex.finditer(content)]
-
+    pattern = r'(?P<time>[0-9\/, :AMP]+) \- (?P<name>[a-zA-Z ]+): (?P<text>.+)'
+    regex_ = re.compile(pattern, re.DOTALL)
+    matches = [re.match(regex_, row) for row in content.split("\n")]
+    real_matches = filter(lambda x: bool(x), matches)
+    return list(map(lambda x: x.groupdict(), real_matches))
 
 # def bucketize_messages(messages: List, bucket_size: int):
 #     return [messages[i: i+bucket_size]

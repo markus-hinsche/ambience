@@ -44,13 +44,13 @@ def map_message_to_rasa_call(message: Dict[str, str]) -> Dict[str, Union[float, 
     """Parse a message by a call to the Rasa NLU module
 
     Arguments:
-        message {Dict[str, str]} -- [
+        message: [
             {'time': '12.04.18, 21:42',
              'name': 'Lotti',
              'text': 'Hey, hier Marcel'}]
 
     Returns:
-        Dict[str, Union[float, str] -- [
+        [
             {'time': '12.04.18, 21:42',
              'name': 'Dirk',
              'text': 'Hey, here is Dirk'

@@ -1,2 +1,2 @@
 #!/bin/sh
-python3.6 server.py
+python3.6 server.py --port 62729

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import unicodedata
+import argparse
 import re
 from typing import List, Dict, Union
 
@@ -69,4 +69,7 @@ def upload_file() -> wrappers.Response:
 
 
 if __name__ == '__main__':
-    app.run(port=62729, debug=True)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--port", help="display a square of a given number", type=int, default=62729)
+    args = parser.parse_args()
+    app.run(port=args.port, debug=True)

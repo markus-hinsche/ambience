@@ -12,17 +12,13 @@ whatsapp_regex_pattern = r'(?P<time>[0-9/, :AMP]+) \- (?P<name>[a-zA-Z ]+): (?P<
 def parse_chat(chat: str) -> List[dict]:
     matches = re.finditer(whatsapp_regex_pattern, chat)
     messages = [m.groupdict() for m in matches]
-
-    # for m in messages:
-    #     m['intent'] = ''
-
     return messages
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--chat', type=str, default='chat.txt')
-    parser.add_argument('--out', type=str, default='parsed_list.json')
+    parser.add_argument('--chat', type=str, default='data/chat_en_short.txt')
+    parser.add_argument('--out', type=str, default='data/chat_en_short.csv')
     args = parser.parse_args()
 
     chat = open(args.chat).read()

@@ -7,4 +7,8 @@ install:
   - pip install -r nlp/requirements.txt
 
 script:
-  - pyest
+  - pytest nlp/test
+
+notifications:
+    email: false
+

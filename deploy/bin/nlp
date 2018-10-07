@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/ambience
-python3.6 -m rasa_nlu.server --port 61729 --path nlp/projects
+python3.6 server.py

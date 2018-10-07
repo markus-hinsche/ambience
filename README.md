@@ -20,17 +20,18 @@ yarn start
 ```
 
 ### Train your RASA model
+
 ```bash
 python3.6 -m rasa_nlu.train \
     --config nlp/config_mitie.yml \
     --data nlp/set12_cleaned.json \
     --path nlp/projects
-
 ```
 
 ```bash
 python3.6 server.py
 ```
+
 At the moment, the messages, the classified intent, and the confidence are
 printed to your console instead of being passed to the frontend.
 
@@ -48,7 +49,7 @@ Analogously to [rasa intents](https://github.com/RasaHQ/rasa_nlu/blob/master/dat
 * explain
 * other
 
-## Competition
+## Similar projects
 
 https://chatvisualizer.com/
 
@@ -57,6 +58,7 @@ https://chatvisualizer.com/
 Follow the instructions in `deploy/README.md`
 
 ### Resources
+
 Rasa:
 - [installation](https://nlu.rasa.com/installation.html)
 - [tutorial](https://nlu.rasa.com/tutorial.html)

@@ -1,2 +1,2 @@
 #!/bin/sh
-python3.6 server.py --port 62729
+python3.6 nlp/server.py --port 62729

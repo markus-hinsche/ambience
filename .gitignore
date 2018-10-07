@@ -1,6 +1,5 @@
 notes
 rasa_nlu
-data/*
 
 set12.csv
 set12_cleaned.csv
@@ -10,9 +9,7 @@ model_20180603-234627
 nlp/MITIE-models*
 nlp/projects
 
-
-backend/node_modules
-backend/uploads
+private/
 
 frontend/node_modules
 

@@ -29,7 +29,7 @@ python3.6 -m rasa_nlu.train \
 ```
 
 ```bash
-python3.6 server.py
+python3.6 nlp/server.py
 ```
 
 ## Intent list:

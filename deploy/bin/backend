@@ -1,8 +1,0 @@
-#!/bin/sh
-
-cd ~/ambience/backend
-
-export NODE_ENV=production
-
-npm install
-npm start

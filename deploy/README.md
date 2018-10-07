@@ -1,8 +1,20 @@
 # Deploy
 
-## How to deploy on a new uberspace?
+## How to deploy on a new Uberspace?
 
-### Setup 
+### Setup
+
+To downlaod the [MITIE models](https://rasa.com/docs/nlu/0.11.4/installation/#first-alternative-mitie), run:
+
+```bash
+./nlp/get_mitie_models.sh
+```
+
+
+### Update frontend
+
+Given the frontend code was altered, to update the deployed frontend, run:
+
 ```bash
 cd frontend
 npm install
@@ -10,21 +22,20 @@ npm run build
 cp -r build/* ~/html/
 ```
 
-```bash
-./nlp/get_mitie_models.sh
-```
+### Update service
 
-Copy contents of `deploy/` directories onto uberspace.
+If the nlp service was altered, to update, run:
 
 ```bash
+cp ~/ambience/deploy/nlp.ini ~/etc/services.d/nlp.ini
 supervisorctl reread
 supervisorctl update
-supervisorctl start
+supervisorctl start nlp
 ```
 
 ## How to handle services?
 As described in 
-[uberspace 7 docs](https://manual.uberspace.de/en/daemons-supervisord.html):
+[Uberspace 7 docs](https://manual.uberspace.de/en/daemons-supervisord.html):
 Here are a few highlights
 
 ```bash

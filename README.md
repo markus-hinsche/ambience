@@ -50,7 +50,7 @@ Analogously to [rasa intents](https://github.com/RasaHQ/rasa_nlu/blob/master/dat
 
 https://chatvisualizer.com/
 
-## Deploy on uberspace
+## Deploy on Uberspace
 
 Follow the instructions in `deploy/README.md`
 

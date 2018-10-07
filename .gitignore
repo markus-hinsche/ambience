@@ -11,7 +11,7 @@ nlp/projects
 
 private/
 
-frontend/node_modules
+node_modules
 
 
 ### Virtualenv ###

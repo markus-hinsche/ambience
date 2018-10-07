@@ -22,14 +22,14 @@ yarn start
 ### Train your RASA model
 
 ```bash
-python3.6 -m rasa_nlu.train \
+python -m rasa_nlu.train \
     --config nlp/config_mitie.yml \
     --data nlp/set12_cleaned.json \
     --path nlp/projects
 ```
 
 ```bash
-python3.6 server.py
+python nlp/server.py
 ```
 
 ## Intent list:

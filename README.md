@@ -32,9 +32,6 @@ python3.6 -m rasa_nlu.train \
 python3.6 server.py
 ```
 
-At the moment, the messages, the classified intent, and the confidence are
-printed to your console instead of being passed to the frontend.
-
 ## Intent list:
 
 Analogously to [rasa intents](https://github.com/RasaHQ/rasa_nlu/blob/master/data/examples/rasa/demo-rasa.md):

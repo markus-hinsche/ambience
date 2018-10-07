@@ -1,0 +1,291 @@
+timestamp,name,text,intent
+02:28:54,<MacTed>,MacTed has joined #rdf-wg,other
+05:17:45,<mbrunati>,mbrunati has joined #rdf-wg,other
+05:21:57,<mbrunati>,mbrunati has joined #rdf-wg,other
+05:22:16,<mbrunati>,mbrunati has left #rdf-wg,other
+06:21:58,<pgroth>,pgroth has joined #rdf-wg,other
+06:47:46,<pgroth_>,pgroth_ has joined #rdf-wg,other
+06:51:46,<tomlurge>,tomlurge has joined #rdf-wg,other
+07:11:44,<danbri>,danbri has joined #rdf-wg,other
+07:13:25,<OlivierCorby>,OlivierCorby has joined #rdf-wg,other
+07:18:50,<FabGandon>,FabGandon has joined #rdf-wg,other
+07:20:56,<ivan>,ivan has joined #rdf-wg,other
+07:21:03,<tomayac>,tomayac has joined #rdf-wg,other
+07:21:55,<tomayac>,bonjour monsieur!,greet
+07:24:23,<pgroth>,pgroth has joined #rdf-wg,other
+07:30:32,<AZ>,AZ has joined #rdf-wg,other
+07:31:34,<mbrunati>,mbrunati has joined #rdf-wg,other
+07:32:13,<pchampin>,pchampin has joined #rdf-wg,other
+07:33:17,"<tomayac> \""the conference is restricted at this time\"" =>",have the dial-in details changed? using rdfwg1# code,ask
+07:34:05,<FabGandon>,should work but we haven't called yet and a number of participants are still missing in the room,explain
+07:34:26,<tomayac>, 9:30 sharp-ish ;-),explain
+07:34:27,<PatH>,PatH has joined #rdf-wg,other
+07:39:52,<Guus>,Guus has joined #rdf-wg,other
+07:40:04,<SteveH>,SteveH has joined #rdf-wg,other
+07:40:19,<Steven_>,Steven_ has joined #rdf-wg,other
+07:40:29,<Steven_>,"zakim, list",other
+07:40:29,<Zakim>,I see SW_RDFWG(RDFWG1)2:00AM active and no others scheduled to start in the next 15 minutes,explain
+07:40:43,<mischat>,mischat has joined #rdf-wg,other
+07:40:49,<FabGandon>,we will have to do an adhoc teleconf the teleconf chanel is not available for today,explain
+07:41:10,<pfps>,pfps has joined #rdf-wg,other
+07:41:13,<Steven_>,"zakim, code?",ask
+07:41:13,<Zakim>,"the conference code is 733941 (tel:+1.617.761.6200 tel:+33.4.26.46.79.03 tel:+44.203.318.0479), Steven_",explain
+07:41:38,<FabGandon>,trying again...,other
+07:41:39,<cmatheus>,cmatheus has joined #rdf-wg,other
+07:41:40,<Steven_>,"zakim, who is on the call?",ask
+07:41:40,<Zakim>,"On the phone I see OlivierCorby, OlivierCorby.a, OlivierCorby.aa, OlivierCorby.aaa",explain
+07:41:41,<cygri>,cygri has joined #rdf-wg,other
+07:41:55,<davidwood>,davidwood has joined #rdf-wg,other
+07:42:13,<PatH>,Same message here,explain
+07:42:23,<tomayac>,same here,explain
+07:42:45,<davidwood>,We're working on it - please stand by,propose
+07:42:56,<Steven_>,"zakim, room for 15 for 600 minutes?",ask
+07:42:58,<Zakim>,"ok, Steven_; conference Team_(rdf-wg)07:42Z scheduled with code 26631 (CONF1) for 600 minutes until 1742Z",other
+07:43:06,<davidwood>,We'll announce a new dial in code shortly,explain
+07:43:12,<FabGandon>,dial 26631,explain
+07:43:18,<davidwood>,PLEASE USE CONFERENCE CODE 26631,explain
+07:43:35,<Steven_>,Steven_ has changed the topic to: CODE is 26631,other
+07:43:41,<davidwood>,Sorry for the confusion.  Our bridge was not configured as we expected.,explain
+07:44:04,<Steven_>,"zakim, who is on the call?",ask
+07:44:04,<Zakim>,"On the phone I see OlivierCorby, OlivierCorby.a, OlivierCorby.aa, OlivierCorby.aaa",explain
+07:44:21,<NickH>,Good Morning!,greet
+07:44:25,<Steven_>,"zakim, this is rdf-wg",greet
+07:44:25,<Zakim>,"Steven_, this was SW_RDFWG(RDFWG1)2:00AM",other
+07:44:27,<Zakim>,"ok, Steven_; that matches Team_(rdf-wg)07:42Z",other
+07:44:33,<Steven_>,"zakim, who is on the call?",ask
+08:15:42,<FabGandon>,PatH: lets not call it the names then.,propose
+08:16:43,<sandro>,+1 pat,affirm
+08:16:51,<FabGandon>,pfps: RDF is agnostic as to the use of the same IRI to name a graph or a person.  ,explain
+08:16:51,<ivan>,ack pchampin ,explain
+08:16:51,<Zakim>,"pchampin, you wanted to talk about named graphs in SPARQL endpoints",other
+08:18:56,<pfps>,"sandro - so you think that you shouldn't use \""anyone else's\""  IRIs in a named graph?",ask
+08:19:03,<cygri>,q+ to disagree with sandro -- web crawling use case,deny
+08:29:08,<FabGandon>,yes we can,affirm
+08:29:37,<FabGandon>,davidwood: some people say we should always use http://,explain
+08:29:55,<FabGandon>,danbri: there is a drift from using http:// URIs,explain
+08:30:07,<FabGandon>,SteveH: I don't see anything wrong with that.,affirm
+09:11:11,<FabGandon>,davidwood: moving to ISSUE 15 ; let's try to rephrase it.,propose
+09:44:21,<sandro>,1,affirm
+09:44:24,<davidwood>,1,affirm
+09:44:26,<SteveH>,1,affirm
+09:44:30,<gavinc>,1,affirm
+09:44:31,<PatH>,1,affirm
+09:44:33,<zwu2>,1,affirm
+09:44:36,<danbri>,-1,deny
+09:44:40,<AZ>,1,affirm
+09:44:51,<JFB>,1,affirm
+09:44:57,<mbrunati>,1,affirm
+09:45:18,<pfps>,+.5 as I'm not exactly sure just what REST is,explain
+09:45:24,<JFB>,"@AZ yes, found that surprising",affirm
+09:46:02,<NickH>,+1 (but agree that REST isn't very well specified),affirm
+09:46:43,<FabGandon>,Guus: we are only considering the notions behind REST.,explain
+09:48:02,<sandro>,"guus: two groups;  (1) json, (2) skolemization",propose
+10:55:48,<davidwood>,ack pchampin,affirm
+10:55:53,<ivan>,ack pchampin ,affirm
+10:56:34,<yvesr>,pchampin: We shoudl specify what is ok for the system to do,propose
+10:56:39,<PatH>,"az, no problem",affirm
+11:20:04,<yvesr>,"davidwood: if we're close to a solution, let's keep on on that",propose
+11:23:42,<PatH>,"have a good lunch, guys.",goodbye
+11:23:59,<AZ>,enjoy your meal,goodbye
+14:18:30,<cygri>,cygri: we should use the same short names to avoid having multiple REC documents floating around,propose
+14:20:07,<cygri>,"guus: i don't hear objections, so let's work on that assumption",propose
+14:25:31,<cygri>,guus: Turtle,affirm
+14:34:08,<zwu2_>,"zakim, who is here",ask
+14:34:09,<Zakim>,"zwu2_, you need to end that query with '?'",explain
+14:56:38,<trackbot>,Created ACTION-39 - Look at respec's handling of references [on Sandro Hawke - due 2011-04-21].,explain
+14:57:05,<cygri>,SteveH: don't use xmlspec,propose
+15:02:02,<sandro>,Bye remote folks!,goodbye
+15:02:06,<zwu2_>,bye and have a safe trip home!,goodbye
+15:02:57,<trackbot>,"Sorry, cygri, I don't understand 'trackbot, generate minutes'. Please refer to http://www.w3.org/2005/06/tracker/irc for help",deny
+07:56:20,<RRSAgent>,RRSAgent has joined #rdf-wg,other
+07:56:20,<RRSAgent>,logging to http://www.w3.org/2011/04/13-rdf-wg-irc,other
+07:56:25,<gavinc>,Mmm... 1 am is in fact morning I guess ;),argue
+07:56:27,<ivan>,"rrsagent, set log public",other
+07:56:44,<ivan>,"gavinc: just a minute, we will dial in soonish",other
+07:56:50,<Zakim>,+ +1.404.978.aabb,other
+07:57:19,<tomayac>,"zakim, aabb is me",other
+07:57:19,<Zakim>,+tomayac; got it,affirm
+07:57:35,<Guus>,Guus has joined #rdf-wg,other
+07:59:54,<OlivierCorby>,OlivierCorby has joined #rdf-wg,other
+08:01:56,<pgroth>,pgroth has joined #rdf-wg,other
+08:03:13,<davidwood>,davidwood has joined #rdf-wg,other
+08:05:31,<Zakim>,+ +31.20.592.aacc,other
+08:05:54,<pfps>,"zakim, who is here?",other
+08:05:54,<Zakim>,"On the phone I see gavinc, tomayac, +31.20.592.aacc",explain
+08:05:55,<sandro>,"zakim, who is on the call?",ask
+08:05:56,<Zakim>,"On the phone I see gavinc, tomayac, +31.20.592.aacc",explain
+08:06:11,<AZ>,AZ has joined #rdf-wg,other
+08:06:35,<AZ>,Hello,greet
+08:09:13,<Zakim>,+ +1.760.705.aaee,other
+08:09:24,<AZ>,"zakim, +1.760.705.aaee is me",explain
+08:09:24,<Zakim>,+AZ; got it,affirm
+08:09:28,<ivan>,"zakim, who is here?",ask
+08:09:28,<Zakim>,"On the phone I see gavinc, tomayac, +31.20.592.aacc, OlivierCorby, AZ",explain
+#08:09:47,<sandro>,"AZ, you're a bit loud",other
+08:09:55,<AZ>,"zakim, mute me",other
+08:09:55,<Zakim>,AZ should now be muted,explain
+08:10:01,<ivan>,"zakim, aacc is ivan",explain
+08:10:01,<Zakim>,+ivan; got it,affirm
+08:10:03,<pfps>,"zakim, aacc is CWI",explain
+08:10:03,<Zakim>,"sorry, pfps, I do not recognize a party named 'aacc'",other
+08:10:25,<sandro>,"zakim, ivan is Meeting_Room",explain
+08:10:25,<Zakim>,+Meeting_Room; got it,affirm
+08:10:53,<SteveH>,Scribe: mischat,other
+08:11:00,<mischat>,http://www.w3.org/2011/rdf-wg/wiki/F2F1,other
+08:11:27,<FabGandon>," zakim, who is here?",ask
+08:11:27,<Zakim>,"On the phone I see gavinc, tomayac, Meeting_Room, OlivierCorby, AZ (muted)",explain
+08:11:55,<mischat>,Guus: are we happy with the agenda ?,ask
+08:12:11,<mischat>,Guus: does anything need to be amended?,ask
+08:12:46,<mischat>,as thomas is not here so matteo will be giving the json roundup,explain
+08:13:38,<mischat>,thanks,other
+08:17:27,<raphael>,raphael has joined #rdf-wg,other
+08:18:23,<mischat>,is everyone physically at CWI turning up to dinner tonight ?,ask
+08:18:26,<mischat>,if not shout ...,propose
+08:18:54,<mbrunati>,mbrunati has joined #rdf-wg,other
+08:19:02,<mischat>,anyone for agenda changes ?,ask
+08:19:16,<mischat>,we are looking at this now,explain
+08:19:16,<mischat>,http://www.w3.org/2011/rdf-wg/wiki/F2F1-objectives,other
+08:19:26,<mischat>,^^ are the objectives for this f2f,explain
+08:19:57,<mischat>,Guus: this f2f to move us from an open discussion to a more targeted effort,explain
+08:20:24,<mischat>,we are looking to get documents in place,explain
+08:21:02,<mischat>,from now on we should have our long threads turn into something tangible and useful for the process,explain
+08:21:33,<mischat>,we are now looking to identify starting documents for the various tasks,explain
+08:21:50,<mischat>,"Guus: would like to have names against the various documents, so that we can push work forward",explain
+08:21:59,<mischat>,Graph's tasks force,other
+08:22:40,<mischat>,we have some standard terminology now in terms of GraphTerminology,explain
+08:23:11,<mischat>,Guus: another issues is the alignment with the SPARQL work,explain
+08:23:26,<NickH>,http://plixi.com/p/92009392,other
+08:24:03,<mischat>,"Guus: so what will be the starting document for the GRaphs TF, should it be the RDF concepts",ask
+08:24:05,<mischat>,?,ask
+08:24:19,<mischat>,"that is the current feeling, and these are things which we need to discuss",explain
+08:24:38,<tomayac>,"thanks, NickH for the photo :-)",other
+08:25:18,<mischat>,"Guus: we have some cleanup tasks, and there are discussions needed to identify what changes need to happen to the various RDF documents",explain
+08:25:48,<mischat>,"Guus: we seem to have a good grasp of the issues, re: a good issue list has been developed",explain
+08:25:59,<mischat>,Guus: do people think we have a good grasp of the problem domain ?,ask
+08:26:04,<mischat>,question for the room ^^,explain
+08:26:30,<FabGandon>,for ecah identifier we define (e.g. g-box identifiers) we should also discuss what happens when we dereference that identifier (e.g. what do I get when I dereference the IRI of g-box? triples in the g-box? triples about g-box? both),propose
+08:27:57,<pgroth>,- moving on to discussing turtle,explain
+08:28:03,<FabGandon>,Guus: for TURTLE starting point is the doc from team submission,explain
+08:28:56,<FabGandon>,Guus: N-triple considered as a limited sub-set of Turtle,explain
+08:29:04,<mischat>,mischat has joined #rdf-wg,other
+08:29:07,<ivan>,"zakim, who is here?",ask
+08:29:07,<Zakim>,"On the phone I see gavinc, tomayac, Meeting_Room, OlivierCorby, AZ (muted)",explain
+08:29:22,<NickH>,pchampin: very impressive!,affirm
+08:30:16,<ivan>,"zakim, Meeting_Room has David Wood, Sandro, Mateo, Steve Harris, Fabien, Pierre Antoine, Cygri, Yves, Nick, Jean-François, Jan, PFPS, Paul Groth, Chris Matheus, Dan Brickley, Misha Tuffield, Ivan",other
+08:30:16,<Zakim>,"+David, Wood, Sandro, Mateo, Steve, Harris, Fabien, Pierre, Antoine, Cygri, Yves, Nick, Jean-François, Jan, PFPS, Paul, Groth, Chris, Matheus, Dan, Brickley, Misha, Tuffield,",other
+08:30:20,<Zakim>,... Ivan; got it,affirm
+08:30:35,<mischat>,"JSON, we have documents to start from, in terms of the Talis submission",explain
+08:30:47,<yvesr>,"if we're not able to standardise object-based json, can we at least standardise a canonical mapping from an rdf graph to some straight-fw json?",propose
+08:31:14,<mischat>,davidWood: just asked about Talis submitting a member submission,explain
+08:31:48,<mischat>,Guus: it is important to figure out what is achievable in terms of work in the JSON TF,explain
+08:32:31,<mischat>,danbri: JSON developers learn new formats all the time,explain
+08:33:04,<mischat>,"danbri: we can get it wrong, and push out three syntaxes, and we will get it right eventually",explain
+08:33:47,<mischat>,"in the JSON TF, we need to elicit what our objectives should be",explain
+08:34:07,<mischat>,if we develop more than one syntax then we will have doubled the work,explain
+08:34:18,<mischat>,ivan: asked about cleanup related actions,explain
+08:34:26,<mischat>,Guus: there is time set aside for that tomorrow,explain
+08:34:51,<mischat>,Guus: has no idea how much work the cleanup will be,explain
+08:35:35,<mischat>,"ivan there are a bunch of small issues, URIRef vs IRI",explain
+08:35:42,<pchampin>,"ivan: following discussion on the ML, we need to agree on what 'deprecation' means for this WG",explain
+08:36:00,<tomayac>,"(audio no longer understandable on the US no. anyone else on the phone have this issue, too?)",ask
+08:36:04,<mischat>,"ivan: the meta-issue regarding \""deprecation\"" should be discussed and sorted out here at the f2f",propose
+08:36:33,<mischat>,"the issue will be tackled tomorrow, but we are going to try and touch upon it now",explain
+08:36:34,<mischat>,for 20 mins,explain
+08:37:12,<ivan>,q?,other
+08:37:17,<mischat>,so lunch at somepoint between 12:30-13:00 central european summer time,explain
+08:37:46,<mischat>,"davidwood: re: turtle, dave wants to know what standardised will be developed by tthe WG",explain
+08:37:56,<tomayac>,(audio back to normal. phew),other
+08:38:26,<Danbri>,Danbri has joined #rdf-wg,other
+08:38:27,<mischat>,"i.e. we will have turtle, will we have qturtle, trig, or what combination of serialisations will we develop",ask
+08:39:12,<tomayac>,sandro FTW! thanks!,other
+08:39:15,<mischat>,"peter: question should we have Qturtle, or turtle, should one be a superset ?",ask
+08:39:37,<mischat>,so dave would like to see issue sorted out,explain
+08:40:00,<mischat>,SteveH: said we could have one document which lists all of the turtle(related) serialisations,propose
+08:40:16,<pchampin>,sounds like a great idea to me,affirm
+08:40:31,<mischat>,Dave's goal for the f2f is to nail the turtle work,explain
+08:40:48,<mischat>,"so we have clear goals, turtle work seems to be the most advanced",explain
+08:41:38,<mischat>,where we have had lots of feedback from people about RDF,explain
+08:42:27,<tomayac>,"sandro, i up-scale it client-side, works perfect for me. thanks!",affirm
+08:42:31,<davidwood>,davidwood has joined #rdf-wg,other
+08:43:24,<davidwood>,http://www.w3.org/2000/03/rdf-tracking/#/%23futures - historical RDF issues,other
+08:43:35,<mischat>,"we are going to move on to the Graph's discussion, if we are happy with the objectives ?",propose
+08:43:59,<mischat>,Richard is about to give some slides summarising the graphs work,explain
+08:44:28,<danbri>,danbri has joined #rdf-wg,other
+08:44:52,<mischat>,there are some slides on the wiki for richard's talk,explain
+08:44:56,<cygri>, slides: http://www.w3.org/2011/rdf-wg/wiki/images/3/3b/Rdfwg-graphs-tf-report.pdf,other
+08:46:17,<mischat>,the charter says we must standardising a model for multiple graphs,explain
+08:47:06,<mischat>,the charter also states that we must standardise turtle and a something similar with multi graph support,explain
+08:47:34,<mischat>,a decision was made for the turtle to focus on syntax and the graphs tf can look at extending turtle,explain
+08:48:16,<pfps>,It's *turqle*!!!,other
+,,It’s your turn to make dinner today. I made dinner yesterday.,argue
+,,You’re making dinner all of this week. I have an exam next week. That’s what we agreed.,argue
+,,"Since life begins at conception, abortion is akin to murder as it is the act of taking human life. Abortion is in direct defiance of the commonly accepted idea of the sanctity of human life",argue
+,,"No civilized society permits one human to intentionally harm or take the life of another human without punishment, and abortion is no different.",argue
+,,"Adoption is a viable alternative to abortion and accomplishes the same result. And with 1.5 million American families wanting to adopt a child, there is no such thing as an unwanted child.",argue
+,,An abortion can result in medical complications later in life; the risk of ectopic pregnancies doubles and the chance of a miscarriage and pelvic inflammatory disease also increases.,argue
+,,"In the instance of rape and incest, proper medical care can ensure that a woman will not get pregnant. Abortion punishes the unborn child who committed no crime; instead, it is the perpetrator who should be punished.",argue
+,,Abortion should not be used as another form of contraception.,argue
+,,"For women who demand complete control of their body, control should include preventing the risk of unwanted pregnancy through the responsible use of contraception or, if that is not possible, through abstinence.",argue
+,,"Many Americans who pay taxes are opposed to abortion, therefore it's morally wrong to use tax dollars to fund abortion.",argue
+,,Those who choose abortions are often minors or young women with insufficient life experience to understand fully what they are doing. Many have lifelong regrets afterward.,argue
+,,Abortion frequently causes intense psychological pain and stress.,argue
+,,"Nearly all abortions take place in the first trimester when a fetus is attached by the placenta and umbilical cord to the mother. As such, its health is dependent on her health, and cannot be regarded as a separate entity as it cannot exist outside her womb.",argue
+,,"The concept of personhood is different from the concept of human life. Human life occurs at conception, but fertilized eggs used for in vitro fertilization are also human lives and those not implanted are routinely thrown away. Is this murder, and if not, then how is abortion murder?",argue
+,,Adoption is not an alternative to abortion because it remains the woman's choice whether or not to give her child up for adoption. Statistics show that very few women who give birth choose to give up their babies; less than 3 percent of white unmarried women and less than 2 percent of percent black​ unmarried women.,argue
+,,Abortion is a safe medical procedure. The vast majority of women (88 percent) who have an abortion do so in their first trimester. Medical abortions have less than 0.5 percent risk of serious complications and do not affect a woman's health or future ability to become pregnant or give birth.,argue
+,,"In the case of rape or incest, forcing a woman made pregnant by this violent act would cause further psychological harm to the victim. Often a woman is too afraid to speak up or is unaware she is pregnant, thus the morning after pill is ineffective in these situations.",argue
+,,"Abortion is not used as a form of contraception. Pregnancy can occur even with responsible contraceptive use. Only 8 percent of women who have abortions do not use any form of birth control, and that is due more to individual carelessness than to the availability of abortion.",argue
+,,"The ability of a woman to have control of her body is critical to civil rights. Take away her reproductive choice and you step onto a slippery slope. If the government can force a woman to continue a pregnancy, what about forcing a woman to use contraception or undergo sterilization?",argue
+,,"Taxpayer dollars are used to enable poor women to access the same medical services as rich women, and abortion is one of these services. Funding abortion is no different from funding a war in the Mideast. For those who are opposed, the place to express outrage is in the voting booth.",argue
+,,Teenagers who become mothers have grim prospects for the future. They are much more likely to leave school; receive inadequate prenatal care; rely on public assistance to raise a child; develop health problems; or end up divorced.,argue
+,,"Like any other difficult situation, abortion creates stress. Yet the American Psychological Association found that stress was greatest prior to an abortion and that there was no evidence of post-abortion syndrome.",argue
+,,No thank you,deny
+,,I don't want it ,deny
+,,I don't need it,deny
+,,Not today,deny
+,,Leave me in peace,deny
+,,Get off me,deny
+,,Fuck off,deny
+,,F**k off,deny
+,,Fuck you,deny
+,,F**k you,deny
+,,I don't drink,deny
+,,I don't wanna go,deny
+,,adieu,goodbye
+,,bye-bye,goodbye
+,,Godspeed,goodbye
+,,adios,goodbye
+,,cheerio,goodbye
+,,ciao,goodbye
+,,leave-taking,goodbye
+,,parting,goodbye
+,,so long,goodbye
+,,swan song,goodbye
+,,toodle-oo,goodbye
+,,farewell,goodbye
+,,aloha,greet
+,,cheerio,goodbye
+,,greetings,greet
+,,hi,greet
+,,howdy,greet
+,,welcome,greet
+,,bonjour,greet
+,,buenas noches,greet
+,,buenos dias,greet
+,,good day,greet
+,,good morning,greet
+,,hey,greet
+,,hi-ya,greet
+,,how are you,greet
+,,how goes it,greet
+,,howdy-do,greet
+,,shalom,greet
+,,what's happening,greet
+,,what's up,greet
+,,What do you think,ask
+,,Why,ask
+,,When,ask
+,,Today?,ask
+,,Now?,ask
+,,Do you wanna go for burgers?,ask
+,,Lasertag – today?,ask

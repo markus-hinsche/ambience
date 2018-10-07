@@ -42,6 +42,10 @@ To start the backend, run:
 python nlp/server.py
 ```
 
+To verify that the setup works you can open [http://localhost:3006](http://localhost:3006) 
+and upload a chat file like `data/chat_en_short.txt`. 
+Of course you can also take your own exported WhatsApp conversation.
+
 ## Train your message classification model
 
 In order to (re)train the Rasa classification model, run:
@@ -49,7 +53,7 @@ In order to (re)train the Rasa classification model, run:
 ```bash
 python -m rasa_nlu.train \
     --config nlp/config_mitie.yml \
-    --data nlp/set12_cleaned.json \
+    --data data/training_data_mixed.json \
     --path nlp/projects
 ```
 

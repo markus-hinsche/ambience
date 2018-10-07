@@ -1,0 +1,15 @@
+language: python
+
+python:
+    - 3.5
+    - 3.6
+
+install:
+  - pip install -r nlp/requirements.txt
+
+script:
+  - pytest nlp/test
+
+notifications:
+    email: false
+

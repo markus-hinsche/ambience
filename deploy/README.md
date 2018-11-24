@@ -10,6 +10,17 @@ To downlaod the [MITIE models](https://rasa.com/docs/nlu/0.11.4/installation/#fi
 ./nlp/get_mitie_models.sh
 ```
 
+To install pip packages, run:
+
+```bash
+pip3.6 install -r nlp/requirements.txt --user
+```
+
+To setup the service/daemon, use:
+
+```bash
+cp /home/ambience/ambience/deploy/bin/nlp /home/ambience/bin
+```
 
 ### Update frontend
 
@@ -27,7 +38,7 @@ cp -r build/* ~/html/
 If the nlp service was altered, to update, run:
 
 ```bash
-cp ~/ambience/deploy/nlp.ini ~/etc/services.d/nlp.ini
+cp ~/ambience/deploy/etc/services.d/nlp.ini ~/etc/services.d/nlp.ini
 supervisorctl reread
 supervisorctl update
 supervisorctl start nlp

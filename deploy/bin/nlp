@@ -1,2 +1,3 @@
 #!/bin/sh
+cd /home/ambience/ambience
 python3.6 nlp/server.py --port 62729

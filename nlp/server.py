@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import pathlib
 import re
 from typing import List, Dict, Union
 
@@ -7,7 +8,7 @@ from flask import Flask, jsonify, request, wrappers
 from flask_cors import CORS
 from rasa_nlu.model import Interpreter
 
-MODEL_DIR = './nlp/projects/default/model_20180613-130746'
+MODEL_DIR = (pathlib.Path(__file__).parent / 'projects' / 'default' / 'model_20180613-130746').absolute()
 INTERPRETER = Interpreter.load(MODEL_DIR)
 
 # Initialize the server

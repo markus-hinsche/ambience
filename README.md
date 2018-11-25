@@ -9,6 +9,9 @@ which chat participant is more likely to propose something, or who asks more.
 
 Find a deployed version here: https://ambience.uber.space. 
 
+An overview of the conversation will look like this:
+![Ambience](frontend/public/og.png)
+
 The frontend is a React web app. 
 For message classification, we use [Rasa NLU](https://github.com/RasaHQ/rasa_nlu).
 The predictions are transmitted via a lean Flask webserver.  

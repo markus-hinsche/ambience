@@ -1,4 +1,4 @@
-# ambience
+# ambience [![Build Status](https://travis-ci.org/markus-hinsche/ambience.svg?branch=master)](https://travis-ci.org/markus-hinsche/ambience)
 
 Ambience is a WhatsApp Chat Analysis WebApp. 
 

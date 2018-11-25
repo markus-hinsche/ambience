@@ -25,8 +25,12 @@ def get_whatsapp_messages(content: str) -> List[Dict[str, str]]:
     Returns: [{'name': 'matched_string', ...}]
     """
 
-    pattern = r'(?P<time>[0-9\/, :AMP]+) \- (?P<name>[a-zA-Z ]+): (?P<text>.+)'
+    pattern = r'(?P<time>[0-9\/, :AMP]+) \- (?P<name>[a-zA-Z0-9+ ]+): (?P<text>.+)'
     regex_ = re.compile(pattern, re.DOTALL)
+
+    # Special chars that appear with phone numbers as names
+    content = content.replace('\u202a', '').replace('\u202c', '')
+
     matches = [re.match(regex_, row) for row in content.split("\n")]
     real_matches = filter(lambda x: bool(x), matches)
     return list(map(lambda x: x.groupdict(), real_matches))

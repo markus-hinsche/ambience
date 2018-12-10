@@ -6,6 +6,7 @@ python:
 
 install:
   - pip install -r nlp/requirements.txt
+  - ./nlp/get_mitie_models.sh
 
 script:
   - pytest nlp/test

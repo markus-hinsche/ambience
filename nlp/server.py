@@ -9,7 +9,7 @@ from flask_cors import CORS
 from rasa_nlu.model import Interpreter
 
 MODEL_DIR = (pathlib.Path(__file__).parent / 'projects' / 'default' / 'model_20180613-130746').absolute()
-INTERPRETER = Interpreter.load(MODEL_DIR)
+INTERPRETER = Interpreter.load(str(MODEL_DIR))
 
 # Initialize the server
 app = Flask(__name__)
